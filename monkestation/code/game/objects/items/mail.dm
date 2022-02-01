@@ -71,9 +71,7 @@
 /obj/item/mail/Initialize()
 	. = ..()
 	RegisterSignal(src, COMSIG_MOVABLE_DISPOSING, .proc/disposal_handling)
-	var/matrix/M = new()
-	M.Scale(((rand(50) / 100) + 0.5), ((rand(50) / 100) + 0.5)) //Between 1.0 and 0.5 scale
-	transform = M
+	transform = transform.Scale(((rand(50) / 100) + 0.5), ((rand(50) / 100) + 0.5)) //Between 1.0 and 0.5 scale
 	if(isnull(department_colors))
 		department_colors = list(
 			ACCOUNT_CIV = COLOR_WHITE,
@@ -235,7 +233,7 @@
 
 /// Subtype that's always junkmail
 /obj/item/mail/junkmail/Initialize()
-	..()
+	. = ..()
 	junk_mail()
 
 /// Crate for mail from CentCom.
