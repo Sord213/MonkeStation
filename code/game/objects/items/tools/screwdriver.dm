@@ -28,6 +28,9 @@
 	/// If the item should be assigned a random color
 	var/random_color = TRUE
 	/// List of possible random colors
+	drop_sound = 'sound/items/handling/screwdriver_drop.ogg'
+	pickup_sound =  'sound/items/handling/screwdriver_pickup.ogg'
+	var/random_color = TRUE //if the screwdriver uses random coloring
 	var/static/list/screwdriver_colors = list(
 		"blue" = "#1861d5",
 		"red" = "#ff0000",
