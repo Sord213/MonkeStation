@@ -445,12 +445,14 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 		var/temp_y
 		var/saved_dizz = dizziness
 		if(C)
-			var/amplitude = dizziness * world.time * 0.0025
+			var/amplitude = dizziness * world.time * 0.0035
 			spawn(0)
 				if(C)
 					temp_x = amplitude * sin(saved_dizz  * world.time * 0.5)
-					temp_y = amplitude * cos(saved_dizz  * world.time * 2) / 2
-					animate(C, QUAD_EASING, pixel_x = temp_x, pixel_y = temp_y)
+					temp_y = amplitude * cos(saved_dizz  * world.time * 2)
+					animate(C, QUAD_EASING, pixel_x = temp_x)
+					sleep(3)
+					animate(C, QUAD_EASING, pixel_y = temp_y)
 					sleep(3)
 					animate(C, QUAD_EASING, pixel_x = 0, pixel_y = 0)
 					if(C)
