@@ -22,7 +22,10 @@
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_y = 31
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "d" = (
 /obj/machinery/disposal/bin,
@@ -38,11 +41,17 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "e" = (
 /obj/structure/chair/wood/wings,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "f" = (
 /obj/structure/table/wood/poker,
@@ -55,7 +64,10 @@
 	brightness = 3;
 	dir = 8
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "g" = (
 /obj/machinery/vending/boozeomat,
@@ -74,10 +86,16 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "i" = (
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "k" = (
 /obj/structure/table/wood/poker,
@@ -91,18 +109,27 @@
 "n" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/figure/wizard,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "q" = (
 /obj/machinery/newscaster{
 	pixel_x = 32;
 	pixel_y = 2
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "r" = (
 /obj/structure/table/wood/poker,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "s" = (
 /obj/machinery/door/airlock{
@@ -111,19 +138,28 @@
 	req_access_txt = "25"
 	},
 /obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "t" = (
 /obj/structure/chair/wood/wings,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "u" = (
 /obj/structure/chair/wood/wings{
 	dir = 1
 	},
 /obj/effect/landmark/start/assistant,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "v" = (
 /obj/structure/table/wood/poker,
@@ -139,7 +175,10 @@
 /obj/item/storage/pill_bottle/dice{
 	icon_state = "magicdicebag"
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "x" = (
 /obj/structure/table/wood/poker,
@@ -151,11 +190,17 @@
 	dir = 4;
 	pixel_x = -26
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "z" = (
 /obj/effect/landmark/event_spawn,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "A" = (
 /obj/structure/table/wood/poker,
@@ -163,17 +208,26 @@
 /obj/item/lighter{
 	pixel_x = 8
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "B" = (
 /obj/structure/table/wood/poker,
 /obj/item/book/manual/wiki/barman_recipes,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "D" = (
 /obj/structure/chair/wood/wings,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "F" = (
 /obj/structure/table/wood/fancy,
@@ -187,11 +241,17 @@
 /obj/effect/spawner/structure/window/reinforced{
 	color = "#008000"
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "H" = (
 /mob/living/carbon/monkey/punpun,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "I" = (
 /obj/structure/table/wood/poker,
@@ -200,14 +260,20 @@
 	pixel_x = -2;
 	pixel_y = 9
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "K" = (
 /obj/machinery/door/airlock{
 	icon = 'icons/obj/doors/airlocks/station/uranium.dmi';
 	name = "Bar"
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "M" = (
 /obj/machinery/smartfridge/drinks{
@@ -221,7 +287,10 @@
 /obj/structure/chair/wood/wings{
 	dir = 1
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "Q" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -230,13 +299,19 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "S" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "V" = (
 /obj/machinery/door/airlock{
@@ -244,16 +319,25 @@
 	name = "Bar Access";
 	req_access_txt = "25"
 	},
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "W" = (
 /obj/effect/landmark/start/bartender,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 "X" = (
 /obj/structure/table/wood/poker,
 /obj/item/clothing/head/wizard,
-/turf/open/floor/plasteel/cult,
+/turf/open/floor/plasteel{
+	icon_state = "cult";
+	name = "cheap engraved floor"
+	},
 /area/crew_quarters/bar)
 
 (1,1,1) = {"
