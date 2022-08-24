@@ -61,6 +61,10 @@ map donutstation
 	votable
 endmap
 
+map monkeydome
+	minplayers 25
+	disabled //temp
+
 #Debug Maps, you probably don't want these enabled.
 
 map runtimestation
