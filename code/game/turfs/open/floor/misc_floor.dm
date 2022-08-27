@@ -243,3 +243,8 @@
 /turf/open/floor/plating/rust/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/rust)
+
+//MonkeDome Outdoor Floors
+/turf/open/floor/stone/airless
+	initial_gas_mix = AIRLESS_ATMOS
+	name = "stone path" //It's an outdoor path, no air for now, will be whatever jungle atmos we decide on later
