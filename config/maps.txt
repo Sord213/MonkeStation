@@ -62,8 +62,8 @@ map donutstation
 endmap
 
 map monkeydome
-	minplayers 25
-	disabled //temp
+	minplayers 20
+	disabled
 
 #Debug Maps, you probably don't want these enabled.
 
