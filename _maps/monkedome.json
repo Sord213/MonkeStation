@@ -1,7 +1,7 @@
 {
-	"map_name": "MonkeyDome",
-	"map_link": "MonkeyDome",
-	"map_path": "map_files/MonkeyDome",
+	"map_name": "MonkeDome",
+	"map_link": "MonkeDome",
+	"map_path": "map_files/MonkeDome",
 	"map_file": "MonkeDome.dmm",
 	"shuttles": {
 		"cargo": "cargo_box",
