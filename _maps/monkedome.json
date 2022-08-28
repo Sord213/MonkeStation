@@ -2,7 +2,7 @@
 	"map_name": "MonkeyDome",
 	"map_link": "MonkeyDome",
 	"map_path": "map_files/MonkeyDome",
-	"map_file": "MonkeyDome.dmm",
+	"map_file": "MonkeDome.dmm",
 	"shuttles": {
 		"cargo": "cargo_box",
 		"ferry": "ferry_fancy",
