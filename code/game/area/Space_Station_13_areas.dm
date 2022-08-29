@@ -1180,7 +1180,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Security Evidence Storage"
 
 /area/security/doctor
-	name = "Brig Physician's Office"
+	name = "Brig Infirmary"
 
 /area/security/interrogation
 	name = "Security Interrogation Room"
