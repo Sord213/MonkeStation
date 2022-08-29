@@ -341,7 +341,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/hallway
 	lighting_colour_tube = "#ffce99"
 	lighting_colour_bulb = "#ffdbb4"
-	lighting_brightness_tube = 8
+	lighting_brightness_tube = 10
 
 /area/hallway/primary
 	name = "Primary Hallway"
@@ -451,7 +451,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 	lighting_colour_tube = "#ffce99"
 	lighting_colour_bulb = "#ffdbb4"
-	lighting_brightness_tube = 8
+	lighting_brightness_tube = 10
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
 /area/bridge/meeting_room
@@ -516,7 +516,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/crew_quarters
 	lighting_colour_tube = "#ffce99"
 	lighting_colour_bulb = "#ffdbb4"
-	lighting_brightness_tube = 8
+	lighting_brightness_tube = 10
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
 /area/crew_quarters/dorms
@@ -679,7 +679,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 	lighting_colour_tube = "#ffce99"
 	lighting_colour_bulb = "#ffdbb4"
-	lighting_brightness_tube = 8
+	lighting_brightness_tube = 10
 
 /area/library/lounge
 	name = "Library Lounge"
@@ -820,6 +820,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/solar
 	requires_power = FALSE
 	area_flags = UNIQUE_AREA | AREA_USES_STARLIGHT
+	false_outdoors = TRUE
 	flags_1 = NONE
 	ambience_index = AMBIENCE_ENGI
 	sound_environment = SOUND_AREA_SPACE

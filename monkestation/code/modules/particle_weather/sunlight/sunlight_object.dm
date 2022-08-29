@@ -73,12 +73,6 @@ Sunlight System
 	affecting_corners = null
 
 /atom/movable/outdoor_effect/proc/process_state()
-	var/turf/mob_turf = get_turf(src)
-	var/area/turf_area = get_area(mob_turf)
-	if(!mob_turf.above() && !SSmapping.level_trait(mob_turf.z, ZTRAIT_UP) && !turf_area.outdoors)
-		disable_sunlight()
-		return
-
 	switch(state)
 		if(SKY_BLOCKED)
 			disable_sunlight() /* Do our indoor processing */
@@ -226,6 +220,11 @@ Sunlight System
 			.["SKYVISIBLE"]   &= ceilingStat["SKYVISIBLE"]
 			.["WEATHERPROOF"] |= ceilingStat["WEATHERPROOF"]
 
+	/// this is some ghetto ass check for singlular Z-level maps that i don't wanna add pseudo roofs to
+	var/area/turf_area = get_area(src)
+	if(!isspaceturf(src) && !above() && !SSmapping.level_trait(src.z, ZTRAIT_UP) && !turf_area.outdoors && !turf_area.false_outdoors)
+		.["SKYVISIBLE"]   =  FALSE
+		.["WEATHERPROOF"] =  TRUE
 
 /* moved this out of reconsider lights so we can call it in multiz refresh  */
 /turf/proc/reconsider_sunlight()

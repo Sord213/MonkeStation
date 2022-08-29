@@ -182,10 +182,6 @@
 	if(!mob_turf.outdoor_effect || mob_turf.outdoor_effect.weatherproof)
 		return
 
-	var/area/turf_area = get_area(mob_turf)
-	if(!mob_turf.above() && !SSmapping.level_trait(mob_turf.z, ZTRAIT_UP) && !turf_area.outdoors)
-		return
-
 	return TRUE
 
 /**
