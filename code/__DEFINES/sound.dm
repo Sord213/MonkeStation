@@ -9,6 +9,7 @@
 #define CHANNEL_AMBIENT_MUSIC 1017
 #define CHANNEL_BUZZ 1017
 #define CHANNEL_ENGINE_ALERT 1015 //Monkestation Edit -- RBMK Reactor Sounds
+#define CHANNEL_WEATHER 1014
 
 ///Default range of a sound.
 #define SOUND_RANGE 17

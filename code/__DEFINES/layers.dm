@@ -9,16 +9,21 @@
 #define PLANE_SPACE_PARALLAX -90
 
 
-#define GRAVITY_PULSE_PLANE -11
+//Not ever visible, place beneath everything
+#define WEATHER_OVERLAY_PLANE -80
+#define WEATHER_RENDER_TARGET "*WEATHER_OVERLAY_PLANE"
+
+#define GRAVITY_PULSE_PLANE -12
 #define GRAVITY_PULSE_RENDER_TARGET "*GRAVPULSE_RENDER_TARGET"
 
 #define OPENSPACE_LAYER 600 //Openspace layer over all
-#define OPENSPACE_PLANE -9 //Openspace plane below all turfs
-#define OPENSPACE_BACKDROP_PLANE -8 //Black square just over openspace plane to guaranteed cover all in openspace turf
+#define OPENSPACE_PLANE -10 //Openspace plane below all turfs
+#define OPENSPACE_BACKDROP_PLANE -9 //Black square just over openspace plane to guaranteed cover all in openspace turf
 
 
-#define FLOOR_PLANE -7
-#define GAME_PLANE -4
+#define FLOOR_PLANE -8
+#define GAME_PLANE -5
+#define WEATHER_EFFECT_PLANE -4
 
 #define SPACE_LAYER 1.8
 //#define TURF_LAYER 2 //For easy recordkeeping; this is a byond define
@@ -99,6 +104,11 @@
 #define RAD_TEXT_PLANE 90
 
 //---------- LIGHTING -------------
+
+// This is not rendered, a fullscreen effect uses the render_target as a layer filter to display on the lighting plane
+#define SUNLIGHTING_PLANE 99
+#define SUNLIGHTING_RENDER_TARGET "*SUNLIGHT_PLANE"
+
 ///Normal 1 per turf dynamic lighting objects
 #define LIGHTING_PLANE 100
 
@@ -108,6 +118,10 @@
 
 ///Things that should render ignoring lighting
 #define ABOVE_LIGHTING_PLANE 120
+
+#define LIGHTING_PRIMARY_LAYER 15	//The layer for the main lights of the station
+#define LIGHTING_PRIMARY_DIMMER_LAYER 15.1	//The layer that dims the main lights of the station
+#define LIGHTING_SECONDARY_LAYER 16	//The colourful, usually small lights that go on top
 
 ///visibility + hiding of things outside of light source range
 #define BYOND_LIGHTING_PLANE 130

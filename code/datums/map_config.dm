@@ -19,6 +19,9 @@
 	var/map_path = "map_files/BoxStation"
 	var/map_file = "BoxStation.dmm"
 
+	//List of particle_weather types for this map
+	var/particle_weather = list() //MOJAVE MODULE OUTDOOR_EFFECTS
+
 	var/traits = null
 	var/space_ruin_levels = 4	//Keep this low, as new ones are created dynamically when needed.
 	var/space_empty_levels = 1
@@ -115,6 +118,12 @@
 		log_world("map_config traits is not a list!")
 		return
 
+	if ("particle_weather" in json)
+		if(!islist(json["particle_weather"]))
+			log_world("map_config \"particle_weather\" field is missing or invalid!")
+			return
+		particle_weather = json["particle_weather"]
+
 	var/temp = json["space_ruin_levels"]
 	if (isnum_safe(temp))
 		space_ruin_levels = temp
@@ -132,7 +141,7 @@
 	if ("minetype" in json)
 		minetype = json["minetype"]
 
-	if("map_link" in json)						
+	if("map_link" in json)
 		map_link = json["map_link"]
 	else
 		log_world("map_link missing from json!")
