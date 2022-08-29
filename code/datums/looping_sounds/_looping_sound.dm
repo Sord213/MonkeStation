@@ -29,9 +29,6 @@
 	var/channel
 	var/timerid
 
-	/// Has the looping started yet?
-	var/loop_started = FALSE
-
 /datum/looping_sound/New(list/_output_atoms=list(), start_immediately=FALSE, _direct=FALSE, _channel = 0)
 	if(!mid_sounds)
 		WARNING("A looping sound datum was created without sounds to play.")
@@ -64,14 +61,6 @@
 	on_stop()
 	deltimer(timerid, SSsound_loops)
 	timerid = null
-	loop_started = FALSE
-
-/// The proc that handles starting the actual core sound loop.
-/datum/looping_sound/proc/start_sound_loop()
-	loop_started = TRUE
-	sound_loop()
-	addtimer(CALLBACK(src, .proc/sound_loop, world.time), mid_length, TIMER_CLIENT_TIME | TIMER_STOPPABLE | TIMER_LOOP | TIMER_DELETE_ME, SSsound_loops)
-
 
 /datum/looping_sound/proc/sound_loop(starttime)
 	if(max_loops && world.time >= starttime + mid_length * max_loops)
@@ -105,8 +94,8 @@
 	if(start_sound)
 		play(start_sound)
 		start_wait = start_length
-	addtimer(CALLBACK(src, .proc/start_sound_loop), start_wait, TIMER_CLIENT_TIME | TIMER_DELETE_ME | TIMER_STOPPABLE, SSsound_loops)
+	addtimer(CALLBACK(src, .proc/sound_loop), start_wait, TIMER_CLIENT_TIME, SSsound_loops)
 
 /datum/looping_sound/proc/on_stop()
-	if(loop_started)
+	if(end_sound)
 		play(end_sound)
