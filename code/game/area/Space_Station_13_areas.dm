@@ -582,6 +582,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Unisex Locker Room"
 	icon_state = "fitness"
 
+/area/crew_quarters/fitness/pool
+	name = "Pool"
+	icon_state = "rec"
+
 /area/crew_quarters/fitness/recreation
 	name = "Recreation Area"
 	icon_state = "fitness"
@@ -589,6 +593,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/crew_quarters/fitness/recreation/upper
 	name = "Upper Recreation Area"
 	icon_state = "fitness"
+
+/area/crew_quarters/fitness/recreation/holodeckcontrol
+	name = "Holodeck Controls Room"
+	icon_state = "rec"
 
 /area/crew_quarters/park
 	name = "Recrational Park"
@@ -627,6 +635,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/crew_quarters/bar/lounge
 	name = "Bar lounge"
+	icon_state = "lounge"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/area/crew_quarters/bar/bartendersquarters
+	name = "Bartender's Quarters"
 	icon_state = "lounge"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
@@ -687,6 +700,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "library"
 	flags_1 = NONE
 
+/area/library/curator
+	name = "Curator's Office"
+	icon_state = "library"
+
 /area/chapel
 	icon_state = "chapel"
 	ambience_index = AMBIENCE_HOLY
@@ -716,6 +733,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/chapel/dock
 	name = "Chapel Dock"
 	icon_state = "construction"
+
+/area/chapel/crematorium
+	name = "Chapel Crematorium"
+	icon_state = "chapel"
 
 /area/lawoffice
 	name = "Law Office"
@@ -1066,6 +1087,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "cloning"
 	network = list("ss13", "medbay")
 
+/area/medical/genetics/monkeydome
+	name = "Genetics Monkey Dome"
+	icon_state = "genetics"
+	network = list("ss13", "medbay")
+
 /area/medical/sleeper
 	name = "Medbay Treatment Center"
 	icon_state = "exam_room"
@@ -1146,6 +1172,18 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/security/execution/education
 	name = "Prisoner Education Chamber"
 	network = list("ss13", "prison")
+
+/area/security/lockerroom
+	name = "Security Locker Room"
+
+/area/security/evidencestorage
+	name = "Security Evidence Storage"
+
+/area/security/doctor
+	name = "Brig Physician's Office"
+
+/area/security/interrogation
+	name = "Security Interrogation Room"
 
 /area/security/nuke_storage
 	name = "Vault"
@@ -1636,3 +1674,141 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Telecommunications Relay"
 	icon_state = "tcom_sat_cham"
 	network = list("ss13", "tcomms")
+
+// MonkeDome Areas for the crew's sanity
+
+/area/hallway/monkedome/security
+	name = "Security Hub Primary Hallway"
+	icon_state = "hallA"
+
+/area/hallway/monkedome/comsec
+	name = "ComSec Hub Entry Hallway"
+	icon_state = "entry"
+
+/area/maintenance/monkedome/comsec/fore
+	name = "ComSec Hub Fore Maintenance"
+	icon_state = "foremaint"
+
+/area/maintenance/monkedome/comsec/central
+	name = "ComSec Hub Central Maintenance"
+	icon_state = "centralmaint"
+
+/area/maintenance/monkedome/comsec/aft
+	name = "ComSec Hub Aft Maintenance"
+	icon_state = "aftmaint"
+
+/area/hallway/monkedome/medical
+	name = "Medical Hub Primary Hallway"
+	icon_state = "hallA"
+
+/area/maintenance/monkedome/medical/port
+	name = "Medical Hub Port Maintenance"
+	icon_state = "portmaint"
+
+/area/maintenance/monkedome/medical/starboard
+	name = "Medical Hub Starboard Maintenance"
+	icon_state = "starboardmaint"
+
+/area/hallway/monkedome/civilian/central
+	name = "Civilian Hub Central Primary Hallway"
+	icon_state = "hallC"
+
+/area/hallway/monkedome/civilian/fore
+	name = "Civilian Hub Fore Primary Hallway"
+	icon_state = "hallF"
+
+/area/hallway/monkedome/civilian/aft
+	name = "Civilian Hub Aft Primary Hallway"
+	icon_state = "hallA"
+
+/area/hallway/monkedome/civilian/port
+	name = "Civilian Hub Port Primary Hallway"
+	icon_state = "hallP"
+
+/area/maintenance/monkedome/civilian/upperfore
+	name = "Civilian Hub Upper Fore Maintenance"
+	icon_state = "upperforemaint"
+
+/area/maintenance/monkedome/civilian/upperstarboard
+	name = "Civilian Hub Upper Starboard Maintenance"
+	icon_state = "upperstarboardmaint"
+
+/area/maintenance/monkedome/civilian/upperport
+	name = "Civilian Hub Upper Port Maintenance"
+	icon_state = "upperportmaint"
+
+/area/maintenance/monkedome/civilian/port
+	name = "Civilian Hub Port Maintenance"
+	icon_state = "portmaint"
+
+/area/maintenance/monkedome/civilian/starboard
+	name = "Civilian Hub Starboard Maintenance"
+	icon_state = "starboardmaint"
+
+/area/maintenance/monkedome/civilian/central
+	name = "Civilian Hub Central Maint"
+	icon_state = "centralmaint"
+
+/area/hallway/monkedome/science
+	name = "Science Hub Primary Hallway"
+	icon_state = "hallP"
+
+/area/maintenance/monkedome/science/port
+	name = "Science Hub Port Maintenance"
+	icon_state = "portmaint"
+
+/area/maintenance/monkedome/science/starboard
+	name = "Science Hub Starboard Maintenance"
+	icon_state = "starboardmaint"
+
+/area/science/monkedome/virologyhall
+	name = "Virology Outpost Primary Hallway"
+	icon_state = "hallP"
+
+/area/science/monkedome/virostorage
+	name = "Virology Outpost Storage"
+	icon_state = "science"
+
+/area/science/monkedome/viroconstructionarea
+	name = "Virology Outpost Construction Area"
+	icon_state = "construction"
+
+/area/science/monkedome/virologyoutdoor //make work with outdoor lighting
+	name = "Virology Outdoor Testing"
+	icon_state = "science"
+
+/area/hallway/monkedome/engineering
+	name = "Engineering Hub Primary Hallway"
+	icon_state = "hallC"
+
+/area/hallway/monkedome/engineering/fore
+	name = "Engineering Hub Fore Primary Hallway"
+	icon_state = "hallF"
+
+/area/engine/monkedome/constructionarea
+	name = "Engineering Hub Construction Area"
+	icon_state = "construction"
+
+/area/engine/monkedome/peepeeroom //yes
+	name = "Engineering Hub Restrooms"
+	icon_state = "toilet"
+
+/area/maintenance/monkedome/engine/port
+	name = "Engineering Hub Port Maintenance"
+	icon_state = "portmaint"
+
+/area/maintenance/monkedome/engine/upperport
+	name = "Engineering Hub Upper Port Maintenance"
+	icon_state = "upperportmaint"
+
+/area/maintenance/monkedome/engine/central
+	name = "Engineering Hub Central Maintenance"
+	icon_state = "centralmaint"
+
+/area/maintenance/monkedome/engine/upperstarboard
+	name = "Engineering Hub Upper Starboard Maintenance"
+	icon_state = "upperstarboardmaint"
+
+/area/engine/monkedome/upperairlock
+	name = "Engineering Hub TComm Access Airlock"
+	icon_state = "tcom_sat_entrance"
