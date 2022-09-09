@@ -1697,6 +1697,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "ComSec Hub Aft Maintenance"
 	icon_state = "aftmaint"
 
+/area/medical/monkedome/constructionarea
+	name = "Medical Hub Construction Area"
+
+/area/medical/monkedome/storageroom
+	name = "Medical Hub Storage Room"
+
 /area/hallway/monkedome/medical
 	name = "Medical Hub Primary Hallway"
 	icon_state = "hallA"
@@ -1708,6 +1714,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/maintenance/monkedome/medical/starboard
 	name = "Medical Hub Starboard Maintenance"
 	icon_state = "starboardmaint"
+
+/area/maintenance/monkedome/medical/fore
+	name = "Medical Hub Fore Maintenance"
+	icon_state = "foremaint"
 
 /area/hallway/monkedome/civilian/central
 	name = "Civilian Hub Central Primary Hallway"
