@@ -58,6 +58,10 @@
 		"nucleium" = /obj/machinery/portable_atmospherics/canister/nucleium
 	)
 
+/obj/machinery/portable_atmospherics/canister/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/gags_recolorable)
+
 /obj/machinery/portable_atmospherics/canister/interact(mob/user)
 	if(!allowed(user))
 		to_chat(user, "<span class='warning'>Error - Unauthorized User</span>")
@@ -215,7 +219,7 @@
 	if(href_list[VV_HK_MODIFY_CANISTER_GAS])
 		usr.client.modify_canister_gas(src)
 
-/obj/machinery/portable_atmospherics/canister/New(loc, datum/gas_mixture/existing_mixture)
+/obj/machinery/portable_atmospherics/canister/Initialize(mapload, datum/gas_mixture/existing_mixture)
 	. = ..()
 	if(existing_mixture)
 		air_contents.copy_from(existing_mixture)
