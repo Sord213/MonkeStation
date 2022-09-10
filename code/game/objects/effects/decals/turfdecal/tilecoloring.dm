@@ -15,15 +15,15 @@
 
 /obj/effect/turf_decal/tile/blue/tile_marquee
 	name = "blue marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/blue/tile_side
 	name = "blue side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/blue/tile_full
 	name = "blue tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/green
 	name = "green corner"
@@ -31,15 +31,15 @@
 
 /obj/effect/turf_decal/tile/green/tile_marquee
 	name = "green marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/green/tile_side
 	name = "green side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/green/tile_full
 	name = "green tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/yellow
 	name = "yellow corner"
@@ -47,15 +47,15 @@
 
 /obj/effect/turf_decal/tile/yellow/tile_marquee
 	name = "yellow marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/yellow/tile_side
 	name = "yellow side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/yellow/tile_full
 	name = "yellow tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/red
 	name = "red corner"
@@ -63,15 +63,15 @@
 
 /obj/effect/turf_decal/tile/red/tile_marquee
 	name = "red marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/red/tile_side
 	name = "red side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/red/tile_full
 	name = "red tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/bar
 	name = "bar corner"
@@ -80,15 +80,15 @@
 
 /obj/effect/turf_decal/tile/bar/tile_marquee
 	name = "bar marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/bar/tile_side
 	name = "bar side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/bar/tile_full
 	name = "bar tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/purple
 	name = "purple corner"
@@ -96,15 +96,15 @@
 
 /obj/effect/turf_decal/tile/purple/tile_marquee
 	name = "purple marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/purple/tile_side
 	name = "purple side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/purple/tile_full
 	name = "purple tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/brown
 	name = "brown corner"
@@ -112,15 +112,15 @@
 
 /obj/effect/turf_decal/tile/brown/tile_marquee
 	name = "brown marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/brown/tile_side
 	name = "brown side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/brown/tile_full
 	name = "brown tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/darkblue
 	name = "dark blue corner"
@@ -128,15 +128,15 @@
 
 /obj/effect/turf_decal/tile/darkblue/tile_marquee
 	name = "dark blue marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/darkblue/tile_side
 	name = "dark blue side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/darkblue/tile_full
 	name = "dark blue tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/neutral
 	name = "neutral corner"
@@ -145,15 +145,15 @@
 
 /obj/effect/turf_decal/tile/neutral/tile_marquee
 	name = "neutral marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/neutral/tile_side
 	name = "neutral side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/neutral/tile_full
 	name = "neutral tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/random // so many colors
 	name = "colorful corner"
@@ -161,15 +161,15 @@
 
 /obj/effect/turf_decal/tile/random/tile_marquee
 	name = "colorful marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/random/tile_side
 	name = "colorful side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/random/tile_full
 	name = "colorful tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/gray
 	name = "gray corner"
@@ -177,15 +177,15 @@
 
 /obj/effect/turf_decal/tile/gray/tile_marquee
 	name = "gray marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/gray/tile_side
 	name = "gray side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/gray/tile_full
 	name = "gray tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/darkpurple
 	name = "dark purple corner"
@@ -193,15 +193,15 @@
 
 /obj/effect/turf_decal/tile/darkpurple/tile_marquee
 	name = "dark purple marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/darkpurple/tile_side
 	name = "dark purple side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/darkpurple/tile_full
 	name = "dark purple tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/darkred
 	name = "dark red corner"
@@ -209,15 +209,15 @@
 
 /obj/effect/turf_decal/tile/darkred/tile_marquee
 	name = "dark red marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/darkred/tile_side
 	name = "dark red side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/darkred/tile_full
 	name = "dark red tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/orange
 	name = "orange corner"
@@ -225,15 +225,15 @@
 
 /obj/effect/turf_decal/tile/orange/tile_marquee
 	name = "orange marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/orange/tile_side
 	name = "orange side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/orange/tile_full
 	name = "orange tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/darkgreen
 	name = "dark green corner"
@@ -241,15 +241,15 @@
 
 /obj/effect/turf_decal/tile/darkgreen/tile_marquee
 	name = "dark green marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/darkgreen/tile_side
 	name = "dark green side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/darkgreen/tile_full
 	name = "dark green tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/pissyellow
 	name = "piss yellow corner"
@@ -257,15 +257,15 @@
 
 /obj/effect/turf_decal/tile/pissyellow/tile_marquee
 	name = "piss yellow marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/pissyellow/tile_side
 	name = "piss yellow side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/pissyellow/tile_full
 	name = "piss yellow tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 /obj/effect/turf_decal/tile/hotpink
 	name = "hot pink corner"
@@ -273,15 +273,15 @@
 
 /obj/effect/turf_decal/tile/hotpink/tile_marquee
 	name = "hot pink marquee"
-	icon_state = "tile_opposing_corners"
+	icon_state = "tile_marquee"
 
 /obj/effect/turf_decal/tile/hotpink/tile_side
 	name = "hot pink side"
-	icon_state = "tile_half_contrasted"
+	icon_state = "tile_side"
 
 /obj/effect/turf_decal/tile/hotpink/tile_full
 	name = "hot pink tile"
-	icon_state = "tile_fourcorners"
+	icon_state = "tile_full"
 
 
 /obj/effect/turf_decal/tile/random/Initialize(mapload)
