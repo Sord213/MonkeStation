@@ -1,8 +1,9 @@
 //Section for the Mentor Friend verb
 
-/mob/verb/imaginary_friend()
+/client/proc/imaginary_friend()
 	set category = "Mentor"
 	set name = "Become Imaginary Friend"
+	set hidden = 1
 
 	if(!usr.client.is_mentor())
 		return
@@ -48,9 +49,10 @@
 	log_admin("[key_name(mentorfriend)] started being the imaginary friend of [key_name(mentee)].")
 	message_admins("[key_name(mentorfriend)] started being the imaginary friend of [key_name(mentee)].")
 
-/mob/verb/end_imaginary_friendship()
+/client/proc/end_imaginary_friendship()
 	set category = "Mentor"
 	set name = "End Imaginary Friendship"
+	set hidden = 1
 
 	if(!usr.client.is_mentor())
 		return
