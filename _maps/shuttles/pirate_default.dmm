@@ -562,7 +562,6 @@
 /area/shuttle/pirate)
 "by" = (
 /obj/machinery/piratepad,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "bA" = (
@@ -1369,7 +1368,7 @@ am
 jZ
 bm
 ri
-by
+bm
 bm
 au
 aL
@@ -1387,7 +1386,7 @@ an
 aj
 bt
 gY
-Qx
+by
 bI
 aj
 bO
