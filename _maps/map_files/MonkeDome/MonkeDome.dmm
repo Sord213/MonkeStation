@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ac" = (
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
@@ -110,7 +110,7 @@
 	charge = 100;
 	maxcharge = 15000
 	},
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -424,7 +424,7 @@
 	},
 /obj/item/folder/white,
 /obj/item/pen,
-/obj/effect/turf_decal/trimline/darkpurple/line,
+/obj/effect/turf_decal/trimline/dark_purple/line,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "bO" = (
@@ -756,7 +756,7 @@
 /obj/machinery/computer/rdconsole/robotics{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
@@ -1082,7 +1082,7 @@
 /area/crew_quarters/heads/captain)
 "eG" = (
 /obj/machinery/vending/wardrobe/robo_wardrobe,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 10
 	},
 /turf/open/floor/plasteel,
@@ -1243,7 +1243,7 @@
 /area/crew_quarters/heads/hop)
 "fh" = (
 /obj/machinery/modular_fabricator/autolathe,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -1269,7 +1269,7 @@
 /turf/open/floor/plasteel,
 /area/medical/monkedome/constructionarea)
 "fl" = (
-/obj/effect/turf_decal/trimline/darkred/line{
+/obj/effect/turf_decal/trimline/dark_red/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -1302,7 +1302,7 @@
 /obj/item/wrench,
 /obj/item/clothing/glasses/welding,
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -1377,7 +1377,7 @@
 /area/crew_quarters/heads/hos)
 "fS" = (
 /obj/machinery/modular_fabricator/exosuit_fab,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
@@ -1501,7 +1501,7 @@
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/reagent_containers/dropper,
-/obj/effect/turf_decal/trimline/darkpurple/line,
+/obj/effect/turf_decal/trimline/dark_purple/line,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "gw" = (
@@ -2118,7 +2118,7 @@
 /area/security/checkpoint/supply)
 "iM" = (
 /obj/machinery/aug_manipulator,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 9
 	},
 /turf/open/floor/plasteel,
@@ -2710,7 +2710,7 @@
 /obj/item/storage/belt/utility/full,
 /obj/item/circuitboard/mecha/ripley/main,
 /obj/item/circuitboard/mecha/ripley/peripherals,
-/obj/effect/turf_decal/trimline/darkpurple/line,
+/obj/effect/turf_decal/trimline/dark_purple/line,
 /turf/open/floor/plasteel,
 /area/science/robotics)
 "lj" = (
@@ -3064,7 +3064,7 @@
 /turf/closed/wall,
 /area/storage/primary)
 "mJ" = (
-/obj/effect/turf_decal/trimline/darkpurple/corner{
+/obj/effect/turf_decal/trimline/dark_purple/corner{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -3111,7 +3111,7 @@
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
 "mS" = (
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -3366,7 +3366,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/science)
 "nY" = (
-/obj/effect/turf_decal/trimline/darkred/line{
+/obj/effect/turf_decal/trimline/dark_red/line{
 	dir = 9
 	},
 /turf/open/floor/plasteel/white,
@@ -3495,7 +3495,7 @@
 /area/medical/medbay/lobby)
 "ow" = (
 /obj/machinery/door/airlock/research/glass,
-/obj/effect/turf_decal/trimline/darkpurple/filled,
+/obj/effect/turf_decal/trimline/dark_purple/filled,
 /turf/open/floor/plasteel,
 /area/science/robotics/mechbay)
 "ox" = (
@@ -3523,7 +3523,7 @@
 /area/medical/genetics)
 "oF" = (
 /obj/machinery/rnd/production/circuit_imprinter/department/science,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 5
 	},
 /turf/open/floor/plasteel/white,
@@ -3648,7 +3648,7 @@
 /obj/structure/chair/office/light{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/darkpurple/warning{
+/obj/effect/turf_decal/trimline/dark_purple/warning{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -3700,7 +3700,7 @@
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/ai_upload)
 "pr" = (
-/obj/effect/turf_decal/trimline/darkpurple/warning{
+/obj/effect/turf_decal/trimline/dark_purple/warning{
 	dir = 10
 	},
 /turf/open/floor/plasteel,
@@ -4124,7 +4124,7 @@
 /obj/item/radio/intercom{
 	pixel_x = -26
 	},
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 9
 	},
 /turf/open/floor/plasteel/white,
@@ -4147,7 +4147,7 @@
 /turf/open/floor/carpet/blue,
 /area/crew_quarters/heads/hop)
 "rl" = (
-/obj/effect/turf_decal/trimline/darkpurple/corner,
+/obj/effect/turf_decal/trimline/dark_purple/corner,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "rm" = (
@@ -4162,7 +4162,7 @@
 /turf/open/floor/carpet/blue,
 /area/crew_quarters/heads/cmo)
 "ro" = (
-/obj/effect/turf_decal/trimline/darkred/warning{
+/obj/effect/turf_decal/trimline/dark_red/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -4605,7 +4605,7 @@
 /turf/closed/wall/r_wall,
 /area/security/lockerroom)
 "te" = (
-/obj/effect/turf_decal/trimline/darkpurple/warning{
+/obj/effect/turf_decal/trimline/dark_purple/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -4688,7 +4688,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
 "tu" = (
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -4755,7 +4755,7 @@
 	pixel_x = -24;
 	req_access_txt = "7"
 	},
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -4779,7 +4779,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain)
 "tP" = (
-/obj/effect/turf_decal/trimline/darkpurple/warning{
+/obj/effect/turf_decal/trimline/dark_purple/warning{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -4803,7 +4803,7 @@
 /turf/closed/wall/r_wall,
 /area/crew_quarters/heads/cmo)
 "tU" = (
-/obj/effect/turf_decal/trimline/darkpurple/corner{
+/obj/effect/turf_decal/trimline/dark_purple/corner{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -5154,7 +5154,7 @@
 /turf/open/floor/plasteel,
 /area/security/range)
 "vc" = (
-/obj/effect/turf_decal/trimline/darkpurple/corner{
+/obj/effect/turf_decal/trimline/dark_purple/corner{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -5901,7 +5901,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -6095,7 +6095,7 @@
 /area/crew_quarters/heads/cmo)
 "yQ" = (
 /obj/machinery/rnd/production/circuit_imprinter/department/science,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 10
 	},
 /turf/open/floor/plasteel,
@@ -6362,7 +6362,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/aft)
 "Ag" = (
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 6
 	},
 /turf/open/floor/plasteel/white,
@@ -6487,7 +6487,7 @@
 /obj/item/stack/sheet/iron/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -6683,7 +6683,7 @@
 /turf/open/floor/plasteel/white,
 /area/security/doctor)
 "Bq" = (
-/obj/effect/turf_decal/trimline/darkpurple/warning{
+/obj/effect/turf_decal/trimline/dark_purple/warning{
 	dir = 6
 	},
 /turf/open/floor/plasteel/white,
@@ -6697,7 +6697,7 @@
 /obj/item/stock_parts/cell/high,
 /obj/item/stock_parts/cell/high,
 /obj/machinery/cell_charger,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 6
 	},
 /turf/open/floor/plasteel,
@@ -6894,7 +6894,7 @@
 /turf/open/floor/plating,
 /area/engine/engine_core)
 "Cj" = (
-/obj/effect/turf_decal/trimline/darkpurple/corner{
+/obj/effect/turf_decal/trimline/dark_purple/corner{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -7159,7 +7159,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "Dk" = (
-/obj/effect/turf_decal/trimline/darkred/warning{
+/obj/effect/turf_decal/trimline/dark_red/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -7430,7 +7430,7 @@
 /turf/open/floor/plasteel,
 /area/security/main)
 "Ep" = (
-/obj/effect/turf_decal/trimline/darkpurple/warning{
+/obj/effect/turf_decal/trimline/dark_purple/warning{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -7477,7 +7477,7 @@
 	},
 /obj/item/crowbar,
 /obj/item/clothing/glasses/science,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -8101,7 +8101,7 @@
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
 "Hh" = (
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -8198,7 +8198,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/genetics)
 "HO" = (
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 5
 	},
 /turf/open/floor/plasteel/white,
@@ -8211,7 +8211,7 @@
 /turf/open/floor/plasteel,
 /area/security/courtroom)
 "HS" = (
-/obj/effect/turf_decal/trimline/darkpurple/warning,
+/obj/effect/turf_decal/trimline/dark_purple/warning,
 /turf/open/floor/plasteel,
 /area/science/robotics)
 "HT" = (
@@ -8430,7 +8430,7 @@
 /area/engine/atmos)
 "Ja" = (
 /obj/machinery/disposal/bin,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 10
 	},
 /turf/open/floor/plasteel/white,
@@ -9116,7 +9116,7 @@
 /obj/structure/table/reinforced,
 /obj/item/stack/packageWrap,
 /obj/item/hand_labeler,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -9141,7 +9141,7 @@
 	},
 /obj/item/multitool,
 /obj/item/clothing/head/welding,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -9167,7 +9167,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/command)
 "LG" = (
-/obj/effect/turf_decal/trimline/darkpurple/corner{
+/obj/effect/turf_decal/trimline/dark_purple/corner{
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
@@ -9943,7 +9943,7 @@
 /area/medical/chemistry)
 "OF" = (
 /obj/machinery/modular_fabricator/exosuit_fab,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -9969,7 +9969,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "OK" = (
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -10555,7 +10555,7 @@
 "RC" = (
 /obj/structure/table,
 /obj/machinery/ecto_sniffer,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -10952,7 +10952,7 @@
 /area/security/range)
 "Tb" = (
 /obj/machinery/disposal/bin,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 10
 	},
 /turf/open/floor/plasteel,
@@ -10986,7 +10986,7 @@
 /turf/open/floor/plasteel/dark,
 /area/medical/morgue)
 "Tl" = (
-/obj/effect/turf_decal/trimline/darkred/line{
+/obj/effect/turf_decal/trimline/dark_red/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
@@ -11002,7 +11002,7 @@
 	},
 /obj/item/storage/box/bodybags,
 /obj/item/borg/upgrade/rename,
-/obj/effect/turf_decal/trimline/darkpurple/line,
+/obj/effect/turf_decal/trimline/dark_purple/line,
 /turf/open/floor/plasteel,
 /area/science/robotics)
 "Tt" = (
@@ -11045,7 +11045,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/security)
 "TE" = (
-/obj/effect/turf_decal/trimline/darkpurple/warning{
+/obj/effect/turf_decal/trimline/dark_purple/warning{
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
@@ -11163,7 +11163,7 @@
 /turf/open/floor/plasteel/dark,
 /area/medical/morgue)
 "Ud" = (
-/obj/effect/turf_decal/trimline/darkpurple/line,
+/obj/effect/turf_decal/trimline/dark_purple/line,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "Uf" = (
@@ -11398,7 +11398,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/cryopods)
 "Vb" = (
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -12256,7 +12256,7 @@
 /area/lawoffice)
 "Yq" = (
 /obj/structure/chair/office/light,
-/obj/effect/turf_decal/trimline/darkpurple/line,
+/obj/effect/turf_decal/trimline/dark_purple/line,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "Yr" = (
@@ -12488,7 +12488,7 @@
 /area/ai_monitored/storage/eva)
 "Zk" = (
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/trimline/darkpurple/line{
+/obj/effect/turf_decal/trimline/dark_purple/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
