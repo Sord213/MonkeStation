@@ -187,35 +187,35 @@
 	name = "gray tile"
 	icon_state = "tile_full"
 
-/obj/effect/turf_decal/tile/darkpurple
+/obj/effect/turf_decal/tile/dark_purple
 	name = "dark purple corner"
 	color = "#6C1282"
 
-/obj/effect/turf_decal/tile/darkpurple/tile_marquee
+/obj/effect/turf_decal/tile/dark_purple/tile_marquee
 	name = "dark purple marquee"
 	icon_state = "tile_marquee"
 
-/obj/effect/turf_decal/tile/darkpurple/tile_side
+/obj/effect/turf_decal/tile/dark_purple/tile_side
 	name = "dark purple side"
 	icon_state = "tile_side"
 
-/obj/effect/turf_decal/tile/darkpurple/tile_full
+/obj/effect/turf_decal/tile/dark_purple/tile_full
 	name = "dark purple tile"
 	icon_state = "tile_full"
 
-/obj/effect/turf_decal/tile/darkred
+/obj/effect/turf_decal/tile/dark_red
 	name = "dark red corner"
 	color = "#4F0000"
 
-/obj/effect/turf_decal/tile/darkred/tile_marquee
+/obj/effect/turf_decal/tile/dark_red/tile_marquee
 	name = "dark red marquee"
 	icon_state = "tile_marquee"
 
-/obj/effect/turf_decal/tile/darkred/tile_side
+/obj/effect/turf_decal/tile/dark_red/tile_side
 	name = "dark red side"
 	icon_state = "tile_side"
 
-/obj/effect/turf_decal/tile/darkred/tile_full
+/obj/effect/turf_decal/tile/dark_red/tile_full
 	name = "dark red tile"
 	icon_state = "tile_full"
 
@@ -235,51 +235,51 @@
 	name = "orange tile"
 	icon_state = "tile_full"
 
-/obj/effect/turf_decal/tile/darkgreen
+/obj/effect/turf_decal/tile/dark_green
 	name = "dark green corner"
 	color = "#055205"
 
-/obj/effect/turf_decal/tile/darkgreen/tile_marquee
+/obj/effect/turf_decal/tile/dark_green/tile_marquee
 	name = "dark green marquee"
 	icon_state = "tile_marquee"
 
-/obj/effect/turf_decal/tile/darkgreen/tile_side
+/obj/effect/turf_decal/tile/dark_green/tile_side
 	name = "dark green side"
 	icon_state = "tile_side"
 
-/obj/effect/turf_decal/tile/darkgreen/tile_full
+/obj/effect/turf_decal/tile/dark_green/tile_full
 	name = "dark green tile"
 	icon_state = "tile_full"
 
-/obj/effect/turf_decal/tile/pissyellow
+/obj/effect/turf_decal/tile/piss_yellow
 	name = "piss yellow corner"
 	color = "#BAC700"
 
-/obj/effect/turf_decal/tile/pissyellow/tile_marquee
+/obj/effect/turf_decal/tile/piss_yellow/tile_marquee
 	name = "piss yellow marquee"
 	icon_state = "tile_marquee"
 
-/obj/effect/turf_decal/tile/pissyellow/tile_side
+/obj/effect/turf_decal/tile/piss_yellow/tile_side
 	name = "piss yellow side"
 	icon_state = "tile_side"
 
-/obj/effect/turf_decal/tile/pissyellow/tile_full
+/obj/effect/turf_decal/tile/piss_yellow/tile_full
 	name = "piss yellow tile"
 	icon_state = "tile_full"
 
-/obj/effect/turf_decal/tile/hotpink
+/obj/effect/turf_decal/tile/hot_pink
 	name = "hot pink corner"
 	color = "#ff69b4"
 
-/obj/effect/turf_decal/tile/hotpink/tile_marquee
+/obj/effect/turf_decal/tile/hot_pink/tile_marquee
 	name = "hot pink marquee"
 	icon_state = "tile_marquee"
 
-/obj/effect/turf_decal/tile/hotpink/tile_side
+/obj/effect/turf_decal/tile/hot_pink/tile_side
 	name = "hot pink side"
 	icon_state = "tile_side"
 
-/obj/effect/turf_decal/tile/hotpink/tile_full
+/obj/effect/turf_decal/tile/hot_pink/tile_full
 	name = "hot pink tile"
 	icon_state = "tile_full"
 
@@ -781,102 +781,102 @@
 /obj/effect/turf_decal/trimline/gray/filled/shrink_ccw
 	icon_state = "trimline_shrink_ccw"
 
-/obj/effect/turf_decal/trimline/darkpurple
+/obj/effect/turf_decal/trimline/dark_purple
 	color = "#6C1282"
 	alpha = 150
 
-/obj/effect/turf_decal/trimline/darkpurple/line
+/obj/effect/turf_decal/trimline/dark_purple/line
 	icon_state = "trimline"
 
-/obj/effect/turf_decal/trimline/darkpurple/corner
+/obj/effect/turf_decal/trimline/dark_purple/corner
 	icon_state = "trimline_corner"
 
-/obj/effect/turf_decal/trimline/darkpurple/end
+/obj/effect/turf_decal/trimline/dark_purple/end
 	icon_state = "trimline_end"
 
-/obj/effect/turf_decal/trimline/darkpurple/arrow_cw
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw
 	icon_state = "trimline_arrow_cw"
 
-/obj/effect/turf_decal/trimline/darkpurple/arrow_ccw
+/obj/effect/turf_decal/trimline/dark_purple/arrow_ccw
 	icon_state = "trimline_arrow_ccw"
 
-/obj/effect/turf_decal/trimline/darkpurple/warning
+/obj/effect/turf_decal/trimline/dark_purple/warning
 	icon_state = "trimline_warn"
 
-/obj/effect/turf_decal/trimline/darkpurple/filled
+/obj/effect/turf_decal/trimline/dark_purple/filled
 	icon_state = "trimline_box_fill"
 
-/obj/effect/turf_decal/trimline/darkpurple/filled/line
+/obj/effect/turf_decal/trimline/dark_purple/filled/line
 	icon_state = "trimline_fill"
 
-/obj/effect/turf_decal/trimline/darkpurple/filled/corner
+/obj/effect/turf_decal/trimline/dark_purple/filled/corner
 	icon_state = "trimline_corner_fill"
 
-/obj/effect/turf_decal/trimline/darkpurple/filled/end
+/obj/effect/turf_decal/trimline/dark_purple/filled/end
 	icon_state = "trimline_end_fill"
 
-/obj/effect/turf_decal/trimline/darkpurple/filled/arrow_cw
+/obj/effect/turf_decal/trimline/dark_purple/filled/arrow_cw
 	icon_state = "trimline_arrow_cw_fill"
 
-/obj/effect/turf_decal/trimline/darkpurple/filled/arrow_ccw
+/obj/effect/turf_decal/trimline/dark_purple/filled/arrow_ccw
 	icon_state = "trimline_arrow_ccw_fill"
 
-/obj/effect/turf_decal/trimline/darkpurple/filled/warning
+/obj/effect/turf_decal/trimline/dark_purple/filled/warning
 	icon_state = "trimline_warn_fill"
 
-/obj/effect/turf_decal/trimline/darkpurple/filled/shrink_cw
+/obj/effect/turf_decal/trimline/dark_purple/filled/shrink_cw
 	icon_state = "trimline_shrink_cw"
 
-/obj/effect/turf_decal/trimline/darkpurple/filled/shrink_ccw
+/obj/effect/turf_decal/trimline/dark_purple/filled/shrink_ccw
 	icon_state = "trimline_shrink_ccw"
 
-/obj/effect/turf_decal/trimline/darkred
+/obj/effect/turf_decal/trimline/dark_red
 	color = "#4F0000"
 	alpha = 150
 
-/obj/effect/turf_decal/trimline/darkred/line
+/obj/effect/turf_decal/trimline/dark_red/line
 	icon_state = "trimline"
 
-/obj/effect/turf_decal/trimline/darkred/corner
+/obj/effect/turf_decal/trimline/dark_red/corner
 	icon_state = "trimline_corner"
 
-/obj/effect/turf_decal/trimline/darkred/end
+/obj/effect/turf_decal/trimline/dark_red/end
 	icon_state = "trimline_end"
 
-/obj/effect/turf_decal/trimline/darkred/arrow_cw
+/obj/effect/turf_decal/trimline/dark_red/arrow_cw
 	icon_state = "trimline_arrow_cw"
 
-/obj/effect/turf_decal/trimline/darkred/arrow_ccw
+/obj/effect/turf_decal/trimline/dark_red/arrow_ccw
 	icon_state = "trimline_arrow_ccw"
 
-/obj/effect/turf_decal/trimline/darkred/warning
+/obj/effect/turf_decal/trimline/dark_red/warning
 	icon_state = "trimline_warn"
 
-/obj/effect/turf_decal/trimline/darkred/filled
+/obj/effect/turf_decal/trimline/dark_red/filled
 	icon_state = "trimline_box_fill"
 
-/obj/effect/turf_decal/trimline/darkred/filled/line
+/obj/effect/turf_decal/trimline/dark_red/filled/line
 	icon_state = "trimline_fill"
 
-/obj/effect/turf_decal/trimline/darkred/filled/corner
+/obj/effect/turf_decal/trimline/dark_red/filled/corner
 	icon_state = "trimline_corner_fill"
 
-/obj/effect/turf_decal/trimline/darkred/filled/end
+/obj/effect/turf_decal/trimline/dark_red/filled/end
 	icon_state = "trimline_end_fill"
 
-/obj/effect/turf_decal/trimline/darkred/filled/arrow_cw
+/obj/effect/turf_decal/trimline/dark_red/filled/arrow_cw
 	icon_state = "trimline_arrow_cw_fill"
 
-/obj/effect/turf_decal/trimline/darkred/filled/arrow_ccw
+/obj/effect/turf_decal/trimline/dark_red/filled/arrow_ccw
 	icon_state = "trimline_arrow_ccw_fill"
 
-/obj/effect/turf_decal/trimline/darkred/filled/warning
+/obj/effect/turf_decal/trimline/dark_red/filled/warning
 	icon_state = "trimline_warn_fill"
 
-/obj/effect/turf_decal/trimline/darkred/filled/shrink_cw
+/obj/effect/turf_decal/trimline/dark_red/filled/shrink_cw
 	icon_state = "trimline_shrink_cw"
 
-/obj/effect/turf_decal/trimline/darkred/filled/shrink_ccw
+/obj/effect/turf_decal/trimline/dark_red/filled/shrink_ccw
 	icon_state = "trimline_shrink_ccw"
 
 /obj/effect/turf_decal/trimline/orange
@@ -928,149 +928,149 @@
 /obj/effect/turf_decal/trimline/orange/filled/shrink_ccw
 	icon_state = "trimline_shrink_ccw"
 
-/obj/effect/turf_decal/trimline/darkgreen
+/obj/effect/turf_decal/trimline/dark_green
 	color = "#055205"
 	alpha = 150
 
-/obj/effect/turf_decal/trimline/darkgreen/line
+/obj/effect/turf_decal/trimline/dark_green/line
 	icon_state = "trimline"
 
-/obj/effect/turf_decal/trimline/darkgreen/corner
+/obj/effect/turf_decal/trimline/dark_green/corner
 	icon_state = "trimline_corner"
 
-/obj/effect/turf_decal/trimline/darkgreen/end
+/obj/effect/turf_decal/trimline/dark_green/end
 	icon_state = "trimline_end"
 
-/obj/effect/turf_decal/trimline/darkgreen/arrow_cw
+/obj/effect/turf_decal/trimline/dark_green/arrow_cw
 	icon_state = "trimline_arrow_cw"
 
-/obj/effect/turf_decal/trimline/darkgreen/arrow_ccw
+/obj/effect/turf_decal/trimline/dark_green/arrow_ccw
 	icon_state = "trimline_arrow_ccw"
 
-/obj/effect/turf_decal/trimline/darkgreen/warning
+/obj/effect/turf_decal/trimline/dark_green/warning
 	icon_state = "trimline_warn"
 
-/obj/effect/turf_decal/trimline/darkgreen/filled
+/obj/effect/turf_decal/trimline/dark_green/filled
 	icon_state = "trimline_box_fill"
 
-/obj/effect/turf_decal/trimline/darkgreen/filled/line
+/obj/effect/turf_decal/trimline/dark_green/filled/line
 	icon_state = "trimline_fill"
 
-/obj/effect/turf_decal/trimline/darkgreen/filled/corner
+/obj/effect/turf_decal/trimline/dark_green/filled/corner
 	icon_state = "trimline_corner_fill"
 
-/obj/effect/turf_decal/trimline/darkgreen/filled/end
+/obj/effect/turf_decal/trimline/dark_green/filled/end
 	icon_state = "trimline_end_fill"
 
-/obj/effect/turf_decal/trimline/darkgreen/filled/arrow_cw
+/obj/effect/turf_decal/trimline/dark_green/filled/arrow_cw
 	icon_state = "trimline_arrow_cw_fill"
 
-/obj/effect/turf_decal/trimline/darkgreen/filled/arrow_ccw
+/obj/effect/turf_decal/trimline/dark_green/filled/arrow_ccw
 	icon_state = "trimline_arrow_ccw_fill"
 
-/obj/effect/turf_decal/trimline/darkgreen/filled/warning
+/obj/effect/turf_decal/trimline/dark_green/filled/warning
 	icon_state = "trimline_warn_fill"
 
-/obj/effect/turf_decal/trimline/darkgreen/filled/shrink_cw
+/obj/effect/turf_decal/trimline/dark_green/filled/shrink_cw
 	icon_state = "trimline_shrink_cw"
 
-/obj/effect/turf_decal/trimline/darkgreen/filled/shrink_ccw
+/obj/effect/turf_decal/trimline/dark_green/filled/shrink_ccw
 	icon_state = "trimline_shrink_ccw"
 
-/obj/effect/turf_decal/trimline/pissyellow
+/obj/effect/turf_decal/trimline/piss_yellow
 	color = "#BAC700"
 	alpha = 150
 
-/obj/effect/turf_decal/trimline/pissyellow/line
+/obj/effect/turf_decal/trimline/piss_yellow/line
 	icon_state = "trimline"
 
-/obj/effect/turf_decal/trimline/pissyellow/corner
+/obj/effect/turf_decal/trimline/piss_yellow/corner
 	icon_state = "trimline_corner"
 
-/obj/effect/turf_decal/trimline/pissyellow/end
+/obj/effect/turf_decal/trimline/piss_yellow/end
 	icon_state = "trimline_end"
 
-/obj/effect/turf_decal/trimline/pissyellow/arrow_cw
+/obj/effect/turf_decal/trimline/piss_yellow/arrow_cw
 	icon_state = "trimline_arrow_cw"
 
-/obj/effect/turf_decal/trimline/pissyellow/arrow_ccw
+/obj/effect/turf_decal/trimline/piss_yellow/arrow_ccw
 	icon_state = "trimline_arrow_ccw"
 
-/obj/effect/turf_decal/trimline/pissyellow/warning
+/obj/effect/turf_decal/trimline/piss_yellow/warning
 	icon_state = "trimline_warn"
 
-/obj/effect/turf_decal/trimline/pissyellow/filled
+/obj/effect/turf_decal/trimline/piss_yellow/filled
 	icon_state = "trimline_box_fill"
 
-/obj/effect/turf_decal/trimline/pissyellow/filled/line
+/obj/effect/turf_decal/trimline/piss_yellow/filled/line
 	icon_state = "trimline_fill"
 
-/obj/effect/turf_decal/trimline/pissyellow/filled/corner
+/obj/effect/turf_decal/trimline/piss_yellow/filled/corner
 	icon_state = "trimline_corner_fill"
 
-/obj/effect/turf_decal/trimline/pissyellow/filled/end
+/obj/effect/turf_decal/trimline/piss_yellow/filled/end
 	icon_state = "trimline_end_fill"
 
-/obj/effect/turf_decal/trimline/pissyellow/filled/arrow_cw
+/obj/effect/turf_decal/trimline/piss_yellow/filled/arrow_cw
 	icon_state = "trimline_arrow_cw_fill"
 
-/obj/effect/turf_decal/trimline/pissyellow/filled/arrow_ccw
+/obj/effect/turf_decal/trimline/piss_yellow/filled/arrow_ccw
 	icon_state = "trimline_arrow_ccw_fill"
 
-/obj/effect/turf_decal/trimline/pissyellow/filled/warning
+/obj/effect/turf_decal/trimline/piss_yellow/filled/warning
 	icon_state = "trimline_warn_fill"
 
-/obj/effect/turf_decal/trimline/pissyellow/filled/shrink_cw
+/obj/effect/turf_decal/trimline/piss_yellow/filled/shrink_cw
 	icon_state = "trimline_shrink_cw"
 
-/obj/effect/turf_decal/trimline/pissyellow/filled/shrink_ccw
+/obj/effect/turf_decal/trimline/piss_yellow/filled/shrink_ccw
 	icon_state = "trimline_shrink_ccw"
 
-/obj/effect/turf_decal/trimline/hotpink
+/obj/effect/turf_decal/trimline/hot_pink
 	color = "#ff69b4"
 	alpha = 150
 
-/obj/effect/turf_decal/trimline/hotpink/line
+/obj/effect/turf_decal/trimline/hot_pink/line
 	icon_state = "trimline"
 
-/obj/effect/turf_decal/trimline/hotpink/corner
+/obj/effect/turf_decal/trimline/hot_pink/corner
 	icon_state = "trimline_corner"
 
-/obj/effect/turf_decal/trimline/hotpink/end
+/obj/effect/turf_decal/trimline/hot_pink/end
 	icon_state = "trimline_end"
 
-/obj/effect/turf_decal/trimline/hotpink/arrow_cw
+/obj/effect/turf_decal/trimline/hot_pink/arrow_cw
 	icon_state = "trimline_arrow_cw"
 
-/obj/effect/turf_decal/trimline/hotpink/arrow_ccw
+/obj/effect/turf_decal/trimline/hot_pink/arrow_ccw
 	icon_state = "trimline_arrow_ccw"
 
-/obj/effect/turf_decal/trimline/hotpink/warning
+/obj/effect/turf_decal/trimline/hot_pink/warning
 	icon_state = "trimline_warn"
 
-/obj/effect/turf_decal/trimline/hotpink/filled
+/obj/effect/turf_decal/trimline/hot_pink/filled
 	icon_state = "trimline_box_fill"
 
-/obj/effect/turf_decal/trimline/hotpink/filled/line
+/obj/effect/turf_decal/trimline/hot_pink/filled/line
 	icon_state = "trimline_fill"
 
-/obj/effect/turf_decal/trimline/hotpink/filled/corner
+/obj/effect/turf_decal/trimline/hot_pink/filled/corner
 	icon_state = "trimline_corner_fill"
 
-/obj/effect/turf_decal/trimline/hotpink/filled/end
+/obj/effect/turf_decal/trimline/hot_pink/filled/end
 	icon_state = "trimline_end_fill"
 
-/obj/effect/turf_decal/trimline/hotpink/filled/arrow_cw
+/obj/effect/turf_decal/trimline/hot_pink/filled/arrow_cw
 	icon_state = "trimline_arrow_cw_fill"
 
-/obj/effect/turf_decal/trimline/hotpink/filled/arrow_ccw
+/obj/effect/turf_decal/trimline/hot_pink/filled/arrow_ccw
 	icon_state = "trimline_arrow_ccw_fill"
 
-/obj/effect/turf_decal/trimline/hotpink/filled/warning
+/obj/effect/turf_decal/trimline/hot_pink/filled/warning
 	icon_state = "trimline_warn_fill"
 
-/obj/effect/turf_decal/trimline/hotpink/filled/shrink_cw
+/obj/effect/turf_decal/trimline/hot_pink/filled/shrink_cw
 	icon_state = "trimline_shrink_cw"
 
-/obj/effect/turf_decal/trimline/hotpink/filled/shrink_ccw
+/obj/effect/turf_decal/trimline/hot_pink/filled/shrink_ccw
 	icon_state = "trimline_shrink_ccw"
