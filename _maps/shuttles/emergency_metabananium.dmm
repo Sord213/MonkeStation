@@ -769,7 +769,7 @@
 "cO" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/bananium,
-/turf/open/floor/mineral/titanium/blue,
+/turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "ef" = (
 /obj/machinery/door/airlock/security/glass{
@@ -915,19 +915,12 @@
 	dir = 2;
 	dwidth = 5;
 	height = 14;
-	name = "Meta emergency shuttle";
+	name = "Meta bananium emergency shuttle";
 	width = 25
 	},
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/bananium,
-/turf/open/floor/mineral/titanium/blue,
-/area/shuttle/escape)
-"PE" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Escape Shuttle Infirmary"
-	},
-/obj/machinery/door/firedoor,
-/turf/open/floor/mineral/titanium/white,
+/turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "Ub" = (
 /obj/structure/sign/poster/contraband/random{
@@ -1241,7 +1234,7 @@ nO
 ba
 ad
 kx
-PE
+UH
 ba
 ad
 "}
