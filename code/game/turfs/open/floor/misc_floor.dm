@@ -245,6 +245,9 @@
 	AddElement(/datum/element/rust)
 
 //MonkeDome Outdoor Floors
-/turf/open/floor/stone/airless
+/turf/open/floor/stone/airless //It's an outdoor path, no air for now, will be whatever jungle atmos we decide on later
 	initial_gas_mix = AIRLESS_ATMOS
-	name = "stone path" //It's an outdoor path, no air for now, will be whatever jungle atmos we decide on later
+	name = "stone path"
+
+/turf/open/floor/plating/outdoors // Change to outside airmix later
+	initial_gas_mix = AIRLESS_ATMOS

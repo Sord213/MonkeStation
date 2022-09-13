@@ -1771,21 +1771,29 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Science Hub Starboard Maintenance"
 	icon_state = "starboardmaint"
 
-/area/science/monkedome/virologyhall
-	name = "Virology Outpost Primary Hallway"
+/area/maintenance/monkedome/science/aft
+	name = "Science Hub Aft Maintenance"
+	icon_state = "aftmaint"
+
+/area/science/monkedome/xenobiohall
+	name = "Xenobio Outpost Primary Hallway"
 	icon_state = "hallP"
 
-/area/science/monkedome/virostorage
-	name = "Virology Outpost Storage"
+/area/science/monkedome/xenobiostorage
+	name = "Xenobio Outpost Storage"
 	icon_state = "science"
 
-/area/science/monkedome/viroconstructionarea
-	name = "Virology Outpost Construction Area"
+/area/science/monkedome/xenobioconstructionarea
+	name = "Xenobio Outpost Construction Area"
 	icon_state = "construction"
 
-/area/science/monkedome/virologyoutdoor //make work with outdoor lighting
-	name = "Virology Outdoor Testing"
+/area/science/monkedome/xenobiooutdoor //make work with outdoor lighting
+	name = "Xenobio Outdoor Testing"
 	icon_state = "science"
+
+/area/science/monkedome/constructionarea
+	name = "Research Hub Construction Area"
+	icon_state = "construction"
 
 /area/hallway/monkedome/engineering
 	name = "Engineering Hub Primary Hallway"
