@@ -41,7 +41,7 @@
 	and cannot teleport unless Reebe is loaded."
 
 /datum/map_template/shuttle/emergency/metabananium
-	prefix = "monkestation/_maps/shuttles/"
+	prefix = "_maps/shuttles/"
 	suffix = "metabananium"
 	name = "Clownified Shuttle"
 	description = "Honk honk honk honk honk honk honk honk honk honk honk honk henk"
@@ -51,7 +51,7 @@
 	illegal_shuttle = TRUE
 
 /datum/map_template/shuttle/emergency/pods
-	prefix = "monkestation/_maps/shuttles/"
+	prefix = "_maps/shuttles/"
 	suffix = "pods"
 	name = "Multiple Escape Pods"
 	description = "Well, you can't afford a shuttle but you need more than one or two pods. We got you covered."
