@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/template_noop,
+/turf/open/space/basic,
 /area/template_noop)
 "ac" = (
 /obj/effect/spawner/structure/window/shuttle,
@@ -126,7 +126,7 @@
 	name = "pods emergency shuttle";
 	width = 25
 	},
-/turf/template_noop,
+/turf/open/space/basic,
 /area/template_noop)
 "Vs" = (
 /obj/structure/chair/comfy/shuttle{
