@@ -246,6 +246,9 @@
 #define LAVALAND_EQUIPMENT_EFFECT_PRESSURE 90 //! what pressure you have to be under to increase the effect of equipment meant for lavaland
 #define LAVALAND_DEFAULT_ATMOS		"o2=14;n2=5;co2=13;TEMP=300"
 
+//MONKEDOME
+#define MONKEDOME_DEFAULT_ATMOS		"o2=14;n2=5;co2=13;TEMP=300" // Currently just lavaland mix until final mixture composition is decided
+
 //ATMOS MIX IDS
 //Lavaland used to live here. That was a mistake.
 
