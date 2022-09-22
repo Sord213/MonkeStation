@@ -4598,7 +4598,6 @@
 	dir = 9
 	},
 /obj/structure/cable/white{
-	d1 = 1;
 	icon_state = "1-2"
 	},
 /turf/open/floor/engine,
@@ -7348,7 +7347,6 @@
 	dir = 8
 	},
 /obj/structure/cable/white{
-	d1 = 1;
 	icon_state = "1-2"
 	},
 /turf/open/floor/engine,
@@ -9767,7 +9765,6 @@
 	dir = 8
 	},
 /obj/structure/cable/white{
-	d1 = 1;
 	icon_state = "1-2"
 	},
 /turf/open/floor/engine,
@@ -10330,7 +10327,6 @@
 /area/hallway/monkedome/civilian/aft)
 "jXo" = (
 /obj/structure/cable/white{
-	d1 = 1;
 	icon_state = "1-2"
 	},
 /obj/structure/cable/white{
@@ -12439,7 +12435,6 @@
 	dir = 8
 	},
 /obj/structure/cable/white{
-	d1 = 1;
 	icon_state = "1-2"
 	},
 /obj/structure/cable{
@@ -18626,7 +18621,6 @@
 	dir = 8
 	},
 /obj/structure/cable/white{
-	d1 = 1;
 	icon_state = "1-2"
 	},
 /turf/open/floor/engine,
@@ -19562,7 +19556,6 @@
 /area/engine/monkedome/freezer)
 "syI" = (
 /obj/structure/cable/white{
-	d1 = 1;
 	icon_state = "1-2"
 	},
 /obj/structure/cable/white{
@@ -24227,7 +24220,6 @@
 "wHf" = (
 /obj/machinery/door/airlock/engineering/glass,
 /obj/structure/cable/white{
-	d1 = 1;
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
