@@ -1677,6 +1677,47 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 // MonkeDome Areas for the crew's sanity
 
+/// LS = Life Support, or where all the power, atmos, and pipe connections are
+/area/maintenance/monkedome/ls/civ/englifesupport
+	name = "Civilian Hub LS Engineering Connection"
+	icon_state = "engine"
+
+/area/maintenance/monkedome/ls/civ/seclifesupport
+	name = "Civilian Hub LS ComSec Connection"
+	icon_state = "engine"
+
+/area/maintenance/monkedome/ls/civ/reslifesupport
+	name = "Civilian Hub LS Research Connection"
+	icon_state = "engine"
+
+/area/maintenance/monkedome/ls/civ/medlifesupport
+	name = "Civilian Hub LS Medical Connection"
+	icon_state = "engine"
+
+/area/maintenance/monkedome/ls/eng/lifesupport
+	name = "Engineering Hub LS Connection"
+	icon_state = "engine"
+
+/area/maintenance/monkedome/ls/med/lifesupport
+	name = "Medical Hub LS Connection"
+	icon_state = "engine"
+
+/area/maintenance/monkedome/ls/med/virolifesupport
+	name = "Medical Hub Virology LS Connection"
+	icon_state = "engine"
+
+/area/maintenance/monkedome/ls/res/lifesupport
+	name = "Research Hub LS Connection"
+	icon_state = "engine"
+
+/area/maintenance/monkedome/ls/res/xenooutlifesupport
+	name = "Research Hub Xenobio LS Connection"
+	icon_state = "engine"
+
+/area/maintenance/monkedome/ls/comsec/lifesupport
+	name = "ComSec Hub LS Connection"
+	icon_state = "engine"
+
 /area/hallway/monkedome/security
 	name = "Security Hub Primary Hallway"
 	icon_state = "hallA"
@@ -1810,6 +1851,14 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/engine/monkedome/peepeeroom //yes
 	name = "Engineering Hub Restrooms"
 	icon_state = "toilet"
+
+/area/engine/monkedome/storageroom
+	name = "Engineering Hub Storage"
+	icon_state = "engine"
+
+/area/engine/monkedome/freezer
+	name = "Engineering Freezer Room"
+	icon_state = "engine"
 
 /area/maintenance/monkedome/engine/port
 	name = "Engineering Hub Port Maintenance"
