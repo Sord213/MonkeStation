@@ -1883,3 +1883,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/maintenance/solars/monkedome/southprimary
 	name = "South Primary Solar Maintenance"
 	icon_state = "yellow"
+
+/area/solarsouthprimary
+	name = "South Primary Solar Array"
+	icon_state = "yellow"
