@@ -30,19 +30,18 @@
 	SSair.stop_processing_machine(src)
 	return ..()
 
-/obj/machinery/power/generator/update_icon()
-
+/obj/machinery/power/generator/update_overlays()
+	. = ..()
 	if(machine_stat & (NOPOWER|BROKEN))
-		cut_overlays()
-	else
-		cut_overlays()
+		return
 
-		var/L = min(round(lastgenlev/100000),11)
-		if(L != 0)
-			add_overlay(image('icons/obj/power.dmi', "teg-op[L]"))
-
-		if(hot_circ && cold_circ)
-			add_overlay("teg-oc[lastcirc]")
+	var/L = min(round(lastgenlev / 100000), 11)
+	if(L != 0)
+		. += mutable_appearance('icons/obj/power.dmi', "teg-op[L]")
+		. += emissive_appearance('icons/obj/power.dmi', "teg-op[L]")
+	if(hot_circ && cold_circ)
+		. += mutable_appearance('icons/obj/power.dmi',"teg-oc[lastcirc]")
+		. += emissive_appearance('icons/obj/power.dmi',"teg-oc[lastcirc]")
 
 
 #define GENRATE 800		// generator output coefficient from Q

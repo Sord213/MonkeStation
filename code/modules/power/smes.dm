@@ -217,13 +217,16 @@
 	if(panel_open)
 		return
 
-	. += "smes-op[outputting ? 1 : 0]"
-	. += "smes-oc[inputting ? 1 : 0]"
+	. += mutable_appearance(icon,"smes-op[outputting ? 1 : 0]", alpha = src.alpha)
+	. += emissive_appearance(icon,"smes-op[outputting ? 1 : 0]", alpha = src.alpha)
+
+	. += mutable_appearance(icon,"smes-oc[inputting ? 1 : 0]", alpha = src.alpha)
+	. += emissive_appearance(icon,"smes-oc[inputting ? 1 : 0]", alpha = src.alpha)
 
 	var/clevel = chargedisplay()
 	if(clevel > 0)
-		. += "smes-og[clevel]"
-
+		. += mutable_appearance(icon,"smes-og[clevel]", alpha = src.alpha)
+		. += emissive_appearance(icon,"smes-og[clevel]", alpha = src.alpha)
 
 /obj/machinery/power/smes/proc/chargedisplay()
 	return clamp(round(5.5*charge/capacity),0,5)
