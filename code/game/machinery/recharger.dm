@@ -50,11 +50,11 @@
 		update_use_power(ACTIVE_POWER_USE)
 		finished_recharging = FALSE
 		using_power = TRUE
-		update_appearance()
+		update_icon(scan = TRUE)
 	else
 		update_use_power(IDLE_POWER_USE)
 		using_power = FALSE
-		update_appearance()
+		update_icon()
 
 /obj/machinery/recharger/attackby(obj/item/G, mob/user, params)
 	if(G.tool_behaviour == TOOL_WRENCH)
@@ -111,14 +111,14 @@
 
 	add_fingerprint(user)
 	if(charging)
-		charging.update_appearance()
+		charging.update_icon()
 		charging.forceMove(drop_location())
 		user.put_in_hands(charging)
 		setCharging(null)
 
 /obj/machinery/recharger/attack_tk(mob/user)
 	if(charging)
-		charging.update_appearance()
+		charging.update_icon()
 		charging.forceMove(drop_location())
 		setCharging(null)
 
@@ -134,7 +134,7 @@
 				C.give(C.chargerate * recharge_coeff * delta_time / 2)
 				use_power(active_power_usage * recharge_coeff * delta_time)
 				using_power = TRUE
-			update_appearance()
+			update_icon()
 
 		if(istype(charging, /obj/item/ammo_box/magazine/recharge))
 			var/obj/item/ammo_box/magazine/recharge/R = charging
@@ -142,7 +142,7 @@
 				R.stored_ammo += new R.ammo_type(R)
 				use_power(active_power_usage * recharge_coeff * delta_time)
 				using_power = TRUE
-			update_appearance()
+			update_icon()
 			return
 		if(!using_power && !finished_recharging) //Inserted thing is at max charge/ammo, notify those around us
 			finished_recharging = TRUE
@@ -153,7 +153,7 @@
 
 /obj/machinery/recharger/power_change()
 	..()
-	update_appearance()
+	update_icon()
 
 /obj/machinery/recharger/emp_act(severity)
 	. = ..()
@@ -170,13 +170,6 @@
 			if(B.cell)
 				B.cell.charge = 0
 
-
-/obj/machinery/recharger/update_appearance(updates)
-	. = ..()
-	if((machine_stat & (NOPOWER|BROKEN)) || panel_open || !anchored)
-		luminosity = 0
-		return
-	luminosity = 1
 
 /obj/machinery/recharger/update_overlays()
 	. = ..()
