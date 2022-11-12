@@ -1686,6 +1686,11 @@
 	icon_state = "lbelly"
 	gender_specific = 1
 
+/datum/sprite_accessory/body_markings/lbelly
+	name = "Glow Belly"
+	icon_state = "lbelly"
+	gender_specific = 1
+	uses_emissives = TRUE
 /datum/sprite_accessory/tails
 	icon = 'icons/mob/mutant_bodyparts.dmi'
 	em_block = TRUE
@@ -1822,6 +1827,7 @@
 	icon_state = "angler"
 	head_icon = "m_horns_angler_ADJ"
 	uses_emissives = TRUE
+
 /datum/sprite_accessory/ears
 	icon = 'icons/mob/mutant_bodyparts.dmi'
 	em_block = TRUE

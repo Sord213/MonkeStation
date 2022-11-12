@@ -1050,6 +1050,11 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				tail_body_overlay.icon_state = tail_icon_state
 				tail_body_overlay.color = "#" + human_host.dna.features["bellycolor"]
 
+				if(belly_accessory.uses_emissives)
+					var/mutable_appearance/tail_body_emissive_overlay = emissive_appearance(accessory_type.icon, layer = -layer)
+					tail_body_emissive_overlay.icon_state = "[belly_accessory.icon_state]_emissive_[accessory_overlay.icon_state]"
+					standing += tail_body_emissive_overlay
+
 				standing += tail_body_overlay
 
 			if(accessory_type.hasinner)
@@ -1063,6 +1068,19 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					inner_accessory_overlay = center_image(inner_accessory_overlay, accessory_type.dimension_x, accessory_type.dimension_y)
 
 				standing += inner_accessory_overlay
+
+			if(accessory_type.uses_emissives)
+				var/mutable_appearance/emissive_accessory_overlay = emissive_appearance(accessory_type.icon, layer = -layer)
+				if(accessory_type.gender_specific)
+					emissive_accessory_overlay.icon_state = "[g]_[bodypart]_emissive_[accessory_type.icon_state]_[layertext]"
+				else
+					emissive_accessory_overlay.icon_state = "m_[bodypart]_emissive_[accessory_type.icon_state]_[layertext]"
+
+				if(accessory_type.center)
+					emissive_accessory_overlay = center_image(emissive_accessory_overlay, accessory_type.dimension_x, accessory_type.dimension_y)
+
+				standing += emissive_accessory_overlay
+
 
 		human_host.overlays_standing[layer] = standing.Copy()
 		standing = list()
