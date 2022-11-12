@@ -59,7 +59,7 @@
 			charging = W
 			user.visible_message("[user] inserts a cell into [src].", "<span class='notice'>You insert a cell into [src].</span>")
 			chargelevel = -1
-			update_icon()
+			update_icon(UPDATE_OVERLAYS)
 	else
 		if(!charging && default_deconstruction_screwdriver(user, icon_state, icon_state, W))
 			return
@@ -82,7 +82,7 @@
 	charging.update_icon()
 	charging = null
 	chargelevel = -1
-	update_icon()
+	update_icon(UPDATE_OVERLAYS)
 
 /obj/machinery/cell_charger/attack_hand(mob/user)
 	. = ..()
@@ -134,7 +134,7 @@
 	use_power(charge_rate * delta_time)
 	charging.give(charge_rate * delta_time)	//this is 2558, efficient batteries exist
 
-	update_icon()
+	update_icon(UPDATE_OVERLAYS)
 
 
 //Monkestation: Added circuit component

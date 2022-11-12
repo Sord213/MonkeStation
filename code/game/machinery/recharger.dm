@@ -50,11 +50,11 @@
 		update_use_power(ACTIVE_POWER_USE)
 		finished_recharging = FALSE
 		using_power = TRUE
-		update_icon(scan = TRUE)
+		update_icon(UPDATE_OVERLAYS)
 	else
 		update_use_power(IDLE_POWER_USE)
 		using_power = FALSE
-		update_icon()
+		update_icon(UPDATE_OVERLAYS)
 
 /obj/machinery/recharger/attackby(obj/item/G, mob/user, params)
 	if(G.tool_behaviour == TOOL_WRENCH)
@@ -134,7 +134,7 @@
 				C.give(C.chargerate * recharge_coeff * delta_time / 2)
 				use_power(active_power_usage * recharge_coeff * delta_time)
 				using_power = TRUE
-			update_icon()
+			update_icon(UPDATE_OVERLAYS)
 
 		if(istype(charging, /obj/item/ammo_box/magazine/recharge))
 			var/obj/item/ammo_box/magazine/recharge/R = charging
@@ -142,7 +142,7 @@
 				R.stored_ammo += new R.ammo_type(R)
 				use_power(active_power_usage * recharge_coeff * delta_time)
 				using_power = TRUE
-			update_icon()
+			update_icon(UPDATE_OVERLAYS)
 			return
 		if(!using_power && !finished_recharging) //Inserted thing is at max charge/ammo, notify those around us
 			finished_recharging = TRUE
@@ -153,7 +153,7 @@
 
 /obj/machinery/recharger/power_change()
 	..()
-	update_icon()
+	update_icon(UPDATE_OVERLAYS)
 
 /obj/machinery/recharger/emp_act(severity)
 	. = ..()
