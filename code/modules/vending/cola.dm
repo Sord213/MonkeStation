@@ -94,7 +94,7 @@
 	desc = "You want it, we got it. Brought to you in partnership with Vlad's Salads."
 	product_slogans = "The POWER that gamers crave! PWR GAME!"
 	light_color = LIGHT_COLOR_PURPLE
-	light_mask = "pwr_game-light-mask"s
+	light_mask = "pwr_game-light-mask"
 
 /obj/machinery/vending/cola/shamblers
 	name = "\improper Shambler's Vendor"
