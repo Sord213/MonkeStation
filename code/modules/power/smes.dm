@@ -61,7 +61,7 @@
 		set_machine_stat(machine_stat | BROKEN)
 		return
 	terminal.master = src
-	update_icon()
+	update_appearance()
 
 /obj/machinery/power/smes/RefreshParts()
 	. = ..()
@@ -86,7 +86,7 @@
 /obj/machinery/power/smes/attackby(obj/item/I, mob/user, params)
 	//opening using screwdriver
 	if(default_deconstruction_screwdriver(user, "[initial(icon_state)]-o", initial(icon_state), I))
-		update_icon()
+		update_appearance()
 		return
 
 	//changing direction using wrench
@@ -103,7 +103,7 @@
 			to_chat(user, "<span class='alert'>No power terminal found.</span>")
 			return
 		set_machine_stat(machine_stat & ~BROKEN)
-		update_icon()
+		update_appearance()
 		return
 
 	//building and linking a terminal
@@ -209,28 +209,20 @@
 		set_machine_stat(machine_stat | BROKEN)
 
 
-/obj/machinery/power/smes/update_icon()
-	cut_overlays()
+/obj/machinery/power/smes/update_overlays()
+	. = ..()
 	if(machine_stat & BROKEN)
 		return
 
 	if(panel_open)
 		return
 
-	if(outputting)
-		add_overlay("smes-op1")
-	else
-		add_overlay("smes-op0")
-
-	if(inputting)
-		add_overlay("smes-oc1")
-	else
-		if(input_attempt)
-			add_overlay("smes-oc0")
+	. += "smes-op[outputting ? 1 : 0]"
+	. += "smes-oc[inputting ? 1 : 0]"
 
 	var/clevel = chargedisplay()
-	if(clevel>0)
-		add_overlay("smes-og[clevel]")
+	if(clevel > 0)
+		. += "smes-og[clevel]"
 
 
 /obj/machinery/power/smes/proc/chargedisplay()
@@ -297,7 +289,7 @@
 
 	// only update icon if state changed
 	if(last_disp != chargedisplay() || last_chrg != inputting || last_onln != outputting)
-		update_icon()
+		update_appearance()
 
 
 
@@ -327,7 +319,7 @@
 	output_used -= excess
 
 	if(clev != chargedisplay() ) //if needed updates the icons overlay
-		update_icon()
+		update_appearance()
 	return
 
 
@@ -368,11 +360,11 @@
 	switch(action)
 		if("tryinput")
 			input_attempt = !input_attempt
-			update_icon()
+			update_appearance()
 			. = TRUE
 		if("tryoutput")
 			output_attempt = !output_attempt
-			update_icon()
+			update_appearance()
 			. = TRUE
 		if("input")
 			var/target = params["target"]
@@ -428,7 +420,7 @@
 	charge -= 1e6/severity
 	if (charge < 0)
 		charge = 0
-	update_icon()
+	update_appearance()
 	log_smes()
 
 /obj/machinery/power/smes/engineering
