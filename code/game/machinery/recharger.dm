@@ -1,7 +1,7 @@
 /obj/machinery/recharger
 	name = "recharger"
 	icon = 'icons/obj/stationobjs.dmi'
-	icon_state = "recharger0"
+	icon_state = "recharger"
 	desc = "A charging dock for energy based weaponry."
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 4
@@ -50,11 +50,11 @@
 		update_use_power(ACTIVE_POWER_USE)
 		finished_recharging = FALSE
 		using_power = TRUE
-		update_icon(scan = TRUE)
+		update_appearance(scan = TRUE)
 	else
 		update_use_power(IDLE_POWER_USE)
 		using_power = FALSE
-		update_icon()
+		update_appearance()
 
 /obj/machinery/recharger/attackby(obj/item/G, mob/user, params)
 	if(G.tool_behaviour == TOOL_WRENCH)
@@ -111,14 +111,14 @@
 
 	add_fingerprint(user)
 	if(charging)
-		charging.update_icon()
+		charging.update_appearance()
 		charging.forceMove(drop_location())
 		user.put_in_hands(charging)
 		setCharging(null)
 
 /obj/machinery/recharger/attack_tk(mob/user)
 	if(charging)
-		charging.update_icon()
+		charging.update_appearance()
 		charging.forceMove(drop_location())
 		setCharging(null)
 
@@ -134,7 +134,7 @@
 				C.give(C.chargerate * recharge_coeff * delta_time / 2)
 				use_power(active_power_usage * recharge_coeff * delta_time)
 				using_power = TRUE
-			update_icon()
+			update_appearance()
 
 		if(istype(charging, /obj/item/ammo_box/magazine/recharge))
 			var/obj/item/ammo_box/magazine/recharge/R = charging
@@ -142,7 +142,7 @@
 				R.stored_ammo += new R.ammo_type(R)
 				use_power(active_power_usage * recharge_coeff * delta_time)
 				using_power = TRUE
-			update_icon()
+			update_appearance()
 			return
 		if(!using_power && !finished_recharging) //Inserted thing is at max charge/ammo, notify those around us
 			finished_recharging = TRUE
@@ -153,7 +153,7 @@
 
 /obj/machinery/recharger/power_change()
 	..()
-	update_icon()
+	update_appearance()
 
 /obj/machinery/recharger/emp_act(severity)
 	. = ..()
@@ -171,20 +171,29 @@
 				B.cell.charge = 0
 
 
-/obj/machinery/recharger/update_icon(scan)	//we have an update_icon() in addition to the stuff in process to make it feel a tiny bit snappier.
-	if(machine_stat & (NOPOWER|BROKEN) || !anchored)
-		icon_state = "rechargeroff"
+/obj/machinery/recharger/update_appearance(updates)
+	. = ..()
+	if((machine_stat & (NOPOWER|BROKEN)) || panel_open || !anchored)
+		luminosity = 0
 		return
-	if(scan)
-		icon_state = "rechargeroff"
+	luminosity = 1
+
+/obj/machinery/recharger/update_overlays()
+	. = ..()
+	if(machine_stat & (NOPOWER|BROKEN) || !anchored)
 		return
 	if(panel_open)
-		icon_state = "rechargeropen"
+		. += mutable_appearance(icon, "[base_icon_state]-open", alpha = src.alpha)
 		return
-	if(charging)
-		if(using_power)
-			icon_state = "recharger1"
-		else
-			icon_state = "recharger2"
+
+	if(!charging)
+		. += mutable_appearance(icon, "[base_icon_state]-empty", alpha = src.alpha)
+		. += emissive_appearance(icon, "[base_icon_state]-empty", alpha = src.alpha)
 		return
-	icon_state = "recharger0"
+	if(using_power)
+		. += mutable_appearance(icon, "[base_icon_state]-charging", alpha = src.alpha)
+		. += emissive_appearance(icon, "[base_icon_state]-charging", alpha = src.alpha)
+		return
+
+	. += mutable_appearance(icon, "[base_icon_state]-full", alpha = src.alpha)
+	. += emissive_appearance(icon, "[base_icon_state]-full", alpha = src.alpha)

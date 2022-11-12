@@ -1,7 +1,7 @@
 /// The light switch. Can have multiple per area.
 /obj/machinery/light_switch
 	name = "light switch"
-	icon = 'monkestation/icons/obj/machinery/lightswitch.dmi'
+	icon = 'icons/obj/power.dmi'
 	icon_state = "light-nopower"
 	base_icon_state = "light"
 	desc = "Make dark."
