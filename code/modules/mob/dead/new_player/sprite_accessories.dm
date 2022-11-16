@@ -1686,7 +1686,7 @@
 	icon_state = "lbelly"
 	gender_specific = 1
 
-/datum/sprite_accessory/body_markings/lbelly
+/datum/sprite_accessory/body_markings/glow_belly
 	name = "Glow Belly"
 	icon_state = "lbelly"
 	gender_specific = 1
