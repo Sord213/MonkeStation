@@ -146,11 +146,14 @@
 	var/area/local_area = get_area(src)
 	if(low_power_mode || major_emergency || (local_area?.fire))
 		. += mutable_appearance(overlay_icon, "[base_state]_emergency")
+		. += emissive_appearance(overlay_icon, "[base_state]_emergency")
 		return
 	if(nightshift_enabled)
 		. += mutable_appearance(overlay_icon, "[base_state]_nightshift")
+		. += emissive_appearance(overlay_icon, "[base_state]_nightshift")
 		return
 	. += mutable_appearance(overlay_icon, base_state)
+	. += emissive_appearance(overlay_icon, base_state)
 
 /*
 // Area sensitivity is traditionally tied directly to power use, as an optimization
