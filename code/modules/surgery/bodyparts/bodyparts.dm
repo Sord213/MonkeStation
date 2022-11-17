@@ -501,6 +501,12 @@
 		else
 			limb.icon = 'icons/mob/augmentation/augments.dmi'
 			limb.icon_state = "[animal_origin]_[body_zone]"
+
+		if(blocks_emissive)
+			var/mutable_appearance/limb_em_block = mutable_appearance(limb.icon, limb.icon_state, plane = EMISSIVE_PLANE, appearance_flags = KEEP_APART)
+			limb_em_block.dir = image_dir
+			limb_em_block.color = GLOB.em_block_color
+			limb.overlays += limb_em_block
 		. += limb
 		return
 
@@ -539,6 +545,12 @@
 		aux = image(limb.icon, "[limb_id]_[aux_zone]", -aux_layer, image_dir)
 		. += aux
 
+	if(blocks_emissive)
+		var/mutable_appearance/limb_em_block = mutable_appearance(limb.icon, limb.icon_state, -BODYPARTS_LAYER, plane = EMISSIVE_PLANE, appearance_flags = KEEP_APART)
+		limb_em_block.dir = image_dir
+		limb_em_block.color = GLOB.em_block_color
+		. += limb_em_block
+
 	draw_color = mutation_color
 	if(should_draw_greyscale) //Should the limb be colored?
 		draw_color ||= (species_color) || (skin_tone)
@@ -547,6 +559,18 @@
 		limb.color = "#[draw_color]"
 		if(aux_zone)
 			aux.color = "#[draw_color]"
+
+	if(blocks_emissive)
+		var/mutable_appearance/limb_em_block = mutable_appearance(limb.icon, limb.icon_state, -BODYPARTS_LAYER,  plane = EMISSIVE_PLANE, appearance_flags = KEEP_APART)
+		limb_em_block.dir = image_dir
+		limb_em_block.color = GLOB.em_block_color
+		. += limb_em_block
+
+		if(aux_zone)
+			var/mutable_appearance/aux_em_block = mutable_appearance(aux.icon, aux.icon_state, -BODYPARTS_LAYER, plane = EMISSIVE_PLANE, appearance_flags = KEEP_APART)
+			aux_em_block.dir = image_dir
+			aux_em_block.color = GLOB.em_block_color
+			. += aux_em_block
 
 /obj/item/bodypart/deconstruct(disassembled = TRUE)
 	drop_organs()

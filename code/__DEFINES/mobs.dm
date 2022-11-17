@@ -566,3 +566,5 @@
 #define VOMIT_TOXIC 1
 /// The mob will vomit a purple color
 #define VOMIT_PURPLE 2
+
+#define MUTANT_INDEX_EMISSIVE_LIST "emissive"
