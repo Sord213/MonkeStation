@@ -1,12 +1,12 @@
 /particles/weather
 	spawning = 0
 	var/wind = 0 //Left/Right maximum movement increase per tick
-	var/maxSpawning = 0 //Max spawner - Recommend you use this over Spawning, so severity can ease it in
-	var/minSpawning = 0 //Weather should start with 0, but when easing, it will never go below this
+	var/max_spawning = 0 //Max spawner - Recommend you use this over Spawning, so severity can ease it in
+	var/min_spawning = 0 //Weather should start with 0, but when easing, it will never go below this
 	icon = 'icons/effects/particles/particle.dmi'
 
 
-	spawning = 0
+	spawning 			   = 0
 	width                  = 800  // I think this is supposed to be in pixels, but it doesn't match bounds, so idk - 800x800 seems to prevent particle-less edges
 	height                 = 800
 	count                  = 3000 // 3000 particles
@@ -23,7 +23,7 @@
 								   0, 0, 0,  1  )
 
 //Animate particle effect to a severity
-/particles/weather/proc/animateSeverity(severityMod)
+/particles/weather/proc/animate_severity(severityMod)
 
 	//If we have no severity, just stop spawning
 	if(!severityMod)
@@ -31,7 +31,7 @@
 		return
 
 	var newWind = wind * severityMod * pick(-1,1) //Wind can go left OR right!
-	var newSpawning = max(minSpawning, maxSpawning * severityMod)
+	var newSpawning = max(min_spawning, max_spawning * severityMod)
 
 	//gravity might be x, xy, or xyz
 	var/newGravity = gravity
@@ -43,4 +43,4 @@
 	//The higher the severity, the faster the change - elastic easing for flappy wind
 	gravity = newGravity
 	spawning = newSpawning
-	// animate(src, gravity=newGravity, spawning=newSpawning, time=1/severity * 10, easing=ELASTIC_EASING)
+	animate(src, gravity=newGravity, spawning=newSpawning, time=1/severity * 10, easing=ELASTIC_EASING)

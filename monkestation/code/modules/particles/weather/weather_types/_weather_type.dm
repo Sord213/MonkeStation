@@ -130,7 +130,7 @@
 
 
 	if(SSParticleWeather.particleEffect)
-		SSParticleWeather.particleEffect.animateSeverity(severityMod())
+		SSParticleWeather.particleEffect.animate_severity(severityMod())
 
 	//Send new severity message if the message has changed
 	if(last_message != scale_range_pick(minSeverity, maxSeverity, severity, weather_messages))
@@ -151,7 +151,7 @@
 /datum/particle_weather/proc/wind_down()
 	severity = 0
 	if(SSParticleWeather.particleEffect)
-		SSParticleWeather.particleEffect.animateSeverity(severityMod())
+		SSParticleWeather.particleEffect.animate_severity(severityMod())
 
 		//Wait for the last particle to fade, then qdel yourself
 		addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particleEffect.lifespan + SSParticleWeather.particleEffect.fade)
