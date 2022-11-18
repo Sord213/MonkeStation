@@ -70,7 +70,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 	weather_setter = new weather_datum_type()
 
 	if(force)
-		weather_setter.start()
+		weather_setter.start(type)
 	else
 		var/randTime = rand(0, 6000) + initial(weather_setter.weather_duration_upper)
 		addtimer(CALLBACK(weather_setter, /datum/particle_weather/proc/start), randTime, TIMER_UNIQUE|TIMER_STOPPABLE) //Around 0-10 minutes between weathers
@@ -109,9 +109,14 @@ SUBSYSTEM_DEF(ParticleWeather)
 				weather_effect_mining.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 			return weather_effect_mining
 
-/datum/controller/subsystem/ParticleWeather/proc/SetparticleEffect(particles/P)
-	particleEffect = P
-	weather_effect.particles = particleEffect
+/datum/controller/subsystem/ParticleWeather/proc/SetparticleEffect(particles/P, var/weather_level = "Default")
+	switch(weather_level)
+		if("Default")
+			particleEffect = P
+			weather_effect.particles = particleEffect
+		if("Mining")
+			particleEffect = P
+			weather_effect_mining.particles = particleEffect
 
 /datum/controller/subsystem/ParticleWeather/proc/stopWeather()
 	QDEL_NULL(running_weather)

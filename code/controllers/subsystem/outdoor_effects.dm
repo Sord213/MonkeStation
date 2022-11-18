@@ -100,6 +100,12 @@ SUBSYSTEM_DEF(outdoor_effects)
 			if (TArea.static_lighting)
 				GLOB.SUNLIGHT_QUEUE_WORK += T
 
+	for (var/z in SSmapping.levels_by_trait(ZTRAIT_MINING))
+		for (var/turf/T in block(locate(1,1,z), locate(world.maxx,world.maxy,z)))
+			var/area/TArea = T.loc
+			if (TArea.static_lighting)
+				GLOB.SUNLIGHT_QUEUE_WORK += T
+
 
 /datum/controller/subsystem/outdoor_effects/proc/check_cycle()
 	if(!next_step_datum || station_time() > next_step_datum.start)

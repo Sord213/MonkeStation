@@ -102,7 +102,7 @@
  * Begins dealing effects from weather to mobs in the area
  *
  */
-/datum/particle_weather/proc/start()
+/datum/particle_weather/proc/start(var/weather_level = "Default")
 	if(running)
 		return //some cheeky git has started you early
 	weather_duration = rand(weather_duration_lower, weather_duration_upper)
@@ -110,7 +110,7 @@
 	addtimer(CALLBACK(src, .proc/wind_down), weather_duration)
 
 	if(particleEffectType)
-		SSParticleWeather.SetparticleEffect(new particleEffectType);
+		SSParticleWeather.SetparticleEffect(new particleEffectType, weather_level);
 
 	//Always step severity to start
 	ChangeSeverity()
