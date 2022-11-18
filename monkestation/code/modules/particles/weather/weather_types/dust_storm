@@ -7,9 +7,9 @@
 	weather_sounds = list(/datum/looping_sound/dust_storm)
 	weather_messages = list("The whipping sand stings your eyes!")
 
-	minSeverity = 1
-	maxSeverity = 50
-	maxSeverityChange = 10
+	min_severity = 1
+	max_severity = 50
+	max_severityChange = 10
 	severitySteps = 20
 	immunity_type = TRAIT_DUSTSTORM_IMMUNE
 	probability = 1

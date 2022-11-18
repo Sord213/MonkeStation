@@ -7,9 +7,9 @@
 	weather_sounds = list(/datum/looping_sound/rad_storm)
 	weather_messages = list("Your skin feels tingly", "Your face is melting")
 
-	minSeverity = 1
-	maxSeverity = 100
-	maxSeverityChange = 0
+	min_severity = 1
+	max_severity = 100
+	max_severityChange = 0
 	severitySteps = 50
 	immunity_type = TRAIT_RADSTORM_IMMUNE
 	probability = 1

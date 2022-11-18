@@ -7,9 +7,9 @@
 	weather_sounds = list(/datum/looping_sound/storm)
 	weather_messages = list("The rain cools your skin.", "The storm is really picking up!")
 
-	minSeverity = 4
-	maxSeverity = 100
-	maxSeverityChange = 50
+	min_severity = 4
+	max_severity = 100
+	max_severityChange = 50
 	severitySteps = 50
 	immunity_type = TRAIT_RAINSTORM_IMMUNE
 	probability = 1

@@ -38,11 +38,11 @@
 
 	// Keep this between 1 and 100
 	// Gentle rain shouldn't use the max rain wind speed, nor should a storm be a gentle breeze
-	var/minSeverity = 1
-	var/maxSeverity = 100
+	var/min_severity = 1
+	var/max_severity = 100
 	//We will increase or decrease our severity by a random amount up to this value
 	//If 0, we will pick a random value between min and max
-	var/maxSeverityChange = 20
+	var/max_severityChange = 20
 	//The number of times we will change our severity over the duration
 	var/severitySteps = 5
 	/// Used by mobs to prevent them from being affected by the weather
@@ -80,7 +80,7 @@
 	var/last_message = ""
 
 /datum/particle_weather/proc/severityMod()
-	return severity / maxSeverity
+	return severity / max_severity
 /*
 * arbitrary effects to run every time the particle_weather SS ticks
 * for storms this might be a random chance for lightning, etc.
@@ -113,19 +113,19 @@
 		SSParticleWeather.SetparticleEffect(new particleEffectType, weather_level);
 
 	//Always step severity to start
-	ChangeSeverity()
+	change_severity()
 
 
-/datum/particle_weather/proc/ChangeSeverity()
+/datum/particle_weather/proc/change_severity()
 	if(!running)
 		return
 	severityStepsTaken++
 
-	if(maxSeverityChange == 0)
-		severity = rand(minSeverity, maxSeverity)
+	if(max_severityChange == 0)
+		severity = rand(min_severity, max_severity)
 	else
-		var/newSeverity = severity + rand(-maxSeverityChange,maxSeverityChange)
-		newSeverity = min(max(newSeverity,minSeverity), maxSeverity)
+		var/newSeverity = severity + rand(-max_severityChange,max_severityChange)
+		newSeverity = min(max(newSeverity,min_severity), max_severity)
 		severity = newSeverity
 
 
@@ -133,12 +133,12 @@
 		SSParticleWeather.particleEffect.animate_severity(severityMod())
 
 	//Send new severity message if the message has changed
-	if(last_message != scale_range_pick(minSeverity, maxSeverity, severity, weather_messages))
+	if(last_message != scale_range_pick(min_severity, max_severity, severity, weather_messages))
 		messagedMobs = list()
 
 	//Tick on
 	if(severityStepsTaken < severitySteps)
-		addtimer(CALLBACK(src, .proc/ChangeSeverity), weather_duration / severitySteps)
+		addtimer(CALLBACK(src, .proc/change_severity), weather_duration / severitySteps)
 
 
 /**
@@ -228,7 +228,7 @@
 		if(!currentSound.loop_started) //don't restart already playing sounds
 			currentSound.start()
 		return
-	var/tempSound = scale_range_pick(minSeverity, maxSeverity, severity, weather_sounds)
+	var/tempSound = scale_range_pick(min_severity, max_severity, severity, weather_sounds)
 	if(tempSound)
 		currentSound = new tempSound(L, FALSE, TRUE, FALSE, CHANNEL_WEATHER)
 		currentSounds[L] = currentSound
@@ -245,6 +245,6 @@
 
 /datum/particle_weather/proc/weather_message(mob/living/L)
 	messagedMobs[L] = world.time + 30 SECONDS //Chunky delay - this spams otherwise - Severity changes and going indoors resets this timer
-	last_message = scale_range_pick(minSeverity, maxSeverity, severity, weather_messages)
+	last_message = scale_range_pick(min_severity, max_severity, severity, weather_messages)
 	if(last_message)
 		to_chat(L, last_message)

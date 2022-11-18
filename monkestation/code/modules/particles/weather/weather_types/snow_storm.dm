@@ -7,9 +7,9 @@
 	weather_sounds = list(/datum/looping_sound/snow)
 	weather_messages = list("You feel a chill/", "The cold wind is freezing you to the bone", "How can a man who is warm, understand a man who is cold?")
 
-	minSeverity = 40
-	maxSeverity = 100
-	maxSeverityChange = 50
+	min_severity = 40
+	max_severity = 100
+	max_severityChange = 50
 	severitySteps = 50
 	immunity_type = TRAIT_SNOWSTORM_IMMUNE
 	probability = 1

@@ -7,9 +7,9 @@
 	weather_sounds = list(/datum/looping_sound/snow)
 	weather_messages = list("It's snowing!","You feel a chill/")
 
-	minSeverity = 1
-	maxSeverity = 10
-	maxSeverityChange = 5
+	min_severity = 1
+	max_severity = 10
+	max_severityChange = 5
 	severitySteps = 5
 	immunity_type = TRAIT_SNOWSTORM_IMMUNE
 	probability = 1
