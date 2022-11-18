@@ -3891,7 +3891,6 @@
 #include "monkestation\code\modules\particle_weather\weather_particle.dm"
 #include "monkestation\code\modules\particle_weather\datums\weather_datum_types.dm"
 #include "monkestation\code\modules\particle_weather\particles\weather_particles.dm"
-#include "monkestation\code\modules\particle_weather\particool\particool.dm"
 #include "monkestation\code\modules\particle_weather\sunlight\sunlight_object.dm"
 #include "monkestation\code\modules\power\rbmk\rbmk.dm"
 #include "monkestation\code\modules\power\rbmk\rbmk_admin_procs.dm"
