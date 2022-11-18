@@ -8,7 +8,9 @@ SUBSYSTEM_DEF(ParticleWeather)
 	// var/list/next_hit = list() //Used by barometers to know when the next storm is coming
 
 	var/particles/weather/particleEffect
-	var/obj/weatherEffect
+	var/obj/weather_effect
+	var/obj/weather_effect_mining
+	var/obj/weather_effect_misc
 
 /datum/controller/subsystem/ParticleWeather/fire()
 	// process active weather
@@ -65,17 +67,33 @@ SUBSYSTEM_DEF(ParticleWeather)
 	elligble_weather = possible_weather
 // 	next_hit = null
 
-/datum/controller/subsystem/ParticleWeather/proc/getweatherEffect()
-	if(!weatherEffect)
-		weatherEffect = new /obj()
-		weatherEffect.particles = particleEffect
-		weatherEffect.filters += filter(type="alpha", render_source=WEATHER_RENDER_TARGET)
-		weatherEffect.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	return weatherEffect
+/datum/controller/subsystem/ParticleWeather/proc/getweatherEffect(var/z_type)
+	switch(z_type)
+		if("Default")
+			if(!weather_effect)
+				weather_effect = new /obj()
+				weather_effect.particles = particleEffect
+				weather_effect.filters += filter(type="alpha", render_source=WEATHER_RENDER_TARGET)
+				weather_effect.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+			return weather_effect
+		if("Misc")
+			if(!weather_effect_misc)
+				weather_effect_misc = new /obj()
+				weather_effect_misc.particles = particleEffect
+				weather_effect_misc.filters += filter(type="alpha", render_source=WEATHER_RENDER_TARGET)
+				weather_effect_misc.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+			return weather_effect_misc
+		if("Mining")
+			if(!weather_effect_mining)
+				weather_effect_mining = new /obj()
+				weather_effect_mining.particles = particleEffect
+				weather_effect_mining.filters += filter(type="alpha", render_source=WEATHER_MINING_RENDER_TARGET)
+				weather_effect_mining.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+			return weather_effect_mining
 
 /datum/controller/subsystem/ParticleWeather/proc/SetparticleEffect(particles/P)
 	particleEffect = P
-	weatherEffect.particles = particleEffect
+	weather_effect.particles = particleEffect
 
 /datum/controller/subsystem/ParticleWeather/proc/stopWeather()
 	QDEL_NULL(runningWeather)

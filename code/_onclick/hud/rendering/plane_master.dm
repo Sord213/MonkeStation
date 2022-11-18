@@ -251,6 +251,11 @@
 	render_target = WEATHER_RENDER_TARGET
 	render_relay_plane = null //Used as alpha filter for weather_effect fullscreen
 
+/atom/movable/screen/plane_master/weather_overlay/mining
+	name = "weather overlay master mining z"
+	plane = WEATHER_OVERLAY_PLANE_MINING
+	render_target = WEATHER_MINING_RENDER_TARGET
+
 //Contains the weather effect itself
 /atom/movable/screen/plane_master/weather_effect
 	name = "weather effect plane master"
@@ -258,6 +263,7 @@
 	appearance_flags = PLANE_MASTER
 	blend_mode = BLEND_OVERLAY
 	render_relay_plane = RENDER_PLANE_GAME
+	var/z_type = "Default"
 
 /atom/movable/screen/plane_master/weather_effect/Initialize()
 	. = ..()
@@ -267,6 +273,16 @@
 /atom/movable/screen/plane_master/weather_effect/Destroy()
 	. = ..()
 	SSoutdoor_effects.weather_planes_need_vis -= src
+
+/atom/movable/screen/plane_master/weather_effect/misc
+	name = "weather effect misc plane master"
+	plane = WEATHER_EFFECT_PLANE + 1
+	z_type = "Misc"
+
+/atom/movable/screen/plane_master/weather_effect/mining
+	name = "weather effect mining plane master"
+	plane = WEATHER_EFFECT_PLANE  + 2
+	z_type = "Mining"
 
 //Contains all sunlight overlays
 /atom/movable/screen/plane_master/sunlight

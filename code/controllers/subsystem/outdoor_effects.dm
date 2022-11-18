@@ -79,6 +79,12 @@ SUBSYSTEM_DEF(outdoor_effects)
 			if (TArea.static_lighting)
 				GLOB.SUNLIGHT_QUEUE_WORK += T
 
+	for (var/z in SSmapping.levels_by_trait(ZTRAIT_MINING))
+		for (var/turf/T in block(locate(1,1,z), locate(world.maxx,world.maxy,z)))
+			var/area/TArea = T.loc
+			if (TArea.static_lighting)
+				GLOB.SUNLIGHT_QUEUE_WORK += T
+
 /datum/controller/subsystem/outdoor_effects/Initialize(timeofday)
 	if(!initialized)
 		get_time_of_day()
@@ -140,7 +146,7 @@ SUBSYSTEM_DEF(outdoor_effects)
 		for (i in 1 to weather_planes_need_vis.len)
 			var/atom/movable/screen/plane_master/weather_effect/W = weather_planes_need_vis[i]
 			if(W)
-				W.vis_contents = list(SSParticleWeather.getweatherEffect())
+				W.vis_contents = list(SSParticleWeather.getweatherEffect(W.z_type))
 			if(init_tick_checks)
 				CHECK_TICK
 			else if (MC_TICK_CHECK)
@@ -251,7 +257,7 @@ SUBSYSTEM_DEF(outdoor_effects)
 
 	OE.sunlight_overlay = MA
 	//Get weather overlay if not weatherproof
-	OE.overlays = OE.weatherproof ? list(OE.sunlight_overlay) : list(OE.sunlight_overlay, get_weather_overlay())
+	OE.overlays = OE.weatherproof ? list(OE.sunlight_overlay) : list(OE.sunlight_overlay, get_weather_overlay(OE.z))
 	OE.luminosity = MA.luminosity
 
 //Retrieve an overlay from the list - create if necessary
@@ -264,12 +270,13 @@ SUBSYSTEM_DEF(outdoor_effects)
 	return sunlight_overlays[index]
 
 //get our weather overlay
-/datum/controller/subsystem/outdoor_effects/proc/get_weather_overlay()
+/datum/controller/subsystem/outdoor_effects/proc/get_weather_overlay(var/z)
 	var/mutable_appearance/MA = new /mutable_appearance()
+	var/use_this_plane = is_mining_level(z) ? WEATHER_OVERLAY_PLANE_MINING : WEATHER_OVERLAY_PLANE
 	MA.blend_mode   	  = BLEND_OVERLAY
 	MA.icon 			  = 'monkestation/icons/effects/weather_overlay.dmi'
 	MA.icon_state 		  = "weather_overlay"
-	MA.plane			  = WEATHER_OVERLAY_PLANE /* we put this on a lower level than lighting so we dont multiply anything */
+	MA.plane			  = use_this_plane /* we put this on a lower level than lighting so we dont multiply anything */
 	MA.invisibility 	  = INVISIBILITY_LIGHTING
 	return MA
 

@@ -157,6 +157,7 @@ Sunlight System
 /turf/var/weatherproof = TRUE
 /turf/open/space/weatherproof = FALSE
 /turf/open/openspace/weatherproof = FALSE
+/turf/open/floor/plating/asteroid/weatherproof = FALSE ///this may change remove this if we start adding asteroid platings indoors
 
 /* check ourselves and neighbours to see what outdoor effects we need */
 /* turf won't initialize an outdoor_effect if sky_blocked*/
@@ -199,12 +200,6 @@ Sunlight System
 		else //We are open, so assume open to the elements
 			.["SKYVISIBLE"]   = TRUE
 			.["WEATHERPROOF"] = FALSE
-
-	// Early leave if we can't see the sky - if we are an opaque turf, we already know the results
-	// I can't think of a case where we would have a turf that would block light but let weather effects through - Maybe a vent?
-	// fix this if that is the case
-	if(!.["SKYVISIBLE"])
-		return .
 
 	//Ceiling Check
 	// Psuedo-roof, for the top of the map (no actual turf exists up here) -- We assume these are solid, if you add glass pseudo_roofs then fix this
