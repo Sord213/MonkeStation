@@ -4,7 +4,9 @@ SUBSYSTEM_DEF(ParticleWeather)
 	wait = 1 SECONDS
 	runlevels = RUNLEVEL_GAME
 	var/list/elligble_weather = list()
-	var/datum/particle_weather/runningWeather
+	var/datum/particle_weather/running_weather
+	var/datum/particle_weather/running_weather_mining
+	var/datum/particle_weather/running_weather_misc
 	// var/list/next_hit = list() //Used by barometers to know when the next storm is coming
 
 	var/particles/weather/particleEffect
@@ -14,11 +16,11 @@ SUBSYSTEM_DEF(ParticleWeather)
 
 /datum/controller/subsystem/ParticleWeather/fire()
 	// process active weather
-	if(runningWeather)
-		if(runningWeather.running)
-			runningWeather.tick()
+	if(running_weather)
+		if(running_weather.running)
+			running_weather.tick()
 			for(var/mob/act_on as anything in GLOB.mob_living_list)
-				runningWeather.try_weather_act(act_on)
+				running_weather.try_weather_act(act_on)
 	else
 		// start random weather
 		var/datum/particle_weather/our_event = pickweight(elligble_weather) //possible_weather
@@ -39,12 +41,23 @@ SUBSYSTEM_DEF(ParticleWeather)
 			elligble_weather[W] = probability
 	return ..()
 
-/datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0)
-	if(runningWeather)
-		if(force)
-			runningWeather.end()
-		else
-			return
+/datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type = "Default")
+	var/datum/particle_weather/weather_setter
+
+	switch(type)
+		if("Default")
+			if(running_weather)
+				if(force)
+					running_weather.end()
+				else
+					return
+		if("Mining")
+			if(running_weather_mining)
+				if(force)
+					running_weather_mining.end()
+				else
+					return
+
 	if (istext(weather_datum_type))
 		for (var/V in subtypesof(/datum/particle_weather))
 			var/datum/particle_weather/W = V
@@ -54,14 +67,19 @@ SUBSYSTEM_DEF(ParticleWeather)
 	if (!ispath(weather_datum_type, /datum/particle_weather))
 		CRASH("run_weather called with invalid weather_datum_type: [weather_datum_type || "null"]")
 
-	runningWeather = new weather_datum_type()
+	weather_setter = new weather_datum_type()
 
 	if(force)
-		runningWeather.start()
+		weather_setter.start()
 	else
-		var/randTime = rand(0, 6000) + initial(runningWeather.weather_duration_upper)
-		addtimer(CALLBACK(runningWeather, /datum/particle_weather/proc/start), randTime, TIMER_UNIQUE|TIMER_STOPPABLE) //Around 0-10 minutes between weathers
+		var/randTime = rand(0, 6000) + initial(weather_setter.weather_duration_upper)
+		addtimer(CALLBACK(weather_setter, /datum/particle_weather/proc/start), randTime, TIMER_UNIQUE|TIMER_STOPPABLE) //Around 0-10 minutes between weathers
 
+	switch(type)
+		if("Default")
+			running_weather = weather_setter
+		if("Mining")
+			running_weather_mining = weather_setter
 
 /datum/controller/subsystem/ParticleWeather/proc/make_eligible(possible_weather)
 	elligble_weather = possible_weather
@@ -96,5 +114,5 @@ SUBSYSTEM_DEF(ParticleWeather)
 	weather_effect.particles = particleEffect
 
 /datum/controller/subsystem/ParticleWeather/proc/stopWeather()
-	QDEL_NULL(runningWeather)
+	QDEL_NULL(running_weather)
 	QDEL_NULL(particleEffect)
