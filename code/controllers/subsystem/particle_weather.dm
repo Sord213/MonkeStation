@@ -1,7 +1,7 @@
 SUBSYSTEM_DEF(ParticleWeather)
 	name = "Particle Weather"
 	flags = SS_BACKGROUND
-	wait = 10
+	wait = 1 SECONDS
 	runlevels = RUNLEVEL_GAME
 	var/list/elligble_weather = list()
 	var/datum/particle_weather/runningWeather
