@@ -79,3 +79,7 @@
 	gravity 	= list(0, -1)
 	friction 	= 0.2
 	drift 		= generator("circle", 1)
+
+	max_spawning           = 50
+	min_spawning           = 20
+	wind                  = 10
