@@ -3887,6 +3887,7 @@
 #include "monkestation\code\modules\particles\byond_particles\particle\smoke.dm"
 #include "monkestation\code\modules\particles\byond_particles\particle\spark.dm"
 #include "monkestation\code\modules\particles\byond_particles\particle\weather.dm"
+#include "monkestation\code\modules\particles\weather\_weather_particle.dm"
 #include "monkestation\code\modules\particles\weather\procs.dm"
 #include "monkestation\code\modules\particles\weather\sunlight\sunlight_object.dm"
 #include "monkestation\code\modules\particles\weather\weather_types\_weather_type.dm"
