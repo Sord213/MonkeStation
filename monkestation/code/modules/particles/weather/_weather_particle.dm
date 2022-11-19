@@ -43,4 +43,4 @@
 	//The higher the severity, the faster the change - elastic easing for flappy wind
 	gravity = newGravity
 	spawning = newSpawning
-	animate(src, gravity=newGravity, spawning=newSpawning, time=1/severityMod * 10, easing=ELASTIC_EASING)
+	//animate(src, gravity=newGravity, spawning=newSpawning, time=1/severityMod * 10, easing=ELASTIC_EASING)
