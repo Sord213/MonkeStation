@@ -82,4 +82,4 @@
 
 	max_spawning           = 50
 	min_spawning           = 20
-	wind                  = 10
+	wind                  = 2
