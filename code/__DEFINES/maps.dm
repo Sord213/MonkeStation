@@ -152,3 +152,4 @@ require only minor tweaks.
 #define PARTICLEWEATHER_SNOW "Weather_Snow"
 #define PARTICLEWEATHER_DUST "Weather_Dust"
 #define PARTICLEWEATHER_RADS "Weather_Rads"
+#define PARTICLEWEATHER_LEAF "Weather_Leaf"

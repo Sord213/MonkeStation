@@ -70,3 +70,12 @@
 	max_spawning           = 50
 	min_spawning           = 20
 	wind                  = 10
+
+/particles/weather/leaf
+	icon_state	= list("leaf1"=5, "leaf2"=6, "leaf3"=5)
+
+	spin		= 8
+	position 	= generator("box", list(-600,-600,0), list(600,600,0))
+	gravity 	= list(0, -1)
+	friction 	= 0.2
+	drift 		= generator("circle", 1)
