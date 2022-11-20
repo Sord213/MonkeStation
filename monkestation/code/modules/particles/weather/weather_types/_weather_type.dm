@@ -144,6 +144,7 @@
 		if("Planet")
 			if(SSParticleWeather.particle_effect_planet)
 				SSParticleWeather.particle_effect_planet.animate_severity(severityMod())
+
 	//Send new severity message if the message has changed
 	if(last_message != scale_range_pick(min_severity, max_severity, severity, weather_messages))
 		messagedMobs = list()
