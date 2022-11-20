@@ -143,6 +143,9 @@ Sunlight System
 
 	GLOB.SUNLIGHT_QUEUE_CORNER += tempMasterList /* update the boys */
 
+/atom/movable/outdoor_effect/admin_weather/Initialize(mapload)
+	return
+
 /* Related object changes */
 /* I moved this here to consolidate sunlight changes as much as possible, so its easily disabled */
 
@@ -152,7 +155,7 @@ Sunlight System
 /* turf fuckery */
 /turf/var/tmp/atom/movable/outdoor_effect/outdoor_effect /* a turf's sunlight overlay */
 /turf/var/turf/pseudo_roof /* our roof turf - may be a path for top z level, or a ref to the turf above*/
-/turf/var/tmp/atom/movable/outdoor_effect/admin_effect
+/turf/var/tmp/atom/movable/outdoor_effect/admin_weather/admin_effect
 
 //non-weatherproof turfs
 /turf/var/weatherproof = TRUE

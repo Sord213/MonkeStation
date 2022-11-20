@@ -23,6 +23,7 @@
 
 		holder.overlays += MA
 		T.admin_effect = holder
+		T.vis_contents += T.admin_effect
 
 		log_admin("Weather Painter Mode: [key_name(c)] added a weather overlay at [AREACOORD(T)]")
 		return
@@ -30,5 +31,6 @@
 		var/turf/T = object
 		if(!T.admin_effect)
 			return
-		T.admin_effect = null
+		T.vis_contents -= T.admin_effect
+		qdel(T.admin_effect)
 		log_admin("Weather Painter Mode: [key_name(c)] removed a weather overlay at [AREACOORD(object)]")

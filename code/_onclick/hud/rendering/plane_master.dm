@@ -291,7 +291,7 @@
 /atom/movable/screen/plane_master/weather_effect/planet
 	name = "weather effect admin plane master"
 	plane = WEATHER_EFFECT_PLANE + 2
-	z_type = "Planetoid"
+	z_type = "Planet"
 
 /atom/movable/screen/plane_master/weather_effect/mining
 	name = "weather effect mining plane master"
