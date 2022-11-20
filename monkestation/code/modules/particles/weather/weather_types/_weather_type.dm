@@ -164,9 +164,9 @@
 /datum/particle_weather/proc/wind_down()
 	severity = 0
 	if("Default")
-			if(SSParticleWeather.particle_effect)
-				SSParticleWeather.particle_effect.animate_severity(severityMod())
-			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect.lifespan + SSParticleWeather.particle_effect.fade)
+		if(SSParticleWeather.particle_effect)
+			SSParticleWeather.particle_effect.animate_severity(severityMod())
+		addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect.lifespan + SSParticleWeather.particle_effect.fade)
 		if("Admin")
 			if(SSParticleWeather.particle_effect_admin)
 				SSParticleWeather.particle_effect_admin.animate_severity(severityMod())
