@@ -117,7 +117,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 			if(!weather_effect_admin)
 				weather_effect_admin = new /obj()
 				weather_effect_admin.particles = particleEffect
-				weather_effect_admin.filters += filter(type="alpha", render_source=WEATHER_RENDER_TARGET_ADMIN)
+				weather_effect_admin.filters += filter(type="alpha", render_source=WEATHER_ADMIN_RENDER_TARGET)
 				weather_effect_admin.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 			return weather_effect_admin
 		if("Mining")
@@ -131,7 +131,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 			if(!weather_effect_planet)
 				weather_effect_planet = new /obj()
 				weather_effect_planet.particles = particleEffect
-				weather_effect_planet.filters += filter(type="alpha", render_source=WEATHER_RENDER_TARGET_PLANETOID)
+				weather_effect_planet.filters += filter(type="alpha", render_source=WEATHER_PLANETOID_RENDER_TARGET)
 				weather_effect_planet.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 			return weather_effect_planet
 
