@@ -131,10 +131,19 @@
 		newSeverity = min(max(newSeverity,min_severity), max_severity)
 		severity = newSeverity
 
-
-	if(SSParticleWeather.particle_effect)
-		SSParticleWeather.particle_effect.animate_severity(severityMod())
-
+	switch(weather_area)
+		if("Default")
+			if(SSParticleWeather.particle_effect)
+				SSParticleWeather.particle_effect.animate_severity(severityMod())
+		if("Admin")
+			if(SSParticleWeather.particle_effect_admin)
+				SSParticleWeather.particle_effect_admin.animate_severity(severityMod())
+		if("Mining")
+			if(SSParticleWeather.particle_effect_mining)
+				SSParticleWeather.particle_effect_mining.animate_severity(severityMod())
+		if("Planet")
+			if(SSParticleWeather.particle_effect_planet)
+				SSParticleWeather.particle_effect_planet.animate_severity(severityMod())
 	//Send new severity message if the message has changed
 	if(last_message != scale_range_pick(min_severity, max_severity, severity, weather_messages))
 		messagedMobs = list()
