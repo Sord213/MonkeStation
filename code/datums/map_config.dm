@@ -20,7 +20,7 @@
 	var/map_file = "BoxStation.dmm"
 
 	//List of particle_weather types for this map
-	var/particle_weather = list() //MOJAVE MODULE OUTDOOR_EFFECTS
+	var/particle_weather = list()
 
 	var/traits = null
 	var/space_ruin_levels = 4	//Keep this low, as new ones are created dynamically when needed.

@@ -4,6 +4,9 @@ SUBSYSTEM_DEF(ParticleWeather)
 	wait = 1 SECONDS
 	runlevels = RUNLEVEL_GAME
 	var/list/elligble_weather = list()
+	var/list/elligble_weather_mining = list()
+	var/list/elligble_weather_planet = list()
+
 	var/datum/particle_weather/running_weather
 	var/datum/particle_weather/running_weather_mining
 	var/datum/particle_weather/running_weather_admin
