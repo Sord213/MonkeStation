@@ -163,11 +163,22 @@
  */
 /datum/particle_weather/proc/wind_down()
 	severity = 0
-	if(SSParticleWeather.particle_effect)
-		SSParticleWeather.particle_effect.animate_severity(severityMod())
-
-		//Wait for the last particle to fade, then qdel yourself
-		addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect.lifespan + SSParticleWeather.particle_effect.fade)
+	if("Default")
+			if(SSParticleWeather.particle_effect)
+				SSParticleWeather.particle_effect.animate_severity(severityMod())
+			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect.lifespan + SSParticleWeather.particle_effect.fade)
+		if("Admin")
+			if(SSParticleWeather.particle_effect_admin)
+				SSParticleWeather.particle_effect_admin.animate_severity(severityMod())
+			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect_admin.lifespan + SSParticleWeather.particle_effect_admin.fade)
+		if("Mining")
+			if(SSParticleWeather.particle_effect_mining)
+				SSParticleWeather.particle_effect_mining.animate_severity(severityMod())
+			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect_mining.lifespan + SSParticleWeather.particle_effect_mining.fade)
+		if("Planet")
+			if(SSParticleWeather.particle_effect_planet)
+				SSParticleWeather.particle_effect_planet.animate_severity(severityMod())
+			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect_planet.lifespan + SSParticleWeather.particle_effect_planet.fade)
 
 
 
