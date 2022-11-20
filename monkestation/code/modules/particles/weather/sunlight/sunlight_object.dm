@@ -152,6 +152,7 @@ Sunlight System
 /* turf fuckery */
 /turf/var/tmp/atom/movable/outdoor_effect/outdoor_effect /* a turf's sunlight overlay */
 /turf/var/turf/pseudo_roof /* our roof turf - may be a path for top z level, or a ref to the turf above*/
+/turf/var/tmp/atom/movable/outdoor_effect/admin_effect
 
 //non-weatherproof turfs
 /turf/var/weatherproof = TRUE

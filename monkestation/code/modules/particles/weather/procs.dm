@@ -9,7 +9,7 @@
 	var/weather_type = input("Choose a weather", "Weather")  as null|anything in sort_list(subtypesof(/datum/particle_weather), /proc/cmp_typepaths_asc)
 	if(!weather_type)
 		return
-	var/list/types = list("Default", "Mining")
+	var/list/types = list("Default", "Mining", "Admin", "Planet")
 	var/weather_area = input("Choose the level the weather will play on", "Weather") as null|anything in types
 	if(!weather_area)
 		return

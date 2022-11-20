@@ -256,6 +256,15 @@
 	plane = WEATHER_OVERLAY_PLANE_MINING
 	render_target = WEATHER_MINING_RENDER_TARGET
 
+/atom/movable/screen/plane_master/weather_overlay/admin
+	name = "weather overlay master admin"
+	plane = WEATHER_OVERLAY_PLANE_ADMIN
+	render_target = WEATHER_ADMIN_RENDER_TARGET
+
+/atom/movable/screen/plane_master/weather_overlay/planetoid
+	name = "weather overlay master planetoid"
+	plane = WEATHER_OVERLAY_PLANE_PLANETOID
+	render_target = WEATHER_PLANETOID_RENDER_TARGET
 //Contains the weather effect itself
 /atom/movable/screen/plane_master/weather_effect
 	name = "weather effect plane master"
@@ -274,14 +283,19 @@
 	. = ..()
 	SSoutdoor_effects.weather_planes_need_vis -= src
 
-/atom/movable/screen/plane_master/weather_effect/misc
-	name = "weather effect misc plane master"
+/atom/movable/screen/plane_master/weather_effect/admin
+	name = "weather effect admin plane master"
 	plane = WEATHER_EFFECT_PLANE + 1
-	z_type = "Misc"
+	z_type = "Admin"
+
+/atom/movable/screen/plane_master/weather_effect/admin
+	name = "weather effect admin plane master"
+	plane = WEATHER_EFFECT_PLANE + 2
+	z_type = "Planetoid"
 
 /atom/movable/screen/plane_master/weather_effect/mining
 	name = "weather effect mining plane master"
-	plane = WEATHER_EFFECT_PLANE  + 2
+	plane = WEATHER_EFFECT_PLANE  + 3
 	z_type = "Mining"
 
 //Contains all sunlight overlays

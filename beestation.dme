@@ -1946,6 +1946,7 @@
 #include "code\modules\buildmode\submodes\save_area.dm"
 #include "code\modules\buildmode\submodes\throwing.dm"
 #include "code\modules\buildmode\submodes\variable_edit.dm"
+#include "code\modules\buildmode\submodes\weather_brush.dm"
 #include "code\modules\cargo\bounty.dm"
 #include "code\modules\cargo\bounty_console.dm"
 #include "code\modules\cargo\centcom_podlauncher.dm"
