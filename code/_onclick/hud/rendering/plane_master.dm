@@ -288,7 +288,7 @@
 	plane = WEATHER_EFFECT_PLANE + 1
 	z_type = "Admin"
 
-/atom/movable/screen/plane_master/weather_effect/admin
+/atom/movable/screen/plane_master/weather_effect/planet
 	name = "weather effect admin plane master"
 	plane = WEATHER_EFFECT_PLANE + 2
 	z_type = "Planetoid"
