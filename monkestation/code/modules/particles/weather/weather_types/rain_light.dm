@@ -1,7 +1,7 @@
 /datum/particle_weather/rain_gentle
 	name = "Rain"
 	desc = "Gentle Rain, la la description."
-	particleEffectType = /particles/weather/rain
+	particle_effectType = /particles/weather/rain
 
 	scale_vol_with_severity = TRUE
 	weather_sounds = list(/datum/looping_sound/rain)

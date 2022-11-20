@@ -1,7 +1,7 @@
 /datum/particle_weather/dust_storm
 	name = "Dust Storm"
 	desc = "Can't be good for the eyes."
-	particleEffectType = /particles/weather/dust
+	particle_effectType = /particles/weather/dust
 
 	scale_vol_with_severity = TRUE
 	weather_sounds = list(/datum/looping_sound/dust_storm)

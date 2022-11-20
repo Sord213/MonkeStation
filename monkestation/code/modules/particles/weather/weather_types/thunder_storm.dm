@@ -4,7 +4,7 @@
 /datum/particle_weather/thunder_storm
 	name = "Thunder Storm"
 	desc = "Don't get struck."
-	particleEffectType = /particles/weather/rain
+	particle_effectType = /particles/weather/rain
 
 	scale_vol_with_severity = TRUE
 	weather_sounds = list(/datum/looping_sound/storm)

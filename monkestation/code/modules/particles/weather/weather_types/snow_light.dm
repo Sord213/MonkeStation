@@ -1,7 +1,7 @@
 /datum/particle_weather/snow_gentle
 	name = "Light Snow"
 	desc = "Gives off a holiday feel."
-	particleEffectType = /particles/weather/snow
+	particle_effectType = /particles/weather/snow
 
 	scale_vol_with_severity = TRUE
 	weather_sounds = list(/datum/looping_sound/snow)

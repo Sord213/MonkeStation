@@ -1,7 +1,7 @@
 /datum/particle_weather/snow_storm
 	name = "Snow Storm"
 	desc = "It's blizzarding out here"
-	particleEffectType = /particles/weather/snow
+	particle_effectType = /particles/weather/snow
 
 	scale_vol_with_severity = TRUE
 	weather_sounds = list(/datum/looping_sound/snow)

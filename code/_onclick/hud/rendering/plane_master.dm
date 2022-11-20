@@ -272,7 +272,6 @@
 	appearance_flags = PLANE_MASTER
 	blend_mode = BLEND_OVERLAY
 	render_relay_plane = RENDER_PLANE_GAME
-	var/z_type = "Default"
 
 /atom/movable/screen/plane_master/weather_effect/Initialize()
 	. = ..()
@@ -282,21 +281,6 @@
 /atom/movable/screen/plane_master/weather_effect/Destroy()
 	. = ..()
 	SSoutdoor_effects.weather_planes_need_vis -= src
-
-/atom/movable/screen/plane_master/weather_effect/admin
-	name = "weather effect admin plane master"
-	plane = WEATHER_EFFECT_PLANE + 1
-	z_type = "Admin"
-
-/atom/movable/screen/plane_master/weather_effect/planet
-	name = "weather effect admin plane master"
-	plane = WEATHER_EFFECT_PLANE + 2
-	z_type = "Planet"
-
-/atom/movable/screen/plane_master/weather_effect/mining
-	name = "weather effect mining plane master"
-	plane = WEATHER_EFFECT_PLANE  + 3
-	z_type = "Mining"
 
 //Contains all sunlight overlays
 /atom/movable/screen/plane_master/sunlight

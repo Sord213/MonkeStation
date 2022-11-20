@@ -1,7 +1,7 @@
 /datum/particle_weather/radiation_storm
 	name = "Radiation Storm"
 	desc = "I don't feel so good."
-	particleEffectType = /particles/weather/rads
+	particle_effectType = /particles/weather/rads
 
 	scale_vol_with_severity = TRUE
 	weather_sounds = list(/datum/looping_sound/rad_storm)

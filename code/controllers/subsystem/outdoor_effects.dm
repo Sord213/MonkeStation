@@ -152,7 +152,8 @@ SUBSYSTEM_DEF(outdoor_effects)
 		for (i in 1 to weather_planes_need_vis.len)
 			var/atom/movable/screen/plane_master/weather_effect/W = weather_planes_need_vis[i]
 			if(W)
-				W.vis_contents = list(SSParticleWeather.getweatherEffect(W.z_type))
+				var/list/contents_to_add = SSParticleWeather.getweatherEffect()
+				W.vis_contents |= contents_to_add
 			if(init_tick_checks)
 				CHECK_TICK
 			else if (MC_TICK_CHECK)

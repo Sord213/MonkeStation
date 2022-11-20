@@ -28,7 +28,7 @@
 	var/scale_vol_with_severity = FALSE
 
 	//Our particle effect to display - min/max severity effects its wind and count
-	var/particles/weather/particleEffectType = /particles/weather/rain
+	var/particles/weather/particle_effectType = /particles/weather/rain
 
 
 	/// See above - this is the lowest possible duration
@@ -79,6 +79,8 @@
 
 	var/last_message = ""
 
+	var/weather_area
+
 /datum/particle_weather/proc/severityMod()
 	return severity / max_severity
 /*
@@ -109,8 +111,9 @@
 	running = TRUE
 	addtimer(CALLBACK(src, .proc/wind_down), weather_duration)
 
-	if(particleEffectType)
-		SSParticleWeather.SetparticleEffect(new particleEffectType, weather_level);
+	weather_area = weather_level
+	if(particle_effectType)
+		SSParticleWeather.Setparticle_effect(new particle_effectType, weather_level);
 
 	//Always step severity to start
 	change_severity()
@@ -129,8 +132,8 @@
 		severity = newSeverity
 
 
-	if(SSParticleWeather.particleEffect)
-		SSParticleWeather.particleEffect.animate_severity(severityMod())
+	if(SSParticleWeather.particle_effect)
+		SSParticleWeather.particle_effect.animate_severity(severityMod())
 
 	//Send new severity message if the message has changed
 	if(last_message != scale_range_pick(min_severity, max_severity, severity, weather_messages))
@@ -150,11 +153,11 @@
  */
 /datum/particle_weather/proc/wind_down()
 	severity = 0
-	if(SSParticleWeather.particleEffect)
-		SSParticleWeather.particleEffect.animate_severity(severityMod())
+	if(SSParticleWeather.particle_effect)
+		SSParticleWeather.particle_effect.animate_severity(severityMod())
 
 		//Wait for the last particle to fade, then qdel yourself
-		addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particleEffect.lifespan + SSParticleWeather.particleEffect.fade)
+		addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect.lifespan + SSParticleWeather.particle_effect.fade)
 
 
 
@@ -167,7 +170,7 @@
  */
 /datum/particle_weather/proc/end()
 	running = FALSE
-	SSParticleWeather.stopWeather()
+	SSParticleWeather.stopWeather(weather_area)
 
 
 /**

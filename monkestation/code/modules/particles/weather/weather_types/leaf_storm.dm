@@ -1,7 +1,7 @@
 /datum/particle_weather/leaf_storm
 	name = "Leaf Storm"
 	desc = "I love fall."
-	particleEffectType = /particles/weather/leaf
+	particle_effectType = /particles/weather/leaf
 
 	scale_vol_with_severity = TRUE
 	weather_messages = list("Your smell the autumn winds", "You feel crisp leaves against your skin.")

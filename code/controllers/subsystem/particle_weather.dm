@@ -10,7 +10,11 @@ SUBSYSTEM_DEF(ParticleWeather)
 	var/datum/particle_weather/running_weather_planet
 	// var/list/next_hit = list() //Used by barometers to know when the next storm is coming
 
-	var/particles/weather/particleEffect
+	var/particles/weather/particle_effect
+	var/particles/weather/particle_effect_mining
+	var/particles/weather/particle_effect_admin
+	var/particles/weather/particle_effect_planet
+
 	var/obj/weather_effect
 	var/obj/weather_effect_mining
 	var/obj/weather_effect_admin
@@ -104,52 +108,59 @@ SUBSYSTEM_DEF(ParticleWeather)
 	elligble_weather = possible_weather
 // 	next_hit = null
 
-/datum/controller/subsystem/ParticleWeather/proc/getweatherEffect(var/z_type)
-	switch(z_type)
-		if("Default")
-			if(!weather_effect)
-				weather_effect = new /obj()
-				weather_effect.particles = particleEffect
-				weather_effect.filters += filter(type="alpha", render_source=WEATHER_RENDER_TARGET)
-				weather_effect.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-			return weather_effect
-		if("Admin")
-			if(!weather_effect_admin)
-				weather_effect_admin = new /obj()
-				weather_effect_admin.particles = particleEffect
-				weather_effect_admin.filters += filter(type="alpha", render_source=WEATHER_ADMIN_RENDER_TARGET)
-				weather_effect_admin.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-			return weather_effect_admin
-		if("Mining")
-			if(!weather_effect_mining)
-				weather_effect_mining = new /obj()
-				weather_effect_mining.particles = particleEffect
-				weather_effect_mining.filters += filter(type="alpha", render_source=WEATHER_MINING_RENDER_TARGET)
-				weather_effect_mining.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-			return weather_effect_mining
-		if("Planet")
-			if(!weather_effect_planet)
-				weather_effect_planet = new /obj()
-				weather_effect_planet.particles = particleEffect
-				weather_effect_planet.filters += filter(type="alpha", render_source=WEATHER_PLANETOID_RENDER_TARGET)
-				weather_effect_planet.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-			return weather_effect_planet
-
-/datum/controller/subsystem/ParticleWeather/proc/SetparticleEffect(particles/P, var/weather_level = "Default")
+/datum/controller/subsystem/ParticleWeather/proc/getweatherEffect()
+	var/list/effects_to_return = list()
+	if(!weather_effect)
+		weather_effect = new /obj()
+		weather_effect.particles = particle_effect
+		weather_effect.filters += filter(type="alpha", render_source=WEATHER_RENDER_TARGET)
+		weather_effect.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	effects_to_return |= weather_effect
+	if(!weather_effect_admin)
+		weather_effect_admin = new /obj()
+		weather_effect_admin.particles = particle_effect_admin
+		weather_effect_admin.filters += filter(type="alpha", render_source=WEATHER_ADMIN_RENDER_TARGET)
+		weather_effect_admin.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	effects_to_return |= weather_effect_admin
+	if(!weather_effect_mining)
+		weather_effect_mining = new /obj()
+		weather_effect_mining.particles = particle_effect_mining
+		weather_effect_mining.filters += filter(type="alpha", render_source=WEATHER_MINING_RENDER_TARGET)
+		weather_effect_mining.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	effects_to_return |= weather_effect_mining
+	if(!weather_effect_planet)
+		weather_effect_planet = new /obj()
+		weather_effect_planet.particles = particle_effect_planet
+		weather_effect_planet.filters += filter(type="alpha", render_source=WEATHER_PLANETOID_RENDER_TARGET)
+		weather_effect_planet.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	effects_to_return |= weather_effect_planet
+	return effects_to_return
+/datum/controller/subsystem/ParticleWeather/proc/Setparticle_effect(particles/P, var/weather_level = "Default")
 	switch(weather_level)
 		if("Default")
-			particleEffect = P
-			weather_effect.particles = particleEffect
+			particle_effect = P
+			weather_effect.particles = particle_effect
 		if("Mining")
-			particleEffect = P
-			weather_effect_mining.particles = particleEffect
+			particle_effect_mining = P
+			weather_effect_mining.particles = particle_effect_mining
 		if("Admin")
-			particleEffect = P
-			weather_effect_admin.particles = particleEffect
+			particle_effect_admin = P
+			weather_effect_admin.particles = particle_effect_admin
 		if("Planet")
-			particleEffect = P
-			weather_effect_planet.particles = particleEffect
+			particle_effect_planet = P
+			weather_effect_planet.particles = particle_effect_planet
 
-/datum/controller/subsystem/ParticleWeather/proc/stopWeather()
-	QDEL_NULL(running_weather)
-	QDEL_NULL(particleEffect)
+/datum/controller/subsystem/ParticleWeather/proc/stopWeather(var/weather_type)
+	switch(weather_type)
+		if("Default")
+			QDEL_NULL(running_weather)
+			QDEL_NULL(particle_effect)
+		if("Mining")
+			QDEL_NULL(running_weather_mining)
+			QDEL_NULL(particle_effect_mining)
+		if("Admin")
+			QDEL_NULL(running_weather_admin)
+			QDEL_NULL(particle_effect_admin)
+		if("Planet")
+			QDEL_NULL(running_weather_planet)
+			QDEL_NULL(particle_effect_planet)
