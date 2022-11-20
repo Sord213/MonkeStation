@@ -104,7 +104,7 @@
  * Begins dealing effects from weather to mobs in the area
  *
  */
-/datum/particle_weather/proc/start(var/weather_level = "Default")
+/datum/particle_weather/proc/start(var/weather_level)
 	if(running)
 		return //some cheeky git has started you early
 	weather_duration = rand(weather_duration_lower, weather_duration_upper)

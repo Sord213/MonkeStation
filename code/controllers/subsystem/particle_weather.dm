@@ -47,7 +47,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 			elligble_weather[W] = probability
 	return ..()
 
-/datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type = "Default")
+/datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type)
 	var/datum/particle_weather/weather_setter
 
 	switch(type)
