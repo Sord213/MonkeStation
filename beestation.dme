@@ -3892,6 +3892,7 @@
 #include "monkestation\code\modules\particles\weather\procs.dm"
 #include "monkestation\code\modules\particles\weather\sunlight\sunlight_object.dm"
 #include "monkestation\code\modules\particles\weather\weather_types\_weather_type.dm"
+#include "monkestation\code\modules\particles\weather\weather_types\ash_storm.dm"
 #include "monkestation\code\modules\particles\weather\weather_types\dust_storm.dm"
 #include "monkestation\code\modules\particles\weather\weather_types\leaf_storm.dm"
 #include "monkestation\code\modules\particles\weather\weather_types\rad_storm.dm"

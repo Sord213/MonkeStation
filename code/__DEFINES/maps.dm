@@ -153,3 +153,8 @@ require only minor tweaks.
 #define PARTICLEWEATHER_DUST "Weather_Dust"
 #define PARTICLEWEATHER_RADS "Weather_Rads"
 #define PARTICLEWEATHER_LEAF "Weather_Leaf"
+#define PARTICLEWEATHER_ASH  "Weather Ash"
+
+#define LAVALAND_WEATHERS list(/datum/particle_weather/dust_storm,  \
+								/datum/particle_weather/radiation_storm, \
+								/datum/particle_weather/ash_storm)

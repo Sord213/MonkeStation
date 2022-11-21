@@ -81,6 +81,9 @@
 
 	var/weather_area
 
+	///list of all filters to remove
+	var/uses_filter = FALSE
+
 /datum/particle_weather/proc/severityMod()
 	return severity / max_severity
 /*
@@ -163,10 +166,11 @@
  */
 /datum/particle_weather/proc/wind_down()
 	severity = 0
-	if("Default")
-		if(SSParticleWeather.particle_effect)
-			SSParticleWeather.particle_effect.animate_severity(severityMod())
-		addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect.lifespan + SSParticleWeather.particle_effect.fade)
+	switch(weather_area)
+		if("Default")
+			if(SSParticleWeather.particle_effect)
+				SSParticleWeather.particle_effect.animate_severity(severityMod())
+			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect.lifespan + SSParticleWeather.particle_effect.fade)
 		if("Admin")
 			if(SSParticleWeather.particle_effect_admin)
 				SSParticleWeather.particle_effect_admin.animate_severity(severityMod())
@@ -191,8 +195,22 @@
  */
 /datum/particle_weather/proc/end()
 	running = FALSE
-	SSParticleWeather.stopWeather(weather_area)
 
+	if(uses_filter)
+		var/obj/holder = SSParticleWeather.return_particle_emitter(weather_area)
+		holder.clear_filters()
+		var/used_source
+		switch(weather_area)
+			if("Default")
+				used_source = WEATHER_RENDER_TARGET
+			if("Mining")
+				used_source = WEATHER_MINING_RENDER_TARGET
+			if("ADMIN")
+				used_source = WEATHER_ADMIN_RENDER_TARGET
+			if("Planet")
+				used_source = WEATHER_PLANETOID_RENDER_TARGET
+		holder.filters += filter(type="alpha", render_source=used_source)
+	SSParticleWeather.stopWeather(weather_area)
 
 /**
  * Returns TRUE if the living mob can hear the weather (you might be immune, but you get to listen to the pitter patter)

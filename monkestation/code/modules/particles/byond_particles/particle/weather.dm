@@ -83,3 +83,18 @@
 	max_spawning           = 50
 	min_spawning           = 20
 	wind                  = 2
+
+/particles/weather/ash
+	icon_state             = list("dot"=5, "cross"=1)
+	gradient               = list(0,"#422a1de3",10,"#853e1be3","loop")
+	color                  = 0
+	color_change		   = generator("num",0,3)
+	spin                   = generator("num",-5,5)
+	position               = generator("box", list(-500,-256,0), list(500,500,0))
+	gravity                = list(-5 -1, 0.1)
+	drift                  = generator("circle", 0, 3) + generator("sphere", 0, 1) // Some random movement for variation - squashed sphere
+	friction               = 0.3  // shed 30% of velocity and drift every 0.1s
+	//Weather effects, max values
+	max_spawning           = 50
+	min_spawning           = 20
+	wind                  = 10

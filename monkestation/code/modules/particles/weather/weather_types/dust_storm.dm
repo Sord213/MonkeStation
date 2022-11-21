@@ -17,7 +17,7 @@
 
 //Makes you a little chilly
 /datum/particle_weather/dust_storm/weather_act(mob/living/L)
-	if ishuman(L)
+	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
 		var/obj/item/organ/eyes/eyes = H.getorganslot(ORGAN_SLOT_EYES)
 		eyes?.applyOrganDamage(severityMod() * rand(1,3) - H.get_eye_protection())

@@ -16,7 +16,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 	var/particles/weather/particle_effect
 	var/particles/weather/particle_effect_mining
 	var/particles/weather/particle_effect_admin
-	var/particles/weather/particle_effect_planet
+	var/particles/weather/particle_effect_planet //this is a holder for when planet generation is added to supercruise
 
 	var/obj/weather_effect
 	var/obj/weather_effect_mining
@@ -35,7 +35,9 @@ SUBSYSTEM_DEF(ParticleWeather)
 		var/datum/particle_weather/our_event = pickweight(elligble_weather) //possible_weather
 		if(our_event)
 			run_weather(our_event)
-
+		var/datum/particle_weather/our_event_mining = pickweight(elligble_weather_mining)
+		if(our_event_mining)
+			run_weather(our_event_mining, type = "Mining")
 
 //This has been mangled - currently only supports 1 weather effect serverwide so I can finish this
 /datum/controller/subsystem/ParticleWeather/Initialize(start_timeofday)
@@ -45,9 +47,18 @@ SUBSYSTEM_DEF(ParticleWeather)
 		var/target_trait = initial(W.target_trait)
 
 		// any weather with a probability set may occur at random
-		if (probability && SSmapping.config.particle_weather[target_trait])
+		if (probability && SSmapping.config.particle_weather[target_trait]) //this handles all stations should probably find a way to use something like this for all z-levels
 			LAZYINITLIST(elligble_weather)
 			elligble_weather[W] = probability
+
+		for (var/z in SSmapping.levels_by_trait(ZTRAIT_MINING))
+			if(SSmapping.level_has_all_traits(z, ZTRAITS_LAVALAND))
+				if(!elligble_weather_mining)
+					LAZYINITLIST(elligble_weather)
+				for(var/weather_type in LAVALAND_WEATHERS)
+					var/datum/particle_weather/used_weather = weather_type
+					elligble_weather_mining[used_weather] = initial(used_weather.probability)
+
 	return ..()
 
 /datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type)
@@ -167,3 +178,14 @@ SUBSYSTEM_DEF(ParticleWeather)
 		if("Planet")
 			QDEL_NULL(running_weather_planet)
 			QDEL_NULL(particle_effect_planet)
+
+/datum/controller/subsystem/ParticleWeather/proc/return_particle_emitter(var/weather_type)
+	switch(weather_type)
+		if("Default")
+			return weather_effect
+		if("Mining")
+			return weather_effect_mining
+		if("Admin")
+			return weather_effect_admin
+		if("Planet")
+			return weather_effect_planet
