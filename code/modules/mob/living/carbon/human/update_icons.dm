@@ -55,6 +55,7 @@ There are several things that need to be remembered:
 //used when putting/removing clothes that hide certain mutant body parts to just update those and not update the whole body.
 /mob/living/carbon/human/proc/update_mutant_bodyparts()
 	dna.species.handle_mutant_bodyparts(src)
+	update_body_parts(forced_update = TRUE)
 
 
 /mob/living/carbon/human/update_body()
@@ -67,9 +68,10 @@ There are several things that need to be remembered:
 
 /* --------------------------------------- */
 //For legacy support.
-/mob/living/carbon/human/regenerate_icons()
-
+/mob/living/carbon/human/regenerate_icons(forcing_update = FALSE)
 	if(!..())
+		if(forcing_update)
+			update_body_parts(forced_update = forcing_update)
 		update_body()
 		update_hair()
 		update_inv_w_uniform()
@@ -234,7 +236,7 @@ There are several things that need to be remembered:
 			bloody_overlay += mutable_appearance('icons/effects/blood.dmi', "bloodyhands", -GLOVES_LAYER)
 		else
 			bloody_overlay = mutable_appearance('monkestation/icons/effects/blood.dmi', "[lowertext(dna.species.name)]_bloodyhands")
-		if(get_num_arms(FALSE) < 2)
+		if(num_hands < 2)
 			if(has_left_hand(FALSE))
 				if(!dna.species.get_custom_icons("gloves"))
 					bloody_overlay = mutable_appearance('icons/effects/blood.dmi', "bloodyhands_left", -GLOVES_LAYER)
@@ -373,7 +375,7 @@ There are several things that need to be remembered:
 /mob/living/carbon/human/update_inv_shoes()
 	remove_overlay(SHOES_LAYER)
 
-	if(get_num_legs(FALSE) <2)
+	if(num_legs <2)
 		return
 
 	if(client && hud_used)

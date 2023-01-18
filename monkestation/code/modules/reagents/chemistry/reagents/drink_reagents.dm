@@ -10,7 +10,7 @@
 	if(ishuman(M))
 		if(method == PATCH || method == VAPOR)
 			var/mob/living/carbon/human/N = M
-			if(N.dna.species.id == "human") //Lighten skin
+			if(ishumanbasic(M)) //Lighten skin
 				switch(N.skin_tone)
 					if("african2")
 						N.skin_tone = "african1"
@@ -30,6 +30,10 @@
 						N.skin_tone = "caucasian1"
 					if("caucasian1")
 						N.skin_tone = "albino"
+
+			if(MUTCOLORS in N.dna.species.species_traits)
+				N.dna.features["mcolor"] = random_short_color()
+
 			N.regenerate_icons()
 	..()
 
@@ -57,7 +61,7 @@
 	M.Jitter(20)
 	M.dizziness = min(5,M.dizziness+1)
 	M.drowsyness = 0
-	M.AdjustSleeping(-40, FALSE)
+	M.AdjustSleeping(-40)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
 	..()
 
