@@ -636,3 +636,6 @@ SPARE_ENFORCE_COC
 
 ## Uncomment to disable local bans, effectively enforcing only global bans
 DISABLE_LOCAL_BANS
+
+## Have your config key for twitch integration stored here so you won't get spammed by people
+PRIVATE_KEY mrhouse
