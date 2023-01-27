@@ -166,12 +166,6 @@ GLOBAL_VAR(restart_counter)
 
 	var/list/response[] = list()
 
-	if(findtext(T, "[CONFIG_GET(string/private_key)]_TWITCH_INPUT:"))
-		twitch_request_handler(T)
-		response["statuscode"] = 200
-		response["response"] = "Handled Twitch Input"
-		return json_encode(response)
-
 	if(length(T) > CONFIG_GET(number/topic_max_size))
 		response["statuscode"] = 413
 		response["response"] = "Payload too large"
