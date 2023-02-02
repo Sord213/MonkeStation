@@ -22,7 +22,7 @@
 
 /datum/time_of_day/daytime
  name = "Daytime"
- color = "#FFFFFF"
+ color = "#f5e798"
  start = 5.5 HOURS //5:30:00 AM
 
 /datum/time_of_day/sunset
