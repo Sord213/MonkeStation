@@ -198,7 +198,6 @@
 
 	if(uses_filter)
 		var/obj/holder = SSParticleWeather.return_particle_emitter(weather_area)
-		holder.clear_filters()
 		var/used_source
 		switch(weather_area)
 			if("Default")
@@ -262,6 +261,8 @@
 
 //Not using looping_sounds properly. somebody smart should fix this
 /datum/particle_weather/proc/weather_sound_effect(mob/living/L)
+	if(!L.client)
+		return // no point in trying to add sounds to things that can't hear us
 	var/datum/looping_sound/currentSound = currentSounds[L]
 	if(currentSound)
 		//SET VOLUME
