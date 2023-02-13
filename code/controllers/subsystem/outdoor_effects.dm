@@ -240,6 +240,15 @@ SUBSYSTEM_DEF(outdoor_effects)
 	var timeDiff = min((1 HOURS / SSticker.station_time_rate_multiplier ),daytimeDiff(station_time(), next_step_datum.start))
 	animate(SP,color=current_step_datum.color, time = timeDiff)
 
+//Transition from our last color to our current color (i.e if it is going from daylight (white) to sunset (red), we transition to red in the first hour of sunset)
+/datum/controller/subsystem/outdoor_effects/proc/force_aurora(atom/movable/screen/fullscreen/lighting_backdrop/Sunlight/SP)
+	animate(SP, color = "#FF0000", time = rand(5,10), loop = -1, easing = LINEAR_EASING)
+	animate(color = "#FFFF00", time = rand(5,10), loop = -1, easing = LINEAR_EASING)
+	animate(color = "#00FF00", time = rand(5,10), loop = -1, easing = LINEAR_EASING)
+	animate(color = "#00FFFF", time = rand(5,10), loop = -1, easing = LINEAR_EASING)
+	animate(color = "#0000FF", time = rand(5,10), loop = -1, easing = LINEAR_EASING)
+	animate(color = "#FF00FF", time = rand(5,10), loop = -1, easing = LINEAR_EASING)
+
 // Updates overlays and vis_contents for outdoor effects
 /datum/controller/subsystem/outdoor_effects/proc/update_outdoor_effect_overlays(atom/movable/outdoor_effect/OE)
 

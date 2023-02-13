@@ -107,6 +107,7 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/toggle_nuke,
 	/client/proc/run_weather,
 	/client/proc/run_particle_weather,
+	/client/proc/force_aurora,
 	/client/proc/mass_zombie_infection,
 	/client/proc/mass_zombie_cure,
 	/client/proc/polymorph_all,

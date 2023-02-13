@@ -18,3 +18,14 @@
 	message_admins("[key_name_admin(usr)] started weather of type [weather_type]. What a cunt.")
 	log_admin("[key_name(usr)] started weather of type [weather_type]. What a cunt.")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Run Particle Weather")
+
+/client/proc/force_aurora()
+	set category = "Admin.Events"
+	set name = "Force Aurora "
+	set desc = "Forces Aurora effect"
+
+	if(!holder)
+		return
+
+	for (var/atom/movable/screen/fullscreen/lighting_backdrop/Sunlight/SP in SSoutdoor_effects.sunlighting_planes)
+		SSoutdoor_effects.force_aurora(SP)
