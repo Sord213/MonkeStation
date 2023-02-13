@@ -168,7 +168,7 @@ SUBSYSTEM_DEF(outdoor_effects)
 		if(T)
 			if(!(T.z in living_z_levels))
 				if(isspaceturf(T))
-					if(typesof(T.loc, /area/space))
+					if(istype(T.loc, /area/space) || istype(T.loc, /area/space/nearstation)) //nearstation does not return in typesof checks for some odd reason
 						var/area/space/space_area = T.loc
 						if(!space_area.base_lighting_color)
 							space_area.set_base_lighting("#FFFFFF", 255)
