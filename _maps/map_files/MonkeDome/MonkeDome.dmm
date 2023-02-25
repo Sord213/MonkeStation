@@ -13,6 +13,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/engineering)
+"aav" = (
+/turf/closed/wall,
+/area/ranch)
 "aaw" = (
 /obj/effect/turf_decal/tile/red/tile_side{
 	dir = 4
@@ -2394,6 +2397,15 @@
 	},
 /turf/open/floor/plating/outdoors,
 /area/mine/planetgeneration)
+"aXj" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "aXl" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
@@ -4438,8 +4450,11 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
 /turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/area/ranch)
 "bHh" = (
 /obj/effect/turf_decal/tile/yellow/tile_marquee,
 /obj/machinery/camera/autoname{
@@ -5541,11 +5556,10 @@
 /area/maintenance/monkedome/medical/fore)
 "ccF" = (
 /obj/structure/cable/yellow{
-	icon_state = "0-2"
+	icon_state = "1-2"
 	},
-/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/area/ranch)
 "cdf" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters{
@@ -7897,15 +7911,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai_upload)
 "cSY" = (
-/mob/living/simple_animal/chicken,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 4
-	},
-/turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/turf/open/floor/wood,
+/area/ranch)
 "cTw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -8408,6 +8416,15 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/monkedome/comsec/aft)
+"deg" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "deD" = (
 /obj/structure/cable/blue{
 	icon_state = "1-2"
@@ -8791,6 +8808,13 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/hallway/monkedome/civilian/port)
+"dnf" = (
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "dng" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -9497,13 +9521,16 @@
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "dCj" = (
-/obj/machinery/door/airlock/glass,
+/obj/machinery/door/airlock/glass{
+	name = "Ranch";
+	req_access_txt = "36"
+	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel,
-/area/mine/planetgeneration)
+/area/ranch)
 "dCk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -10833,8 +10860,11 @@
 /turf/open/floor/plasteel/dark,
 /area/medical/sleeper)
 "eas" = (
-/turf/closed/wall,
-/area/mine/planetgeneration)
+/obj/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "eaX" = (
 /turf/open/floor/engine/n2o,
 /area/engine/atmos)
@@ -10873,6 +10903,13 @@
 	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
+"ebz" = (
+/mob/living/simple_animal/chicken/hen,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "ebO" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -13317,8 +13354,9 @@
 /area/medical/virology)
 "eWB" = (
 /obj/machinery/airalarm/directional/west,
+/obj/structure/nestbox,
 /turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/area/ranch)
 "eWL" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 4
@@ -14290,11 +14328,13 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/warehouse)
 "fqF" = (
-/mob/living/simple_animal/chicken{
-	name = "My Sanity"
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/obj/structure/table/wood,
+/obj/machinery/feed_machine,
+/turf/open/floor/wood,
+/area/ranch)
 "fqK" = (
 /obj/effect/turf_decal/tile/red/tile_side{
 	dir = 4
@@ -15136,6 +15176,14 @@
 "fIj" = (
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/science)
+"fIt" = (
+/obj/machinery/door/window/eastright{
+	dir = 1;
+	name = "Ranch Door";
+	req_access_txt = "36"
+	},
+/turf/open/indestructible/sound/pool,
+/area/crew_quarters/fitness/pool)
 "fIJ" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -16852,6 +16900,12 @@
 /obj/effect/landmark/blobstart,
 /turf/open/floor/plasteel/grimy,
 /area/library)
+"gsu" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "gsG" = (
 /obj/structure/rack,
 /obj/item/tank/internals/air{
@@ -17559,6 +17613,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/cryo)
+"gHr" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "gHD" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
@@ -17761,6 +17821,12 @@
 "gLc" = (
 /turf/open/floor/plasteel,
 /area/science/robotics)
+"gLg" = (
+/obj/machinery/camera/autoname{
+	dir = 6
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "gLD" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow{
@@ -19792,6 +19858,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
+"hAB" = (
+/obj/machinery/chicken_grinder,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "hAC" = (
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning,
 /turf/open/floor/plasteel,
@@ -20186,6 +20259,10 @@
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/plating,
 /area/maintenance/monkedome/ls/res/lifesupport)
+"hIn" = (
+/obj/effect/landmark/start/rancher,
+/turf/open/floor/wood,
+/area/ranch)
 "hIo" = (
 /obj/machinery/door/airlock/research,
 /obj/effect/turf_decal/tile/dark_purple/tile_full,
@@ -25123,6 +25200,13 @@
 /obj/machinery/vending/cola/random,
 /turf/open/floor/wood,
 /area/crew_quarters/bar/atrium)
+"jzO" = (
+/obj/machinery/door/window/eastright{
+	name = "Ranch Door";
+	req_access_txt = "36"
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "jzQ" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line,
 /turf/open/floor/plasteel,
@@ -25287,6 +25371,13 @@
 /obj/effect/turf_decal/tile/dark_purple/tile_full,
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
+"jCY" = (
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "jDc" = (
 /obj/machinery/power/solar{
 	id = "aisolars";
@@ -26811,6 +26902,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
+"kgE" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/smartfridge,
+/turf/open/floor/wood,
+/area/ranch)
 "khd" = (
 /obj/structure/fence/corner{
 	dir = 4
@@ -27886,6 +27987,13 @@
 "kDv" = (
 /turf/closed/wall/r_wall,
 /area/security/execution/transfer)
+"kEa" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/nestbox,
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "kEm" = (
 /obj/effect/turf_decal/tile/yellow/tile_side,
 /turf/open/floor/plasteel,
@@ -29840,9 +29948,8 @@
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
 "lmQ" = (
-/mob/living/simple_animal/chicken,
-/turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/turf/open/floor/wood,
+/area/ranch)
 "lmR" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
@@ -30828,6 +30935,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
+"lER" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "lFa" = (
 /obj/machinery/computer/secure_data{
 	dir = 4
@@ -31327,6 +31443,15 @@
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/plating,
 /area/maintenance/monkedome/comsec/fore)
+"lPJ" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "lQk" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow{
@@ -31495,12 +31620,15 @@
 /turf/open/floor/plasteel/white,
 /area/medical/apothecary)
 "lTn" = (
-/obj/machinery/door/airlock/glass,
+/obj/machinery/door/airlock/glass{
+	name = "Ranch";
+	req_access_txt = "36"
+	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel,
-/area/mine/planetgeneration)
+/area/ranch)
 "lTo" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -32468,6 +32596,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/courtroom)
+"mqf" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "mqi" = (
 /obj/structure/chair/comfy/brown{
 	dir = 8
@@ -32485,6 +32619,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/gateway)
+"mqr" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "mqx" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -34889,6 +35029,10 @@
 /obj/item/reagent_containers/syringe,
 /turf/open/floor/plating,
 /area/security/prison)
+"nke" = (
+/mob/living/simple_animal/chicken,
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "nku" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -35563,6 +35707,10 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
+"num" = (
+/obj/effect/landmark/start/rancher,
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "nuy" = (
 /obj/machinery/atmospherics/components/trinary/mixer{
 	dir = 1;
@@ -35751,16 +35899,10 @@
 /turf/open/floor/plasteel,
 /area/maintenance/disposal/incinerator)
 "nxV" = (
-/obj/item/paper{
-	info = "WTB 1 Ranch";
-	name = "offer"
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
-	},
-/turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/wood,
+/area/ranch)
 "nyd" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -38451,8 +38593,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/landmark/event_spawn,
-/turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/turf/open/floor/wood,
+/area/ranch)
 "oxY" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -40774,6 +40916,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/security)
+"ppn" = (
+/obj/structure/nestbox,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "ppr" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -42048,8 +42197,13 @@
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "pMB" = (
+/obj/machinery/door/window/eastright{
+	dir = 8;
+	name = "Ranch Door";
+	req_access_txt = "36"
+	},
 /turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/area/ranch)
 "pMD" = (
 /obj/machinery/camera/autoname{
 	dir = 8
@@ -42550,8 +42704,8 @@
 "pVm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/grass/astroturf,
-/area/mine/planetgeneration)
+/turf/open/floor/wood,
+/area/ranch)
 "pVn" = (
 /turf/open/indestructible/sound/pool/end,
 /area/crew_quarters/fitness/pool)
@@ -42667,6 +42821,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/maintenance/monkedome/civilian/upperfore)
+"pXk" = (
+/mob/living/simple_animal/chicken,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "pXq" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -44568,6 +44729,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/atmos)
+"qJD" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/window/eastright{
+	name = "Ranch Door";
+	req_access_txt = "36"
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "qKb" = (
 /obj/structure/table/glass,
 /obj/item/storage/secure/briefcase,
@@ -45797,7 +45968,7 @@
 "riM" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/mine/planetgeneration)
+/area/ranch)
 "riT" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -47259,6 +47430,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"rNc" = (
+/obj/machinery/hydroponics/constructable,
+/turf/open/floor/wood,
+/area/ranch)
 "rNd" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -48512,6 +48687,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/morgue)
+"siS" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "siX" = (
 /obj/machinery/door/airlock/maintenance,
 /turf/open/floor/plating,
@@ -52820,6 +53001,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/disposal/incinerator)
+"tGw" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/eastright{
+	dir = 2;
+	name = "Ranch Door";
+	req_access_txt = "36"
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "tGx" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -55908,6 +56098,13 @@
 	},
 /turf/open/floor/wood,
 /area/library)
+"uNt" = (
+/obj/structure/table/wood,
+/obj/machinery/camera/autoname{
+	dir = 5
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "uNC" = (
 /obj/machinery/atmospherics/pipe/manifold/dark/visible{
 	dir = 4
@@ -57106,8 +57303,13 @@
 /area/science/xenobiology)
 "vfL" = (
 /obj/structure/table/reinforced,
-/turf/open/floor/plasteel,
-/area/mine/planetgeneration)
+/obj/machinery/door/window/eastleft{
+	dir = 2;
+	name = "Ranch Door";
+	req_access_txt = "36"
+	},
+/turf/open/floor/wood,
+/area/ranch)
 "vfM" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -58599,6 +58801,13 @@
 /obj/effect/turf_decal/trimline/blue/line,
 /turf/open/floor/plasteel/white,
 /area/medical/surgery)
+"vIQ" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/egg_incubator,
+/turf/open/floor/wood,
+/area/ranch)
 "vJf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -59554,6 +59763,11 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
+"wcC" = (
+/obj/effect/landmark/start/rancher,
+/mob/living/simple_animal/chicken/hen,
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "wcK" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Teleporter Maintenance"
@@ -59659,6 +59873,13 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/medical)
+"weg" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc/auto_name/west,
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "weP" = (
 /obj/machinery/atmospherics/pipe/simple/purple/visible,
 /turf/closed/wall/r_wall,
@@ -59992,6 +60213,12 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/lockerroom)
+"wmt" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "wmC" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced,
@@ -62347,6 +62574,18 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/engineering)
+"xmA" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "xmO" = (
 /obj/machinery/teleport/hub,
 /turf/open/floor/plasteel/dark,
@@ -64169,6 +64408,9 @@
 	},
 /turf/open/floor/plating,
 /area/medical/medbay/lobby)
+"xYp" = (
+/turf/open/floor/grass/astroturf,
+/area/ranch)
 "xYA" = (
 /obj/structure/cable/blue{
 	icon_state = "1-8"
@@ -98196,7 +98438,7 @@ fnk
 ofh
 ofh
 ofh
-ofh
+fIt
 ofh
 rtC
 kas
@@ -103861,14 +104103,14 @@ tvL
 dDR
 lTp
 dDR
-pMB
-pMB
-pMB
-pMB
+xYp
+ebz
+xYp
+xYp
 eWB
-pMB
-pMB
-eas
+kgE
+uNt
+aav
 nUE
 fQE
 fgD
@@ -104118,13 +104360,13 @@ dDR
 dDR
 dDR
 dDR
-pMB
+wmt
+xYp
+nke
+num
+xYp
+gsu
 lmQ
-pMB
-pMB
-pMB
-pMB
-pMB
 riM
 onj
 lIl
@@ -104371,17 +104613,17 @@ cVW
 sUe
 cVW
 dDR
-rWZ
-rWZ
-rWZ
-eas
+rNc
+jCY
+ppn
+weg
 ccF
+xmA
+qJD
 bHf
 bHf
-cSY
-bHf
-bHf
-bHf
+lER
+gHr
 dCj
 oxF
 pre
@@ -104628,13 +104870,13 @@ dDR
 dDR
 dDR
 dDR
-rWZ
-rWZ
-rWZ
-eas
-pMB
+lmQ
+lmQ
+deg
+jzO
+wmt
 fqF
-pMB
+cSY
 nxV
 oxT
 pVm
@@ -104884,18 +105126,18 @@ rWZ
 rWZ
 rWZ
 rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-eas
-pMB
-pMB
-pMB
-pMB
-pMB
+aav
+hAB
 lmQ
-pMB
+lmQ
+lmQ
+hIn
+lmQ
+lmQ
+lmQ
+lmQ
+lmQ
+lmQ
 riM
 nUE
 fQE
@@ -105141,18 +105383,18 @@ rWZ
 rWZ
 rWZ
 rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-eas
-pMB
-pMB
+aav
+gLg
 lmQ
+aXj
 pMB
+mqf
+lPJ
+mqf
 pMB
-pMB
-pMB
+mqf
+gsu
+lmQ
 vfL
 nUE
 fQE
@@ -105398,19 +105640,19 @@ rWZ
 rWZ
 rWZ
 rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-eas
-eas
-eas
-pMB
-pMB
-pMB
-pMB
-pMB
-vfL
+aav
+rNc
+dnf
+ppn
+xYp
+xYp
+mqr
+xYp
+wcC
+xYp
+vIQ
+siS
+tGw
 nUE
 hjC
 gUx
@@ -105655,16 +105897,16 @@ rWZ
 rWZ
 rWZ
 rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-epS
-rWZ
+aav
+aav
+aav
+aav
+aav
+aav
+kEa
+pXk
 eas
-eas
-eas
-eas
+xYp
 tnT
 tnT
 mYK
@@ -105916,12 +106158,12 @@ rWZ
 rWZ
 rWZ
 rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
+epS
+aav
+aav
+aav
+aav
+aav
 tnT
 bmL
 nUE
