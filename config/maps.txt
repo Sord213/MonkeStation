@@ -61,8 +61,8 @@ map donutstation
 	votable
 endmap
 
-map MonkeyDome
-	minplayers 40
+map monkedome
+	minplayers 20
 	votable
 endmap
 
