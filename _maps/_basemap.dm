@@ -1,4 +1,4 @@
-//#define LOWMEMORYMODE //uncomment this to load centcom and runtime station and thats it.
+#define LOWMEMORYMODE //uncomment this to load centcom and runtime station and thats it.
 
 #include "map_files\generic\CentCom.dmm"
 
@@ -13,6 +13,7 @@
 		#include "map_files\BoxStation\BoxStation.dmm"
 		#include "map_files\KiloStation\KiloStation.dmm"
 		#include "map_files\flandstation\flandstation.dmm"
+		#include "map_files\MonkeDome\MonkeDome.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"

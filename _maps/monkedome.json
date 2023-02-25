@@ -8,5 +8,6 @@
 		"ferry": "ferry_fancy",
 		"whiteship": "whiteship_meta",
 		"emergency": "emergency_monkedome"
-	}
+	},
+	"traits": [{"Up" : 1, "Baseturf" : "/turf/open/floor/plating/dirt/jungle/wasteland", "Gravity" : "1"}]
 }
