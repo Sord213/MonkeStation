@@ -215,6 +215,14 @@
 	if(ismineralturf(target_turf))
 		var/turf/closed/mineral/M = target_turf
 		M.gets_drilled(firer)
+
+	if(istype(target_turf,/turf/open/floor/plating/dirt/jungleland))
+		var/turf/open/floor/plating/dirt/jungleland/JG = target_turf
+		JG.spawn_rock()
+
+	if(istype(target,/obj/structure/flora))
+		qdel(target)
+
 	var/obj/effect/temp_visual/kinetic_blast/K = new /obj/effect/temp_visual/kinetic_blast(target_turf)
 	K.color = color
 

@@ -18,6 +18,12 @@ SUBSYSTEM_DEF(mapping)
 	var/list/lava_ruins_templates = list()
 	var/datum/space_level/isolated_ruins_z //Created on demand during ruin loading.
 
+	var/list/jungleland_proper_ruins_templates = list()
+	var/list/jungleland_dying_ruins_templates = list()
+	var/list/jungleland_swamp_ruins_templates = list()
+	var/list/jungleland_barren_ruins_templates = list()
+	var/list/jungleland_general_ruins_templates = list()
+
 	var/list/shuttle_templates = list()
 	var/list/shelter_templates = list()
 
@@ -84,6 +90,19 @@ SUBSYSTEM_DEF(mapping)
 	preloadTemplates()
 
 #ifndef LOWMEMORYMODE
+	//Pregenerate generic jungleland ruins that are biome-nonspecific
+	var/list/jungle_ruins = levels_by_trait(ZTRAIT_JUNGLE_RUINS)
+	//this is really fuckign hacky, but we need to have a very specific order for these things, and if jungleland isn't even being loaded then i dont fucking care.
+	if(jungle_ruins.len)
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/pregen), jungleland_general_ruins_templates, clear_below = TRUE)
+		run_map_generation()
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/proper), jungleland_proper_ruins_templates, clear_below = TRUE)
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/dying_forest), jungleland_dying_ruins_templates, clear_below = TRUE)
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/toxic_pit), jungleland_swamp_ruins_templates, clear_below = TRUE)
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/barren_rocks), jungleland_barren_ruins_templates, clear_below = TRUE)
+	else
+		run_map_generation()
+
 	// Create space ruin levels
 	while (space_levels_so_far < config.space_ruin_levels)
 		++space_levels_so_far
@@ -356,6 +375,8 @@ SUBSYSTEM_DEF(mapping)
 	// load mining
 	if(config.minetype == "lavaland")
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND, orbital_body_type = /datum/orbital_object/z_linked/lavaland)
+	else if(config.minetype == "jungleland")
+		LoadGroup(FailedZs, "Jungleland", "map_files/Mining", "Jungleland.dmm", default_traits = ZTRAITS_JUNGLELAND, orbital_body_type = null)
 	else if (!isnull(config.minetype))
 		INIT_ANNOUNCE("WARNING: An unknown minetype '[config.minetype]' was set! This is being ignored! Update the maploader code!")
 #endif

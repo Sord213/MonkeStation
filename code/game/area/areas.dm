@@ -585,7 +585,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 			for(var/obj/machinery/gravity_generator/main/G in GLOB.gravity_generators["[T.get_virtual_z_level()]"])
 				max_grav = max(G.setting,max_grav)
 			return max_grav
-	return SSmapping.level_trait(T.z, ZTRAIT_GRAVITY)
+	return text2num(SSmapping.level_trait(T.z, ZTRAIT_GRAVITY))
 /**
   * Setup an area (with the given name)
   *
