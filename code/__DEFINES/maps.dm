@@ -56,6 +56,7 @@ require only minor tweaks.
 #define ZTRAIT_LAVA_RUINS "Lava Ruins"
 #define ZTRAIT_POCKETDIM "Pocket Dimension"
 #define ZTRAIT_ISOLATED_RUINS "Isolated Ruins" //Placing ruins on z levels with this trait will use turf reservation instead of usual placement.
+#define ZTRAIT_SUNSHINE "Sunshine"
 
 /// number - bombcap is multiplied by this before being applied to bombs
 #define ZTRAIT_BOMBCAP_MULTIPLIER "Bombcap Multiplier"
@@ -96,6 +97,7 @@ require only minor tweaks.
 #define ZTRAITS_STATION list(ZTRAIT_LINKAGE = SELFLOOPING, ZTRAIT_STATION = TRUE)
 #define ZTRAITS_SPACE list(ZTRAIT_LINKAGE = SELFLOOPING, ZTRAIT_DYNAMIC_LEVEL = TRUE)
 #define ZTRAITS_LAVALAND list(\
+	ZTRAIT_SUNSHINE = TRUE, \
     ZTRAIT_MINING = TRUE, \
     ZTRAIT_LAVA_RUINS = TRUE, \
     ZTRAIT_BOMBCAP_MULTIPLIER = 2, \
@@ -161,3 +163,15 @@ require only minor tweaks.
 #define SHELTER_DEPLOY_BAD_AREA "bad area"
 /// Shelter spot has anchored objects that restrict deployment
 #define SHELTER_DEPLOY_ANCHORED_OBJECTS "anchored objects"
+
+// boolean - particle weather types that occur on the level
+#define PARTICLEWEATHER_RAIN "Weather_Rain"
+#define PARTICLEWEATHER_SNOW "Weather_Snow"
+#define PARTICLEWEATHER_DUST "Weather_Dust"
+#define PARTICLEWEATHER_RADS "Weather_Rads"
+#define PARTICLEWEATHER_LEAF "Weather_Leaf"
+#define PARTICLEWEATHER_ASH  "Weather Ash"
+
+#define LAVALAND_WEATHERS list(/datum/particle_weather/dust_storm,  \
+								/datum/particle_weather/radiation_storm, \
+								/datum/particle_weather/ash_storm)

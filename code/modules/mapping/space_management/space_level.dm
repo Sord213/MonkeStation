@@ -8,11 +8,16 @@
 	var/yi   //imaginary placements on the grid
 	//Is something generating on this level?
 	var/generating = FALSE
+	///list of all possible weather_effects this z can have
+	var/list/weather_effects
 
-/datum/space_level/New(new_z, new_name, list/new_traits = list(), orbital_body_type)
+/datum/space_level/New(new_z, new_name, list/new_traits = list(), orbital_body_type, new_weather_effects, sunshines)
 	z_value = new_z
 	name = new_name
 	traits = new_traits
+	weather_effects = new_weather_effects
+	if(sunshines)
+		SSoutdoor_effects.living_z_levels |= z_value
 	set_linkage(new_traits[ZTRAIT_LINKAGE])
 	if(orbital_body_type)
 		var/datum/orbital_object/z_linked/orbital_body = new orbital_body_type()

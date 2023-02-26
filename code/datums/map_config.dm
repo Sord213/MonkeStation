@@ -22,6 +22,9 @@
 	var/map_path = "map_files/BoxStation"
 	var/map_file = "BoxStation.dmm"
 
+	//List of particle_weather types for this map
+	var/particle_weather = list()
+
 	var/traits = null
 	var/space_ruin_levels = 4	//Keep this low, as new ones are created dynamically when needed.
 	var/space_empty_levels = 1
@@ -117,6 +120,12 @@
 	else if (!isnull(traits))
 		log_world("map_config traits is not a list!")
 		return
+
+	if ("particle_weather" in json)
+		if(!islist(json["particle_weather"]))
+			log_world("map_config \"particle_weather\" field is missing or invalid!")
+			return
+		particle_weather = json["particle_weather"]
 
 	var/temp = json["space_ruin_levels"]
 	if (isnum_safe(temp))

@@ -64,6 +64,8 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 
 	/// How accessible underfloor pieces such as wires, pipes, etc are on this turf. Can be HIDDEN, VISIBLE, or INTERACTABLE.
 	var/underfloor_accessibility = UNDERFLOOR_HIDDEN
+	///Bool, whether this turf will always be illuminated no matter what area it is in
+	var/always_lit = FALSE
 
 /turf/vv_edit_var(var_name, new_value)
 	var/static/list/banned_edits = list("x", "y", "z")
@@ -101,9 +103,8 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 	for(var/atom/movable/content as anything in src)
 		Entered(content, null)
 
-	var/area/A = loc
-	if(!IS_DYNAMIC_LIGHTING(src) && IS_DYNAMIC_LIGHTING(A))
-		add_overlay(/obj/effect/fullbright)
+	if(always_lit)
+		add_overlay(GLOB.fullbright_overlay)
 
 	if(requires_activation)
 		CALCULATE_ADJACENT_TURFS(src)
@@ -258,9 +259,11 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 
 /turf/proc/multiz_turf_del(turf/T, dir)
 	SEND_SIGNAL(src, COMSIG_TURF_MULTIZ_DEL, T, dir)
+	reconsider_sunlight()
 
 /turf/proc/multiz_turf_new(turf/T, dir)
 	SEND_SIGNAL(src, COMSIG_TURF_MULTIZ_NEW, T, dir)
+	reconsider_sunlight()
 
 /**
  * Check whether the specified turf is blocked by something dense inside it with respect to a specific atom.
