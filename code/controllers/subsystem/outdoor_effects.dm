@@ -21,7 +21,7 @@
  name = "Sunrise"
  color = "#F598AB"
  start = 5 HOURS  //5:00:00 AM
- signal_to_send = COMSIG_TIME_RUNRISE
+ signal_to_send = COMSIG_TIME_SUNRISE
 
 /datum/time_of_day/daytime
  name = "Daytime"
