@@ -250,17 +250,12 @@ SUBSYSTEM_DEF(mapping)
 		while (total_z > traits.len)  // fall back to defaults on extra levels
 			traits += list(default_traits)
 
-	var/sunny = FALSE
-	if(length(default_traits))
-		if(default_traits[ZTRAIT_SUNSHINE])
-			sunny = default_traits[ZTRAIT_SUNSHINE]
-
 	// preload the relevant space_level datums
 	var/start_z = world.maxz + 1
 	var/i = 0
 	var/list/datum/space_level/space_levels = list()
 	for (var/level in traits)
-		space_levels += add_new_zlevel("[name][i ? " [i + 1]" : ""]", level, sunshine = sunny)
+		space_levels += add_new_zlevel("[name][i ? " [i + 1]" : ""]", level)
 		++i
 	//Shared orbital body
 	var/datum/orbital_object/z_linked/orbital_body = new orbital_body_type()

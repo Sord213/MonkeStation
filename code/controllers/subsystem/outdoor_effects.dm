@@ -58,7 +58,6 @@ SUBSYSTEM_DEF(outdoor_effects)
 	var/list/mutable_appearance/sunlight_overlays
 	var/list/atom/movable/screen/plane_master/weather_effect/weather_planes_need_vis = list()
 	var/last_color = null
-	var/list/living_z_levels = list()
 	//Ensure midnight is the liast step
 	var/list/datum/time_of_day/time_cycle_steps = list(new /datum/time_of_day/dawn(),
 	                                                   new /datum/time_of_day/sunrise(),
@@ -166,14 +165,6 @@ SUBSYSTEM_DEF(outdoor_effects)
 	for (i in 1 to GLOB.SUNLIGHT_QUEUE_WORK.len)
 		var/turf/T = GLOB.SUNLIGHT_QUEUE_WORK[i]
 		if(T)
-			if(!(T.z in living_z_levels))
-				if(isspaceturf(T))
-					T.base_lighting_alpha = 255
-					T.base_lighting_color = "#FFFFFFF"
-				if (i)
-					GLOB.SUNLIGHT_QUEUE_WORK.Cut(1, i+1)
-					i = 0
-				continue
 			T.get_sky_and_weather_states()
 			if(T.outdoor_effect)
 				GLOB.SUNLIGHT_QUEUE_UPDATE += T.outdoor_effect
@@ -211,11 +202,6 @@ SUBSYSTEM_DEF(outdoor_effects)
 	for (i in 1 to GLOB.SUNLIGHT_QUEUE_CORNER.len)
 		var/turf/T = GLOB.SUNLIGHT_QUEUE_CORNER[i]
 		var/atom/movable/outdoor_effect/U = T.outdoor_effect
-		if(!(T.z in living_z_levels))
-			if (i)
-				GLOB.SUNLIGHT_QUEUE_CORNER.Cut(1, i+1)
-				i = 0
-			continue
 
 		/* if we haven't initialized but we are affected, create new and check state */
 		if(!U)
