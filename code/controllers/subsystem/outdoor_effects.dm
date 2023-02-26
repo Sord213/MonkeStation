@@ -58,7 +58,7 @@ SUBSYSTEM_DEF(outdoor_effects)
 	var/list/mutable_appearance/sunlight_overlays
 	var/list/atom/movable/screen/plane_master/weather_effect/weather_planes_need_vis = list()
 	var/last_color = null
-	//Ensure midnight is the liast step
+	//Ensure midnight is the last step
 	var/list/datum/time_of_day/time_cycle_steps = list(new /datum/time_of_day/dawn(),
 	                                                   new /datum/time_of_day/sunrise(),
 	                                                   new /datum/time_of_day/daytime(),
