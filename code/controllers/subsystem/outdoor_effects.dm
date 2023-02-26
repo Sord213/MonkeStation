@@ -168,10 +168,8 @@ SUBSYSTEM_DEF(outdoor_effects)
 		if(T)
 			if(!(T.z in living_z_levels))
 				if(isspaceturf(T))
-					for(var/area/space/space_area in T.loc)
-						if(!space_area.base_lighting_color)
-							space_area.base_lighting_color = "#FFFFFFF"
-							space_area.area_has_base_lighting = TRUE
+					T.base_lighting_alpha = 255
+					T.base_lighting_color = "#FFFFFFF"
 				if (i)
 					GLOB.SUNLIGHT_QUEUE_WORK.Cut(1, i+1)
 					i = 0
