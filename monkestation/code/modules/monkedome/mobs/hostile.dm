@@ -116,8 +116,7 @@
 	health = 100
 	spacewalk = TRUE
 
-	melee_damage_lower = 10
-	melee_damage_upper = 15
+	melee_damage = 15
 
 	rapid_melee = 3
 
@@ -183,8 +182,7 @@
 	maxHealth = 320
 	health = 320
 	spacewalk = TRUE
-	melee_damage_lower = 30
-	melee_damage_upper = 55 // ouch
+	melee_damage = 45
 	rapid_melee = 2
 	butcher_results = list(/obj/item/stack/sheet/skin_twister = 2)
 	alpha_damage_boost = 0 // 30-55 damage is too much to be boosts by 50%
@@ -302,8 +300,7 @@
 	health = 100
 	spacewalk = TRUE
 	loot  = list(/obj/item/stack/sheet/slime)
-	melee_damage_lower = 4
-	melee_damage_upper = 6
+	melee_damage = 5
 
 	alpha_type = /mob/living/simple_animal/hostile/jungleland/alpha_blobby
 
@@ -313,8 +310,7 @@
 /mob/living/simple_animal/hostile/jungleland/blobby/Initialize(mapload,spawned_size = 4)
 	. = ..()
 	current_size = spawned_size > 0 ? spawned_size : current_size
-	melee_damage_lower = melee_damage_lower * current_size
-	melee_damage_upper = melee_damage_upper * current_size
+	melee_damage = melee_damage * current_size
 	var/matrix/M = new
 	M.Scale(current_size/2)
 	transform = M
@@ -357,8 +353,7 @@
 	maxHealth = 60
 	health = 60
 	spacewalk = TRUE
-	melee_damage_lower = 10
-	melee_damage_upper = 40
+	melee_damage = 20
 
 	var/can_charge = TRUE
 	var/cooldown = 15 SECONDS
@@ -402,8 +397,7 @@
 		humie.ForceContractDisease(infection,FALSE,TRUE)
 	has_blood = TRUE
 	rapid_melee = TRUE
-	melee_damage_lower = 30
-	melee_damage_upper = 50
+	melee_damage = 40
 	icon_state = "mosquito_blood"
 	animate(src,color = initial(color),time = charge_ramp_up*2)
 
@@ -486,8 +480,7 @@
 	maxHealth = 160
 	health = 160
 	environment_smash = ENVIRONMENT_SMASH_NONE //held off by walls and windows, stupid oversized bee
-	melee_damage_lower = 10  //not that lethal, but it'll catch up to you easily
-	melee_damage_upper = 10
+	melee_damage = 10
 	attacktext = "stings"
 	attack_sound = 'sound/voice/moth/scream_moth.ogg'
 	deathmessage = "rolls over, falling to the ground."
@@ -565,8 +558,7 @@
 	move_to_delay = 12
 	speed = 3
 	ranged = 1
-	melee_damage_lower = 13
-	melee_damage_upper = 16
+	melee_damage = 14
 	stat_attack = 1
 	robust_searching = 1
 	see_in_dark = 7
@@ -661,18 +653,15 @@
 	icon_state = "tar_faithless"
 	health = 200
 	maxHealth = 200
-	melee_damage_lower = 25
-	melee_damage_upper = 30
+	melee_damage = 25
 
 /mob/living/simple_animal/hostile/tar/amalgamation/AttackingTarget()
 	if(isliving(target))
 		var/mob/living/L = target
 		if(L.has_status_effect(/datum/status_effect/tar_curse))
-			melee_damage_lower = initial(melee_damage_lower) * 1.5
-			melee_damage_upper = initial(melee_damage_upper) * 1.5
+			melee_damage = initial(melee_damage) * 1.5
 		else
-			melee_damage_lower = initial(melee_damage_lower)
-			melee_damage_upper = initial(melee_damage_upper)
+			melee_damage = initial(melee_damage)
 	return ..()
 
 /mob/living/simple_animal/hostile/tar/dryad

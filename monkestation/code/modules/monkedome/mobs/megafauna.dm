@@ -18,8 +18,7 @@
 	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
 	light_color = "#dd35d5"
 	a_intent = INTENT_HARM
-	melee_damage_lower = 25
-	melee_damage_upper = 50
+	melee_damage = 45
 	movement_type = GROUND
 	ranged = TRUE
 	speak_emote = list("roars")

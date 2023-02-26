@@ -21,8 +21,7 @@
 	health = 300
 	spacewalk = TRUE
 	crusher_loot = /obj/item/crusher_trophy/jungleland/meduracha_tentacles
-	melee_damage_lower = 20
-	melee_damage_upper = 25
+	melee_damage = 20
 	ranged = TRUE
 	ranged_cooldown = 5 SECONDS
 	projectiletype = /obj/item/projectile/jungle/meduracha_spit
@@ -106,8 +105,7 @@
 	pixel_y = -16
 	move_to_delay = 5
 	loot  = list(/obj/item/stack/sheet/slime = 10)
-	melee_damage_lower = 30
-	melee_damage_upper = 40
+	melee_damage = 30
 	crusher_loot = /obj/item/crusher_trophy/jungleland/blob_brain
 	var/stage = 1
 

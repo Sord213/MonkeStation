@@ -128,6 +128,7 @@
 	var/turf/T = get_turf(src)
 	for(var/mob/living/L in T.contents)
 		L.apply_status_effect(/datum/status_effect/tar_curse)
+		L.take_overall_damage(0, 0, 10)
 	return ..()
 /obj/effect/timed_attack/tar_priest/shroud
 	replace_icon_state = "tar_shade_shroud"
@@ -369,8 +370,7 @@ GLOBAL_LIST_INIT(nests, list())
 		monster.health = monster.maxHealth * 1.5
 		monster.move_to_delay = max(monster.move_to_delay / 2, 1)
 		if(monster.alpha_damage_boost == 1) //mobs with really high damage amounts may be exempt from giant damage boosts
-			monster.melee_damage_lower *= 1.5
-			monster.melee_damage_upper *= 1.5
+			monster.melee_damage *= 1.5
 		monster.faction = list("mining")
 		var/matrix/M = matrix()
 		M.Scale(1.5,1.5)
