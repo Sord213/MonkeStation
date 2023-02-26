@@ -654,9 +654,6 @@
 	set category = "IC"
 	set src = usr
 
-	return ..()
-
-/mob/living/silicon/robot/execute_mode()
 	if(incapacitated())
 		return
 	var/obj/item/W = get_active_held_item()
