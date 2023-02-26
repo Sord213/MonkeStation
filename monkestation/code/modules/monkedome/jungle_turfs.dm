@@ -34,6 +34,7 @@ Temperature: 126.85 °C (400 K)
 	requires_power = TRUE
 	outdoors = TRUE
 	static_lighting = TRUE
+	base_lighting_alpha = 255
 
 /area/jungleland/explored
 	name = "Explored Jungle"
