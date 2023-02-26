@@ -326,7 +326,7 @@
 	. = ..()
 	RegisterSignal(user,COMSIG_MOB_CLICKON, .proc/sling)
 	for(var/i in 1 to 3)
-		if(do_after(user,2.5 SECONDS, user))
+		if(do_after(user,2.5 SECONDS, target = user))
 			state++
 			icon_state = "slime_sling_[state]"
 		else
