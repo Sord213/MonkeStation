@@ -1,19 +1,24 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ar" = (
+/obj/effect/edge_transition/station,
+/obj/effect/edge_transition/station,
+/turf/open/floor/plating/dirt/jungleland/dry_swamp1,
+/area/jungleland/explored)
 "be" = (
 /turf/open/floor/plating/dirt/jungleland/dry_swamp,
 /area/jungleland/explored)
 "di" = (
 /obj/structure/herb/liberal_hats,
 /obj/structure/herb/liberal_hats,
-/obj/effect/edge_transition/jungle,
+/obj/effect/edge_transition/station,
 /turf/open/floor/plating/dirt/jungleland/dry_swamp1,
 /area/jungleland/explored)
 "eI" = (
-/obj/effect/edge_transition/jungle,
+/obj/effect/edge_transition/station,
 /turf/open/floor/plating/dirt/jungleland/dry_swamp,
 /area/jungleland/explored)
 "gI" = (
-/obj/effect/edge_transition/jungle,
+/obj/effect/edge_transition/station,
 /turf/open/floor/plating/dirt/jungleland/dry_swamp1,
 /area/jungleland/explored)
 "jP" = (
@@ -22,7 +27,7 @@
 /area/jungleland/explored)
 "mx" = (
 /obj/structure/flora/junglebush/large,
-/obj/effect/edge_transition/jungle,
+/obj/effect/edge_transition/station,
 /turf/open/floor/plating/dirt/jungleland/dry_swamp,
 /area/jungleland/explored)
 "vR" = (
@@ -36,7 +41,7 @@
 "Au" = (
 /obj/structure/flora/junglebush/large,
 /obj/structure/flora/junglebush,
-/obj/effect/edge_transition/jungle,
+/obj/effect/edge_transition/station,
 /turf/open/floor/plating/dirt/jungleland/dry_swamp1,
 /area/jungleland/explored)
 "Aw" = (
@@ -45,13 +50,13 @@
 /area/jungleland/explored)
 "AL" = (
 /obj/structure/herb/liberal_hats,
-/obj/effect/edge_transition/jungle,
+/obj/effect/edge_transition/station,
 /turf/open/floor/plating/dirt/jungleland/dry_swamp1,
 /area/jungleland/explored)
 "CS" = (
 /obj/structure/flora/junglebush,
 /obj/structure/flora/junglebush,
-/obj/effect/edge_transition/jungle,
+/obj/effect/edge_transition/station,
 /turf/open/floor/plating/dirt/jungleland/dry_swamp1,
 /area/jungleland/explored)
 "Dd" = (
@@ -59,7 +64,7 @@
 /area/jungleland/explored)
 "Ia" = (
 /obj/structure/flora/tree/jungle,
-/obj/effect/edge_transition/jungle,
+/obj/effect/edge_transition/station,
 /turf/open/floor/plating/dirt/jungleland/dry_swamp1,
 /area/jungleland/explored)
 "NV" = (
@@ -9075,7 +9080,7 @@ ZX
 ZX
 ZX
 Dd
-gI
+ar
 "}
 (36,1,1) = {"
 UW

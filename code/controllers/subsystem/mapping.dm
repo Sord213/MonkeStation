@@ -94,12 +94,12 @@ SUBSYSTEM_DEF(mapping)
 	var/list/jungle_ruins = levels_by_trait(ZTRAIT_JUNGLE_RUINS)
 	//this is really fuckign hacky, but we need to have a very specific order for these things, and if jungleland isn't even being loaded then i dont fucking care.
 	if(jungle_ruins.len)
-		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/pregen), jungleland_general_ruins_templates, clear_below = TRUE)
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/pregen), jungleland_general_ruins_templates)
 		run_map_generation()
-		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/proper), jungleland_proper_ruins_templates, clear_below = TRUE)
-		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/dying_forest), jungleland_dying_ruins_templates, clear_below = TRUE)
-		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/toxic_pit), jungleland_swamp_ruins_templates, clear_below = TRUE)
-		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/barren_rocks), jungleland_barren_ruins_templates, clear_below = TRUE)
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/proper), jungleland_proper_ruins_templates)
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/dying_forest), jungleland_dying_ruins_templates)
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/toxic_pit), jungleland_swamp_ruins_templates)
+		seedRuins(jungle_ruins, CONFIG_GET(number/jungleland_budget), list(/area/jungleland/barren_rocks), jungleland_barren_ruins_templates)
 	else
 		run_map_generation()
 
@@ -376,7 +376,7 @@ SUBSYSTEM_DEF(mapping)
 	if(config.minetype == "lavaland")
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND, orbital_body_type = /datum/orbital_object/z_linked/lavaland)
 	else if(config.minetype == "jungleland")
-		LoadGroup(FailedZs, "Jungleland", "map_files/Mining", "Jungleland.dmm", default_traits = ZTRAITS_JUNGLELAND, orbital_body_type = null)
+		LoadGroup(FailedZs, "Jungleland", "map_files/Mining", "Jungleland.dmm", default_traits = ZTRAITS_JUNGLELAND, orbital_body_type = /datum/orbital_object/z_linked/jungleland)
 	else if (!isnull(config.minetype))
 		INIT_ANNOUNCE("WARNING: An unknown minetype '[config.minetype]' was set! This is being ignored! Update the maploader code!")
 #endif
@@ -467,13 +467,26 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 	if (. && VM.map_name != config.map_name)
 		to_chat(world, "<span class='boldannounce'>Map rotation has chosen [VM.map_name] for next round!</span>")
 
-/datum/controller/subsystem/mapping/proc/changemap(datum/map_config/VM)
-	if(!VM.MakeNextMap())
-		next_map_config = load_map_config(default_to_box = TRUE)
-		message_admins("Failed to set new map with next_map.json for [VM.map_name]! Using default as backup!")
+/**
+ * Proc that simply loads the default map config, which should always be functional.
+ */
+/proc/load_default_map_config()
+	return new /datum/map_config
+
+/datum/controller/subsystem/mapping/proc/changemap(datum/map_config/change_to)
+	if(!change_to.MakeNextMap())
+		next_map_config = load_default_map_config()
+		message_admins("Failed to set new map with next_map.json for [change_to.map_name]! Using default as backup!")
 		return
 
-	next_map_config = VM
+	if (change_to.config_min_users > 0 && GLOB.clients.len < change_to.config_min_users)
+		message_admins("[change_to.map_name] was chosen for the next map, despite there being less current players than its set minimum population range!")
+		log_game("[change_to.map_name] was chosen for the next map, despite there being less current players than its set minimum population range!")
+	if (change_to.config_max_users > 0 && GLOB.clients.len > change_to.config_max_users)
+		message_admins("[change_to.map_name] was chosen for the next map, despite there being more current players than its set maximum population range!")
+		log_game("[change_to.map_name] was chosen for the next map, despite there being more current players than its set maximum population range!")
+
+	next_map_config = change_to
 	return TRUE
 
 /datum/controller/subsystem/mapping/proc/preloadTemplates() //see master controller setup

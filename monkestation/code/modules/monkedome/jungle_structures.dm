@@ -421,14 +421,22 @@ GLOBAL_LIST_INIT(nests, list())
 /obj/effect/edge_transition/Initialize(mapload)
 	. = ..()
 	if(z_transport)
-		RegisterSignal(src, COMSIG_ATOM_ENTERED, .proc/on_entered)
+		RegisterSignal(get_turf(src), COMSIG_ATOM_ENTERED, .proc/on_entered)
+		RegisterSignal(get_turf(src), COMSIG_GHOST_ENTERED, .proc/on_entered)
 
 /obj/effect/edge_transition/proc/on_entered(datum/source, atom/movable/arrived)
+	SIGNAL_HANDLER
+	if(istype(arrived, src))
+		return
+
+	if(arrived.anchored)
+		return
+
 	var/relative_y = world.maxy - src.y
 	if(relative_y == 0)
-		relative_y++
+		relative_y = 2
 	else if(relative_y == world.maxy)
-		relative_y--
+		relative_y = world.maxy - 1
 	var/turf/destination_turf = locate(src.x, relative_y, z_transport)
 	do_teleport(arrived, destination_turf,null,null,null,null,null,TRUE)
 
@@ -437,3 +445,8 @@ GLOBAL_LIST_INIT(nests, list())
 		z_transport = z
 	. = ..()
 
+
+/obj/effect/edge_transition/station/Initialize(mapload)
+	for(var/z in SSmapping.levels_by_trait(ZTRAIT_STATION))
+		z_transport = z
+	. = ..()

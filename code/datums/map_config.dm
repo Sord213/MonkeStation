@@ -1,3 +1,6 @@
+/// Path for the next_map.json file, if someone, for some messed up reason, wants to change it.
+#define PATH_TO_NEXT_MAP_JSON "data/next_map.json"
+
 //used for holding information about unique properties of maps
 //feed it json files that match the datum layout
 //defaults to box
@@ -132,7 +135,7 @@
 	if ("minetype" in json)
 		minetype = json["minetype"]
 
-	if("map_link" in json)						
+	if("map_link" in json)
 		map_link = json["map_link"]
 	else
 		log_world("map_link missing from json!")
@@ -158,4 +161,4 @@
 	return votable && below_max && above_min
 
 /datum/map_config/proc/MakeNextMap()
-	return config_filename == "data/next_map.json" || fcopy(config_filename, "data/next_map.json")
+	return config_filename == PATH_TO_NEXT_MAP_JSON || fcopy(config_filename, PATH_TO_NEXT_MAP_JSON)
