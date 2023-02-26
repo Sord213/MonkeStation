@@ -367,8 +367,8 @@
 
 /mob/living/simple_animal/hostile/jungleland/mosquito/Initialize()
 	. = ..()
-	///the day night system is too big for this pr leaving out
-	//RegisterSignal(SSdcs,COMSIG_GLOB_JUNGLELAND_DAYNIGHT_NEXT_PHASE,.proc/react_to_daynight_change)
+	RegisterSignal(SSdcs,COMSIG_TIME_SUNSET,.proc/night_start)
+	RegisterSignal(SSdcs,COMSIG_TIME_DAWN, .proc/day_start)
 
 /mob/living/simple_animal/hostile/jungleland/mosquito/Aggro()
 	. = ..()
@@ -445,19 +445,21 @@
 /mob/living/simple_animal/hostile/jungleland/mosquito/proc/get_charge()
 	return can_charge
 
-/mob/living/simple_animal/hostile/jungleland/mosquito/proc/react_to_daynight_change(updates,luminosity)
+/mob/living/simple_animal/hostile/jungleland/mosquito/proc/night_start()
 	if(stat == DEAD)
 		return
-
-	if(luminosity > 0.6 && awoke && !target)
-		toggle_ai(AI_OFF)
-		awoke = FALSE
-		icon_state = "mosquito_sleeping"
-
-	if(luminosity <= 0.6 && !awoke)
+	if(!awoke)
 		toggle_ai(AI_ON)
 		awoke = TRUE
 		icon_state = has_blood ? "mosquito_blood" : icon_living
+
+/mob/living/simple_animal/hostile/jungleland/mosquito/proc/day_start()
+	if(stat == DEAD)
+		return
+	if(awoke && !target)
+		toggle_ai(AI_OFF)
+		awoke = FALSE
+		icon_state = "mosquito_sleeping"
 
 //jungle version of the wasp. Slightly weaker and faster, with different loot. Renamed to avoid confusion. Credit to original creator.
 /mob/living/simple_animal/hostile/jungleland/yellowjacket

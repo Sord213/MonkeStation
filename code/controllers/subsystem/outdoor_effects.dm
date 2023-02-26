@@ -3,6 +3,7 @@
 	var/name = ""
 	var/color = ""
 	var/start = 216000 // 6:00 am
+	var/signal_to_send = COMSIG_TIME_CHANGE
 
 
 // /datum/time_of_day/Midnight_am
@@ -14,31 +15,37 @@
  name = "Dawn"
  color = "#31211b"
  start = 4 HOURS //4:00:00 AM
+ signal_to_send = COMSIG_TIME_DAWN
 
 /datum/time_of_day/sunrise
  name = "Sunrise"
  color = "#F598AB"
  start = 5 HOURS  //5:00:00 AM
+ signal_to_send = COMSIG_TIME_RUNRISE
 
 /datum/time_of_day/daytime
  name = "Daytime"
  color = "#f5e798"
  start = 5.5 HOURS //5:30:00 AM
+ signal_to_send = COMSIG_TIME_DAYTIME
 
 /datum/time_of_day/sunset
  name = "Sunset"
  color = "#ff8a63"
  start = 19 HOURS //7:00:00 PM
+ signal_to_send = COMSIG_TIME_SUNSET
 
 /datum/time_of_day/dusk
  name = "Dusk"
  color = "#221f33"
  start = 19.5 HOURS //7:30:00 PM
+ signal_to_send = COMSIG_TIME_DUSK
 
 /datum/time_of_day/midnight
  name = "Midnight"
  color = "#000032"
  start = 20 HOURS //8:00:00 PM
+ signal_to_send = COMSIG_TIME_MIDNIGHT
 
 
 GLOBAL_VAR_INIT(GLOBAL_LIGHT_RANGE, 5)
@@ -135,6 +142,7 @@ SUBSYSTEM_DEF(outdoor_effects)
 		next_step_datum = time_cycle_steps[1]
 
 	current_step_datum = new_step
+	SEND_SIGNAL(SSdcs, current_step_datum.signal_to_send)
 
 	//If it is round-start, we wouldn't have had a current_step_datum, so set our last_color to the current one
 	if(!last_color)
