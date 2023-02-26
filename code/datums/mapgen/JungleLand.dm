@@ -51,6 +51,11 @@
 		)
 
 	var/list/ore_preferences = list(
+		ORE_EMPTY = list(
+			WORLEY_REG_SIZE = 15,
+			WORLEY_THRESHOLD = 5.5,
+			WORLEY_NODE_PER_REG = 400),
+
 		ORE_IRON = list(
 			WORLEY_REG_SIZE = 10,
 			WORLEY_THRESHOLD = 3,
@@ -153,9 +158,16 @@
 										"[ore_preferences[ORE_IRON][WORLEY_NODE_PER_REG]]",
 										"[world.maxx]",
 										"1",
+										"2"),
+		ORE_EMPTY  = rustg_worley_generate("[ore_preferences[ORE_EMPTY][WORLEY_REG_SIZE]]",
+										"[ore_preferences[ORE_EMPTY][WORLEY_THRESHOLD]]",
+										"[ore_preferences[ORE_EMPTY][WORLEY_NODE_PER_REG]]",
+										"[world.maxx]",
+										"1",
 										"2"))
 	//order of generation, ordered from rarest to most common
 	var/list/generation_queue = list(
+		ORE_EMPTY,
 		ORE_IRON,
 		ORE_SILVER,
 		ORE_TITANIUM,
