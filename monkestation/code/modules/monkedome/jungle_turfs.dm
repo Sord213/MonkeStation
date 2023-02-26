@@ -14,7 +14,6 @@ Temperature: 126.85 °C (400 K)
 	icon = 'monkestation/icons/turf/floors/jungle.dmi'
 	icon_state = "pregen"
 	map_generator = /datum/map_generator/jungleland
-	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	has_gravity = TRUE
 
 /area/pregen/station
@@ -22,12 +21,10 @@ Temperature: 126.85 °C (400 K)
 	icon = 'monkestation/icons/turf/floors/jungle.dmi'
 	icon_state = "pregen"
 	map_generator = /datum/map_generator/junglestation
-	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	has_gravity = TRUE
 
 /area/jungleland
 	name = "Jungleland"
-	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	outdoors = TRUE
 	has_gravity = TRUE
 	always_unpowered = TRUE
