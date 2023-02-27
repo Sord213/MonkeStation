@@ -206,7 +206,7 @@
 
 /obj/structure/herb/attack_hand(mob/user)
 	. = ..()
-	if(!do_after(user,10 SECONDS,src))
+	if(!do_after(user,5 SECONDS, target = src))
 		return
 
 	for(var/i in 1 to picked_amt)

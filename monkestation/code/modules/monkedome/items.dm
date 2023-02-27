@@ -226,7 +226,7 @@
 /obj/item/clothing/neck/skin_twister
 	name = "skin-twister cloak"
 	desc = "Cloak made out of skin of the elusive skin-twister, when worn over head it makes you invisible to the smaller fauna of the jungle."
-	icon = 'monkestation/icons/mob/clothing/neck/neck.dmi'
+	icon = 'monkestation/icons/obj/clothing/neck.dmi'
 	icon_state = "skin_twister_cloak_0"
 	item_state = "skin_twister_cloak_0"
 
@@ -356,7 +356,7 @@
 	state = 0
 	icon_state = "slime_sling_0"
 
-/obj/item/clothing/head/yogs/tar_king_crown
+/obj/item/clothing/head/tar_king_crown
 	name = "Crown of the Tar King"
 	desc = "And old and withered crown made out of bone of unknown origin, there is a vibrant pinkish crystal embedded in it, it is warm to the touch..."
 	icon = 'monkestation/icons/obj/jungle.dmi'
@@ -368,11 +368,11 @@
 	var/next_spawn = 0
 	var/next_teleport = 0
 
-/obj/item/clothing/head/yogs/tar_king_crown/Destroy()
+/obj/item/clothing/head/tar_king_crown/Destroy()
 	QDEL_LIST_ASSOC_VAL(current_tar_shrines)
 	return ..()
 
-/obj/item/clothing/head/yogs/tar_king_crown/item_action_slot_check(slot, mob/user)
+/obj/item/clothing/head/tar_king_crown/item_action_slot_check(slot, mob/user)
 	if(slot == ITEM_SLOT_HEAD)
 		return TRUE
 	return FALSE
