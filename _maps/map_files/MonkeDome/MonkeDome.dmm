@@ -5175,9 +5175,8 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 1
 	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = 24
 	},
 /turf/open/floor/plasteel,
 /area/science/research)
@@ -9401,6 +9400,14 @@
 /obj/machinery/portable_atmospherics/canister,
 /turf/open/floor/plasteel,
 /area/science/mixing)
+"dlU" = (
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "dlZ" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -12285,9 +12292,8 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 1;
-	pixel_y = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = -22
 	},
 /turf/open/floor/plating,
 /area/quartermaster/exploration_dock)
@@ -14254,9 +14260,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
 	},
 /turf/open/floor/plating,
 /area/maintenance/monkedome/comsec/aft)
@@ -14660,26 +14665,6 @@
 "fbR" = (
 /turf/open/floor/plating/outdoors,
 /area/jungleland/explored)
-"fbT" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 8
-	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 1;
-	pixel_y = -24
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/warning,
-/turf/open/floor/plasteel,
-/area/hallway/monkedome/civilian/fore)
 "fco" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -14927,9 +14912,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/on/layer2,
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
 	},
 /turf/open/floor/plating,
 /area/maintenance/solars/monkedome/southprimary)
@@ -16421,9 +16405,8 @@
 "fKM" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
 	},
 /turf/open/floor/plating,
 /area/maintenance/monkedome/engine/port)
@@ -16806,9 +16789,6 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller{
-	pixel_y = 24
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -16816,6 +16796,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning,
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = 25
+	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/fore)
 "fSh" = (
@@ -19621,18 +19604,6 @@
 "gUk" = (
 /turf/open/floor/engine,
 /area/engine/engineering)
-"gUq" = (
-/obj/effect/turf_decal/trimline/dark_green/filled/warning{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/on/layer2,
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
-	},
-/turf/open/floor/plasteel,
-/area/hydroponics)
 "gUr" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
 /obj/effect/turf_decal/tile/piss_yellow,
@@ -22103,6 +22074,14 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/maintenance/monkedome/civilian/starboard)
+"hOS" = (
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel,
+/area/science/monkedome/xenobiohall)
 "hPa" = (
 /obj/structure/rack,
 /obj/item/storage/box/bodybags,
@@ -22352,9 +22331,8 @@
 "hSN" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller{
-	dir = 8;
-	pixel_x = 24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
 	},
 /turf/open/floor/plasteel,
 /area/science/monkedome/xenobiohall)
@@ -22914,6 +22892,16 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/science)
+"icm" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
+	dir = 1
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
+	},
+/turf/open/floor/plasteel,
+/area/science/research)
 "icJ" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -25657,8 +25645,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/on/layer2,
-/obj/machinery/advanced_airlock_controller{
-	dir = 8;
+/obj/machinery/advanced_airlock_controller/jungleland{
 	pixel_x = 24
 	},
 /turf/open/floor/plasteel,
@@ -25768,17 +25755,6 @@
 	},
 /turf/open/floor/carpet/blue,
 /area/crew_quarters/heads/hop)
-"jdR" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 1
-	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 8;
-	pixel_x = 24
-	},
-/turf/open/floor/plasteel,
-/area/science/research)
 "jea" = (
 /obj/effect/turf_decal/tile/red/tile_side{
 	dir = 1
@@ -26283,9 +26259,8 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -30418,15 +30393,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
-	},
 /obj/effect/turf_decal/trimline/darkblue/filled/warning{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/darkblue/filled/warning{
 	dir = 4
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = 24
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/port)
@@ -32005,15 +31979,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/maintenance/monkedome/ls/civ/medlifesupport)
-"loJ" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller{
-	dir = 8;
-	pixel_x = 24
-	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
 "loL" = (
 /obj/effect/turf_decal/tile/blue/tile_side{
 	dir = 8
@@ -33675,6 +33640,25 @@
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/plasteel/white,
 /area/medical/apothecary)
+"lTj" = (
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/warning,
+/obj/effect/turf_decal/trimline/yellow/filled/warning{
+	dir = 1
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = 25
+	},
+/turf/open/floor/plasteel,
+/area/hallway/monkedome/engineering)
 "lTn" = (
 /obj/machinery/door/airlock/medical/glass{
 	name = "Ranch";
@@ -33770,9 +33754,8 @@
 "lUU" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = 24
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -35959,6 +35942,23 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/atmos)
+"mJA" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/warning{
+	dir = 8
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel,
+/area/hallway/monkedome/science)
 "mJH" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -40601,6 +40601,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/courtroom)
+"ops" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/warning{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/on/layer2,
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
+	},
+/turf/open/floor/plasteel,
+/area/hydroponics)
 "opC" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -41475,26 +41486,6 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
 /area/maintenance/monkedome/engine/port)
-"oGD" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 1;
-	pixel_y = -24
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/warning,
-/obj/effect/turf_decal/trimline/yellow/filled/warning{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/hallway/monkedome/engineering)
 "oGL" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
@@ -43186,15 +43177,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/advanced_airlock_controller{
-	pixel_y = 24
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning,
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
 	dir = 1
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = -22
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/engineering)
@@ -45744,14 +45735,14 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/caution/stand_clear,
-/obj/machinery/advanced_airlock_controller{
-	pixel_y = 26
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 4
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = 25
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/escape)
@@ -47596,6 +47587,23 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/monkedome/xenobiohall)
+"qIu" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/trimline/darkblue/filled/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/darkblue/filled/warning{
+	dir = 4
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
+	},
+/turf/open/floor/plasteel,
+/area/hallway/monkedome/civilian/port)
 "qIC" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
@@ -47614,15 +47622,14 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 1
 	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
-	},
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning{
 	dir = 8
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/port)
@@ -48852,14 +48859,14 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/caution/stand_clear,
-/obj/machinery/advanced_airlock_controller{
-	pixel_y = 26
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 4
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = 25
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
@@ -49781,9 +49788,8 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 1;
-	pixel_y = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = -22
 	},
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 1
@@ -54317,8 +54323,7 @@
 "sZH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/advanced_airlock_controller{
-	dir = 8;
+/obj/machinery/advanced_airlock_controller/jungleland{
 	pixel_x = 24
 	},
 /turf/open/floor/plating,
@@ -56917,6 +56922,25 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/central)
+"tOY" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/yellow/filled/warning,
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = -22
+	},
+/turf/open/floor/plasteel,
+/area/hallway/monkedome/civilian/fore)
 "tPh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
@@ -57504,24 +57528,6 @@
 /obj/effect/spawner/lootdrop/techstorage/command,
 /turf/open/floor/plasteel/dark,
 /area/storage/tech)
-"tZb" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
-	},
-/obj/effect/turf_decal/trimline/dark_purple/filled/warning{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/dark_purple/filled/warning{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/hallway/monkedome/science)
 "tZf" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Warehouse Maintenance"
@@ -57575,15 +57581,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 8;
-	pixel_x = 24
-	},
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning{
 	dir = 8
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/science)
@@ -58544,11 +58549,11 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller{
-	pixel_y = 24
-	},
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 8
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = 25
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -60525,6 +60530,25 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/genetics)
+"uYZ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 2
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/caution/stand_clear,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
+	dir = 4
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = -22
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/exit/departure_lounge)
 "uZd" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible,
 /turf/open/floor/plasteel,
@@ -63188,17 +63212,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/monkedome/science/port)
-"vUE" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller{
-	dir = 8;
-	pixel_x = 24
-	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
 "vUP" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -65230,15 +65243,15 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller{
-	pixel_y = 24
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/trimline/darkblue/filled/warning,
 /obj/effect/turf_decal/trimline/darkblue/filled/warning{
 	dir = 1
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = 25
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/aft)
@@ -66149,9 +66162,8 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = 24
 	},
 /turf/open/floor/plasteel,
 /area/engine/monkedome/upperairlock)
@@ -66533,24 +66545,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/dark,
 /area/science/server)
-"xjA" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 8;
-	pixel_x = 24
-	},
-/obj/effect/turf_decal/trimline/darkblue/filled/warning{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/darkblue/filled/warning{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/hallway/monkedome/civilian/port)
 "xjF" = (
 /obj/effect/landmark/blobstart,
 /turf/open/floor/plating,
@@ -67097,16 +67091,15 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 1;
-	pixel_y = -24
-	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/trimline/red/filled/warning,
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 1
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = -22
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/aft)
@@ -67638,6 +67631,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/central)
+"xCU" = (
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "xDa" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -68313,8 +68316,8 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/advanced_airlock_controller{
-	pixel_y = 24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/trimline/darkblue/filled/warning,
 /obj/effect/turf_decal/trimline/darkblue/filled/warning{
@@ -69170,15 +69173,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/main)
-"yhb" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
-	},
-/turf/open/floor/plasteel,
-/area/science/monkedome/xenobiohall)
 "yho" = (
 /obj/effect/turf_decal/trimline/darkblue/line{
 	dir = 1
@@ -69242,15 +69236,14 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/advanced_airlock_controller{
-	dir = 8;
-	pixel_x = 24
-	},
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning{
 	dir = 8
+	},
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = 24
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/port)
@@ -69444,9 +69437,8 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller{
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/advanced_airlock_controller/jungleland{
+	pixel_x = -26
 	},
 /turf/open/floor/plasteel,
 /area/engine/monkedome/upperairlock)
@@ -91758,7 +91750,7 @@ xOc
 vrl
 aCh
 hVs
-loJ
+lUU
 qWl
 rWZ
 rWZ
@@ -91768,7 +91760,7 @@ rWZ
 rWZ
 rWZ
 fcz
-vUE
+xCU
 pln
 ujY
 czD
@@ -93557,7 +93549,7 @@ xOc
 vrl
 mqH
 hVs
-lUU
+dlU
 qWl
 rWZ
 rWZ
@@ -93789,11 +93781,11 @@ rWZ
 jKK
 kHb
 czx
-pjj
+lTj
 oww
 rWZ
 oww
-oGD
+pjj
 czx
 rWZ
 kHb
@@ -99445,7 +99437,7 @@ fSd
 nIh
 rWZ
 nIh
-fbT
+tOY
 nob
 rWZ
 bdT
@@ -108484,7 +108476,7 @@ hxG
 cxk
 tWo
 pfm
-gUq
+ops
 iCI
 wRX
 rWZ
@@ -111050,7 +111042,7 @@ azt
 toN
 igR
 iUU
-kPN
+qIu
 ovL
 wsr
 xGU
@@ -112078,7 +112070,7 @@ qcK
 toN
 igR
 iUU
-xjA
+kPN
 ifm
 wsr
 xGU
@@ -115393,7 +115385,7 @@ qce
 eBN
 kkH
 nDa
-tZb
+tZP
 yhY
 kWC
 xGU
@@ -115412,7 +115404,7 @@ rWZ
 rWZ
 rWZ
 eNO
-rgH
+uYZ
 eNO
 rgH
 mru
@@ -115420,7 +115412,7 @@ rBb
 rBb
 rBb
 eNO
-rgH
+uYZ
 wfg
 pZT
 atP
@@ -116421,7 +116413,7 @@ itg
 opC
 mus
 nDa
-tZP
+mJA
 gtu
 kWC
 xGU
@@ -120212,7 +120204,7 @@ fKe
 cpb
 agI
 vpG
-hSN
+hOS
 cJR
 seu
 xGU
@@ -120478,7 +120470,7 @@ xGU
 xGU
 tYs
 tCp
-jdR
+bNV
 vzN
 iCy
 pqc
@@ -120983,7 +120975,7 @@ gwW
 uaz
 agI
 vpG
-yhb
+hSN
 bby
 seu
 xGU
@@ -121249,7 +121241,7 @@ rWZ
 xGU
 tYs
 xRm
-bNV
+icm
 vzN
 iCy
 dsP

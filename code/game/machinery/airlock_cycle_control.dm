@@ -82,6 +82,10 @@
 	depressurization_margin = ONE_ATMOSPHERE
 	skip_delay = 30
 
+/obj/machinery/advanced_airlock_controller/jungleland
+	exterior_pressure = 270
+	depressurization_margin = ONE_ATMOSPHERE
+	skip_delay = 30
 /obj/machinery/advanced_airlock_controller/mix_chamber
 	depressurization_margin = 0.15 // The minimum - We really don't want contamination.
 
