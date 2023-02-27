@@ -82,7 +82,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/engine/outdoor,
-/area/space/nearstation)
+/area/jungleland/explored)
 "abU" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -255,7 +255,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "aeB" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
 	dir = 6
@@ -2612,7 +2612,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "aXl" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
@@ -3024,7 +3024,7 @@
 	dir = 4
 	},
 /turf/open/floor/stone/airless,
-/area/space/nearstation)
+/area/jungleland/explored)
 "bdV" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Secure Holding"
@@ -3249,7 +3249,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "bir" = (
 /obj/machinery/computer/rdconsole/experiment{
 	dir = 4
@@ -4398,7 +4398,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "bAh" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -7178,7 +7178,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "cvK" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -7356,7 +7356,7 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "cyU" = (
 /obj/structure/chair{
 	dir = 1
@@ -8041,7 +8041,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "cLy" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -9382,7 +9382,7 @@
 	dir = 1
 	},
 /turf/open/floor/stone/airless,
-/area/space/nearstation)
+/area/jungleland/explored)
 "dlE" = (
 /obj/effect/turf_decal/tile/red,
 /obj/machinery/light,
@@ -10619,7 +10619,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "dHZ" = (
 /obj/machinery/airalarm/directional/east,
 /obj/structure/cable/yellow{
@@ -11072,7 +11072,7 @@
 /obj/item/bedsheet/rainbow,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
-/area/space/nearstation)
+/area/jungleland/explored)
 "dPG" = (
 /obj/structure/table,
 /obj/item/gps/mining,
@@ -11518,7 +11518,7 @@
 	dir = 6
 	},
 /turf/open/floor/engine/outdoor,
-/area/space/nearstation)
+/area/jungleland/explored)
 "dYg" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -12981,7 +12981,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "ewy" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -13060,7 +13060,7 @@
 	dir = 5
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "exK" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -14659,7 +14659,7 @@
 /area/security/warden)
 "fbR" = (
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "fbT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -16962,7 +16962,7 @@
 /obj/item/wirecutters,
 /obj/item/hatchet,
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "fUX" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -17016,7 +17016,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "fWk" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 10
@@ -17600,7 +17600,7 @@
 /obj/item/target/clown,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
-/area/space/nearstation)
+/area/jungleland/explored)
 "giw" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin{
@@ -17665,7 +17665,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "gjC" = (
 /obj/item/assembly/signaler{
 	pixel_y = 8
@@ -19594,7 +19594,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "gTE" = (
 /turf/open/floor/plasteel/dark,
 /area/tcommsat/computer)
@@ -22186,7 +22186,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "hQg" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -22586,7 +22586,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "hWl" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -22638,7 +22638,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "hWU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -23391,7 +23391,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "ikb" = (
 /obj/effect/turf_decal/tile/bar/tile_marquee{
 	dir = 1
@@ -24591,7 +24591,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "iHn" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 4
@@ -24797,7 +24797,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "iLs" = (
 /obj/structure/chair/comfy/brown{
 	dir = 4
@@ -25812,7 +25812,7 @@
 	dir = 10
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "jem" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
@@ -27071,7 +27071,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/plasteel/airless/solarpanel,
-/area/space/nearstation)
+/area/jungleland/explored)
 "jDq" = (
 /obj/effect/turf_decal/tile/red/tile_side{
 	dir = 8
@@ -27420,7 +27420,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "jJG" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -28083,7 +28083,7 @@
 "jUM" = (
 /obj/structure/grille,
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "jUZ" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -28396,7 +28396,7 @@
 	dir = 6
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "kbM" = (
 /obj/effect/turf_decal/trimline/piss_yellow/warning,
 /obj/effect/turf_decal/trimline/piss_yellow/warning{
@@ -28421,7 +28421,7 @@
 	dir = 9
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "kce" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -30022,7 +30022,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "kIO" = (
 /obj/structure/closet{
 	name = "Evidence Closet 3"
@@ -30511,7 +30511,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "kSq" = (
 /obj/machinery/sleeper{
 	dir = 4
@@ -30589,7 +30589,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "kTh" = (
 /turf/closed/wall/r_wall,
 /area/engine/atmos)
@@ -31137,7 +31137,7 @@
 	volume_rate = 200
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "lbf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/brown/tile_side{
@@ -31718,7 +31718,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "ljK" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -32723,7 +32723,7 @@
 /obj/item/grown/bananapeel,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
-/area/space/nearstation)
+/area/jungleland/explored)
 "lAP" = (
 /obj/structure/sign/plaques/atmos{
 	pixel_y = 32
@@ -33745,7 +33745,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/food/grown/banana,
 /turf/open/floor/plasteel/grimy,
-/area/space/nearstation)
+/area/jungleland/explored)
 "lUp" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -34652,7 +34652,7 @@
 	dir = 10
 	},
 /turf/open/floor/engine/outdoor,
-/area/space/nearstation)
+/area/jungleland/explored)
 "mpa" = (
 /obj/structure/closet/bombcloset,
 /turf/open/floor/plasteel,
@@ -36482,7 +36482,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "mSY" = (
 /obj/machinery/door/airlock{
 	id_tag = "Dorm1";
@@ -37574,7 +37574,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "nox" = (
 /obj/structure/table,
 /obj/item/clipboard,
@@ -37971,7 +37971,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/airless/solarpanel,
-/area/space/nearstation)
+/area/jungleland/explored)
 "ntS" = (
 /obj/structure/closet{
 	name = "Pool Supplies"
@@ -38230,7 +38230,7 @@
 /area/solarsouthprimary)
 "nyk" = (
 /turf/closed/wall,
-/area/space/nearstation)
+/area/jungleland/explored)
 "nyr" = (
 /obj/effect/turf_decal/trimline/gray/warning{
 	dir = 1
@@ -38716,7 +38716,7 @@
 	dir = 9
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "nGV" = (
 /obj/machinery/camera/autoname{
 	dir = 8
@@ -38835,7 +38835,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "nJg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -39821,7 +39821,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/outdoor,
-/area/space/nearstation)
+/area/jungleland/explored)
 "ocd" = (
 /obj/structure/table,
 /obj/item/clipboard,
@@ -40659,7 +40659,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "ord" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -41399,7 +41399,7 @@
 /obj/structure/fans/tiny,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
-/area/space/nearstation)
+/area/jungleland/explored)
 "oEb" = (
 /turf/closed/wall/r_wall,
 /area/ai_monitored/storage/eva)
@@ -42013,7 +42013,7 @@
 	dir = 10
 	},
 /turf/open/floor/stone/airless,
-/area/space/nearstation)
+/area/jungleland/explored)
 "oOU" = (
 /obj/machinery/door/window/eastright{
 	base_state = "left";
@@ -42047,7 +42047,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "oPE" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -44436,7 +44436,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "pEV" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel,
@@ -45555,7 +45555,7 @@
 "pWX" = (
 /obj/structure/fence/door,
 /turf/open/floor/stone/airless,
-/area/space/nearstation)
+/area/jungleland/explored)
 "pXd" = (
 /turf/closed/wall/r_wall,
 /area/science/mixing)
@@ -50811,7 +50811,7 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/airless/solarpanel,
-/area/space/nearstation)
+/area/jungleland/explored)
 "rSu" = (
 /obj/effect/turf_decal/trimline/neutral/warning{
 	dir = 8
@@ -51378,7 +51378,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "sck" = (
 /obj/machinery/airalarm{
 	pixel_y = 23
@@ -51613,7 +51613,7 @@
 /mob/living/simple_animal/hostile/retaliate/clown,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
-/area/space/nearstation)
+/area/jungleland/explored)
 "sfw" = (
 /obj/effect/turf_decal/trimline/gray/filled/line{
 	dir = 8
@@ -51951,7 +51951,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/airless/solarpanel,
-/area/space/nearstation)
+/area/jungleland/explored)
 "slE" = (
 /obj/machinery/door/airlock/highsecurity,
 /obj/structure/cable/yellow{
@@ -53396,7 +53396,7 @@
 	},
 /obj/structure/fence/post,
 /turf/open/floor/stone/airless,
-/area/space/nearstation)
+/area/jungleland/explored)
 "sLF" = (
 /obj/structure/table/wood,
 /obj/item/storage/book/bible,
@@ -54276,7 +54276,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "sYY" = (
 /obj/effect/turf_decal/pool,
 /obj/structure/flora/junglebush,
@@ -56019,7 +56019,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "tBU" = (
 /obj/structure/table/wood,
 /obj/item/storage/crayons,
@@ -57485,7 +57485,7 @@
 "tYu" = (
 /obj/structure/cable,
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "tYI" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/emergency{
@@ -57976,7 +57976,7 @@
 /obj/item/food/grown/banana,
 /obj/item/food/grown/banana,
 /turf/open/floor/plasteel/grimy,
-/area/space/nearstation)
+/area/jungleland/explored)
 "ugG" = (
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/prison)
@@ -58492,7 +58492,7 @@
 "uqO" = (
 /obj/item/stack/cable_coil/red,
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "uqP" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -59892,7 +59892,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "uQE" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -61118,7 +61118,7 @@
 "vjl" = (
 /obj/structure/fence,
 /turf/open/floor/stone/airless,
-/area/space/nearstation)
+/area/jungleland/explored)
 "vjn" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -61758,7 +61758,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "vua" = (
 /obj/structure/cable/blue{
 	icon_state = "2-8"
@@ -62939,7 +62939,7 @@
 	pixel_x = -12
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "vPM" = (
 /obj/machinery/camera{
 	c_tag = "Xenobiology Lab - Pen #3";
@@ -63452,7 +63452,7 @@
 "vZQ" = (
 /obj/structure/sign/warning/fire,
 /turf/closed/wall,
-/area/space/nearstation)
+/area/jungleland/explored)
 "vZT" = (
 /obj/effect/turf_decal/tile/dark_purple/tile_marquee,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -65128,7 +65128,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "wIf" = (
 /obj/structure/sink{
 	dir = 8;
@@ -65660,7 +65660,7 @@
 /obj/structure/reagent_dispensers/watertank/high,
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "wRE" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/open/floor/plating,
@@ -67789,7 +67789,7 @@
 /area/quartermaster/exploration_dock)
 "xGU" = (
 /turf/open/floor/stone/airless,
-/area/space/nearstation)
+/area/jungleland/explored)
 "xGV" = (
 /obj/structure/closet/secure_closet/quartermaster,
 /obj/effect/turf_decal/stripes/line{
@@ -69397,7 +69397,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating/outdoors,
-/area/space/nearstation)
+/area/jungleland/explored)
 "yjh" = (
 /obj/machinery/newscaster{
 	pixel_y = 32

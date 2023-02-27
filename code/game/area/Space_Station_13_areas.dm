@@ -1839,6 +1839,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/science/monkedome/xenobiooutdoor //make work with outdoor lighting
 	name = "Xenobio Outdoor Testing"
 	icon_state = "science"
+	false_outdoors = TRUE
 
 /area/science/monkedome/constructionarea
 	name = "Research Hub Construction Area"
