@@ -6,7 +6,7 @@
 	background_icon_state = "jungle"
 	icon_icon = 'monkestation/icons/mob/actions.dmi'
 	button_icon_state = "tar_crown_summon"
-	var/obj/item/clothing/head/yogs/tar_king_crown/crown
+	var/obj/item/clothing/head/tar_king_crown/crown
 
 /datum/action/cooldown/tar_crown_spawn_altar/New(Target)
 	. = ..()
