@@ -107,10 +107,13 @@
  * Begins dealing effects from weather to mobs in the area
  *
  */
-/datum/particle_weather/proc/start(var/weather_level)
+/datum/particle_weather/proc/start(var/weather_level, duration)
 	if(running)
 		return //some cheeky git has started you early
-	weather_duration = rand(weather_duration_lower, weather_duration_upper)
+	if(!duration)
+		weather_duration = rand(weather_duration_lower, weather_duration_upper)
+	else
+		weather_duration = duration
 	running = TRUE
 	addtimer(CALLBACK(src, .proc/wind_down), weather_duration)
 

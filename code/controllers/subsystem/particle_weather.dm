@@ -42,9 +42,10 @@ SUBSYSTEM_DEF(ParticleWeather)
 		else
 			var/datum/particle_weather/our_event = pickweight(elligble_weather)
 			var/rand_time = rand(0, 6000) + initial(our_event.weather_duration_upper)
+			var/random_length = rand(initial(our_event.weather_duration_lower), initial(our_event.weather_duration_upper))
 			if(our_event)
-				run_weather(our_event, type = "Default", randTime = rand_time)
-				run_weather(our_event, type = "Mining", randTime = rand_time)
+				run_weather(our_event, type = "Default", randTime = rand_time, length = random_length)
+				run_weather(our_event, type = "Mining", randTime = rand_time, length = random_length)
 
 //This has been mangled - currently only supports 1 weather effect serverwide so I can finish this
 /datum/controller/subsystem/ParticleWeather/Initialize(start_timeofday)
@@ -75,7 +76,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 
 	return ..()
 
-/datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type, randTime)
+/datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type, randTime, length = 0)
 	var/datum/particle_weather/weather_setter
 
 	switch(type)
@@ -121,7 +122,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 	else
 		if(!randTime)
 			randTime = rand(0, 6000) + initial(weather_setter.weather_duration_upper)
-		addtimer(CALLBACK(weather_setter, /datum/particle_weather/proc/start), randTime, TIMER_UNIQUE|TIMER_STOPPABLE) //Around 0-10 minutes between weathers
+		addtimer(CALLBACK(weather_setter, /datum/particle_weather/proc/start, type, length), randTime, TIMER_UNIQUE|TIMER_STOPPABLE) //Around 0-10 minutes between weathers
 
 	switch(type)
 		if("Default")
