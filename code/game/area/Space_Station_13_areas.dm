@@ -1840,6 +1840,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Xenobio Outdoor Testing"
 	icon_state = "science"
 	false_outdoors = TRUE
+	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | XENOBIOLOGY_COMPATIBLE
 
 /area/science/monkedome/constructionarea
 	name = "Research Hub Construction Area"

@@ -83,7 +83,7 @@
 	skip_delay = 30
 
 /obj/machinery/advanced_airlock_controller/jungleland
-	exterior_pressure = 270
+	exterior_pressure = 101
 	depressurization_margin = ONE_ATMOSPHERE
 	skip_delay = 30
 /obj/machinery/advanced_airlock_controller/mix_chamber

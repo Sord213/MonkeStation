@@ -53,8 +53,8 @@
 	var/list/ore_preferences = list(
 		ORE_EMPTY = list(
 			WORLEY_REG_SIZE = 15,
-			WORLEY_THRESHOLD = 5.5,
-			WORLEY_NODE_PER_REG = 400),
+			WORLEY_THRESHOLD = 0,
+			WORLEY_NODE_PER_REG = 50),
 
 		ORE_IRON = list(
 			WORLEY_REG_SIZE = 10,
