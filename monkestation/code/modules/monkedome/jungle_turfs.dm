@@ -89,8 +89,8 @@ Temperature: 126.85 °C (400 K)
 		for(var/i in 0 to 2)
 			new /obj/item/stack/ore/glass(src)
 
-/turf/open/floor/plating/dirt/jungleland/tool_act(mob/living/user, obj/item/I, tool_type)
-	if(tool_type != TOOL_MINING && tool_type != TOOL_SHOVEL)
+/turf/open/floor/plating/dirt/jungleland/attackby(obj/item/I, mob/user, params)
+	if(I.tool_type != TOOL_MINING && I.tool_type != TOOL_SHOVEL)
 		return ..()
 
 	if(ore_present == ORE_EMPTY)

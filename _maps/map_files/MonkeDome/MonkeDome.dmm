@@ -5170,16 +5170,6 @@
 	},
 /turf/open/floor/carpet/blue,
 /area/crew_quarters/heads/cmo)
-"bNV" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 1
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
-	},
-/turf/open/floor/plasteel,
-/area/science/research)
 "bOc" = (
 /obj/effect/landmark/start/cargo_technician,
 /obj/structure/chair/office{
@@ -6358,24 +6348,11 @@
 /turf/closed/wall,
 /area/security/prison)
 "cjL" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 2
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/caution/stand_clear,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+/obj/structure/fence{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 4
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = -22
-	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/exit/departure_lounge)
+/turf/open/floor/plating/dirt/jungle/wasteland,
+/area/jungleland/explored)
 "cjN" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -8482,9 +8459,6 @@
 "cSQ" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
-	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "cSY" = (
@@ -10258,9 +10232,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/on/layer2,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
-	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
 "dBz" = (
@@ -12322,9 +12293,6 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = -22
-	},
 /turf/open/floor/plating,
 /area/quartermaster/exploration_dock)
 "ekO" = (
@@ -14290,9 +14258,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
 /turf/open/floor/plating,
 /area/maintenance/monkedome/comsec/aft)
 "eUn" = (
@@ -14942,9 +14907,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/on/layer2,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
 /turf/open/floor/plating,
 /area/maintenance/solars/monkedome/southprimary)
 "fhG" = (
@@ -15596,25 +15558,6 @@
 /obj/effect/turf_decal/trimline/green/filled/line,
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
-"fur" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/warning,
-/obj/effect/turf_decal/trimline/yellow/filled/warning{
-	dir = 1
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = 25
-	},
-/turf/open/floor/plasteel,
-/area/hallway/monkedome/engineering)
 "fuy" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -16451,9 +16394,6 @@
 "fKM" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
 /turf/open/floor/plating,
 /area/maintenance/monkedome/engine/port)
 "fKO" = (
@@ -16829,24 +16769,9 @@
 /turf/open/floor/plating,
 /area/maintenance/monkedome/medical/port)
 "fSd" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 8
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/yellow/filled/warning,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = 25
-	},
-/turf/open/floor/plasteel,
-/area/hallway/monkedome/civilian/fore)
+/obj/structure/fence,
+/turf/open/floor/plating/dirt/jungle/wasteland,
+/area/jungleland/explored)
 "fSh" = (
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/tile/red/tile_side{
@@ -17430,7 +17355,7 @@
 "gei" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock{
-	name = "Unisex Restroom"
+	name = "The Quarry"s
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -22369,9 +22294,6 @@
 "hSN" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
-	},
 /turf/open/floor/plasteel,
 /area/science/monkedome/xenobiohall)
 "hSP" = (
@@ -23915,14 +23837,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
-"ivx" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
-/turf/open/floor/plasteel,
-/area/science/monkedome/xenobiohall)
 "ivK" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -25676,16 +25590,11 @@
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet/restrooms)
 "jbw" = (
-/obj/effect/turf_decal/trimline/dark_green/filled/warning{
-	dir = 1
+/obj/structure/fence/corner{
+	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/on/layer2,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
-/turf/open/floor/plasteel,
-/area/hydroponics)
+/turf/open/floor/plating/dirt/jungle/wasteland,
+/area/jungleland/explored)
 "jbQ" = (
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/wood,
@@ -26291,15 +26200,11 @@
 /turf/open/floor/plasteel/white,
 /area/medical/storage)
 "jmN" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
-	dir = 1
+/obj/structure/fence/corner{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/turf/open/floor/plating/dirt/jungle/wasteland,
+/area/jungleland/explored)
 "jmS" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -30423,23 +30328,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/white,
 /area/security/doctor)
-"kPN" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/trimline/darkblue/filled/warning{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/darkblue/filled/warning{
-	dir = 4
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
-/turf/open/floor/plasteel,
-/area/hallway/monkedome/civilian/port)
 "kQi" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -33769,13 +33657,8 @@
 /turf/open/floor/plating,
 /area/maintenance/monkedome/engine/upperport)
 "lUU" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/turf/open/floor/plating/dirt/jungleland/quarry,
+/area/jungleland/explored)
 "lVg" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -34261,9 +34144,6 @@
 	},
 /obj/effect/turf_decal/trimline/darkblue/filled/warning{
 	dir = 4
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/port)
@@ -43190,9 +43070,6 @@
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
 	dir = 1
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = -22
-	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/engineering)
 "pjo" = (
@@ -45747,9 +45624,6 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 4
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = 25
-	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/escape)
 "pZU" = (
@@ -47617,9 +47491,6 @@
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/port)
 "qIO" = (
@@ -48854,9 +48725,6 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 4
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = 25
-	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "rgK" = (
@@ -49776,9 +49644,6 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = -22
 	},
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 1
@@ -52583,9 +52448,6 @@
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 1
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
 /turf/open/floor/plasteel,
 /area/science/research)
 "svo" = (
@@ -54322,9 +54184,6 @@
 "sZH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
-	},
 /turf/open/floor/plating,
 /area/maintenance/monkedome/science/aft)
 "sZX" = (
@@ -57567,9 +57426,6 @@
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
-	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/science)
 "tZY" = (
@@ -57898,9 +57754,6 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
-	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "ufr" = (
@@ -58541,9 +58394,6 @@
 	},
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 8
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = 25
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -60401,9 +60251,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = -22
-	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/fore)
 "uXK" = (
@@ -63899,22 +63746,11 @@
 /turf/closed/wall,
 /area/maintenance/disposal/incinerator)
 "whT" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/trimline/dark_purple/filled/warning{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/dark_purple/filled/warning{
-	dir = 8
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
+/obj/machinery/door/airlock{
+	name = "Unisex Restroom"
 	},
 /turf/open/floor/plasteel,
-/area/hallway/monkedome/science)
+/area/security/prison)
 "whY" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -65257,9 +65093,6 @@
 /obj/effect/turf_decal/trimline/darkblue/filled/warning{
 	dir = 1
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = 25
-	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/aft)
 "wJZ" = (
@@ -66168,9 +66001,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/light{
 	dir = 8
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
 	},
 /turf/open/floor/plasteel,
 /area/engine/monkedome/upperairlock)
@@ -67104,9 +66934,6 @@
 /obj/effect/turf_decal/trimline/red/filled/warning,
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 1
-	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = -22
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/aft)
@@ -68313,9 +68140,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_y = 25
-	},
 /obj/effect/turf_decal/trimline/darkblue/filled/warning,
 /obj/effect/turf_decal/trimline/darkblue/filled/warning{
 	dir = 1
@@ -69239,9 +69063,6 @@
 /obj/effect/turf_decal/trimline/dark_purple/filled/warning{
 	dir = 8
 	},
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = 24
-	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/port)
 "yhX" = (
@@ -69434,9 +69255,6 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/advanced_airlock_controller/jungleland{
-	pixel_x = -26
-	},
 /turf/open/floor/plasteel,
 /area/engine/monkedome/upperairlock)
 "yjM" = (
@@ -81050,16 +80868,16 @@ bJh
 rEG
 lkJ
 lkJ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
+fSd
+fSd
+fSd
+fSd
+fSd
+fSd
+fSd
+fSd
+fSd
+jbw
 rWZ
 rWZ
 rWZ
@@ -81307,16 +81125,16 @@ kSM
 vdp
 rLX
 lkJ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+cjL
 rWZ
 rWZ
 rWZ
@@ -81564,16 +81382,16 @@ tbX
 sCP
 mzJ
 pDC
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+cjL
 rWZ
 rWZ
 rWZ
@@ -81821,16 +81639,16 @@ jRx
 iMD
 kVG
 cdJ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+cjL
 rWZ
 rWZ
 rWZ
@@ -82078,16 +81896,16 @@ qsm
 tbX
 pGc
 oJf
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+cjL
 rWZ
 rWZ
 rWZ
@@ -82335,16 +82153,16 @@ kSM
 jAg
 uMK
 lkJ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+lUU
+cjL
 rWZ
 rWZ
 rWZ
@@ -82592,16 +82410,16 @@ cjy
 cjy
 cjy
 lkJ
+whT
 lkJ
-lkJ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
+fSd
+fSd
+fSd
+fSd
+fSd
+fSd
+fSd
+jmN
 rWZ
 rWZ
 rWZ
@@ -93546,7 +93364,7 @@ xOc
 vrl
 mqH
 hVs
-lUU
+cSQ
 qWl
 rWZ
 rWZ
@@ -93556,7 +93374,7 @@ rWZ
 rWZ
 rWZ
 fcz
-jmN
+ufn
 pln
 oPM
 czD
@@ -93778,7 +93596,7 @@ rWZ
 jKK
 kHb
 czx
-fur
+pjj
 oww
 rWZ
 oww
@@ -99430,7 +99248,7 @@ jsS
 vZe
 rWZ
 nob
-fSd
+uXy
 nIh
 rWZ
 nIh
@@ -108473,7 +108291,7 @@ hxG
 cxk
 tWo
 pfm
-jbw
+dBn
 iCI
 wRX
 rWZ
@@ -111039,7 +110857,7 @@ azt
 toN
 igR
 iUU
-kPN
+mgM
 ovL
 wsr
 xGU
@@ -115382,7 +115200,7 @@ qce
 eBN
 kkH
 nDa
-whT
+tZP
 yhY
 kWC
 xGU
@@ -115401,7 +115219,7 @@ rWZ
 rWZ
 rWZ
 eNO
-cjL
+rgH
 eNO
 rgH
 mru
@@ -115409,7 +115227,7 @@ rBb
 rBb
 rBb
 eNO
-cjL
+rgH
 wfg
 pZT
 atP
@@ -120467,7 +120285,7 @@ xGU
 xGU
 tYs
 tCp
-bNV
+svj
 vzN
 iCy
 pqc
@@ -120972,7 +120790,7 @@ gwW
 uaz
 agI
 vpG
-ivx
+hSN
 bby
 seu
 xGU
