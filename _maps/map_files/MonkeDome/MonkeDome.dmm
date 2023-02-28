@@ -17343,7 +17343,7 @@
 "gei" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock{
-	name = "The Quarry"s
+	name = "The Quarry"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
