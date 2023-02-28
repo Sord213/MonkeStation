@@ -276,7 +276,7 @@
 		return
 	var/tempSound = scale_range_pick(min_severity, max_severity, severity, weather_sounds)
 	if(tempSound)
-		currentSound = new tempSound(L, FALSE, TRUE, FALSE, CHANNEL_WEATHER)
+		currentSound = new tempSound(list(L), FALSE, TRUE, FALSE, CHANNEL_WEATHER)
 		currentSounds[L] = currentSound
 		//SET VOLUME
 		if(scale_vol_with_severity)
