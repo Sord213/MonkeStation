@@ -11,9 +11,7 @@
 /turf/open/floor/plating/dirt/jungleland/jungle,
 /area/ruin/unpowered)
 "h" = (
-/mob/living/simple_animal/hostile/jungleland/corrupted_dryad{
-	startDead = 1
-	},
+/mob/living/simple_animal/hostile/jungleland/corrupted_dryad,
 /turf/open/floor/plating/dirt/jungleland/jungle,
 /area/ruin/unpowered)
 "i" = (
