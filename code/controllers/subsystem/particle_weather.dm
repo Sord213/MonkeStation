@@ -31,13 +31,20 @@ SUBSYSTEM_DEF(ParticleWeather)
 			for(var/mob/act_on as anything in GLOB.mob_living_list)
 				running_weather.try_weather_act(act_on)
 	else
-		// start random weather
-		var/datum/particle_weather/our_event = pickweight(elligble_weather) //possible_weather
-		if(our_event)
-			run_weather(our_event)
-		var/datum/particle_weather/our_event_mining = pickweight(elligble_weather_mining)
-		if(our_event_mining)
-			run_weather(our_event_mining, type = "Mining")
+		if(!SSmapping.config.planetary)
+			// start random weather
+			var/datum/particle_weather/our_event = pickweight(elligble_weather) //possible_weather
+			if(our_event)
+				run_weather(our_event)
+			var/datum/particle_weather/our_event_mining = pickweight(elligble_weather_mining)
+			if(our_event_mining)
+				run_weather(our_event_mining, type = "Mining")
+		else
+			var/datum/particle_weather/our_event = pickweight(elligble_weather)
+			var/rand_time = rand(0, 6000) + initial(our_event.weather_duration_upper)
+			if(our_event)
+				run_weather(our_event, type = "Default", randTime = rand_time)
+				run_weather(our_event, type = "Mining", randTime = rand_time)
 
 //This has been mangled - currently only supports 1 weather effect serverwide so I can finish this
 /datum/controller/subsystem/ParticleWeather/Initialize(start_timeofday)
@@ -46,22 +53,29 @@ SUBSYSTEM_DEF(ParticleWeather)
 		var/probability = initial(W.probability)
 		var/target_trait = initial(W.target_trait)
 
-		// any weather with a probability set may occur at random
-		if (probability && SSmapping.config.particle_weather[target_trait]) //this handles all stations should probably find a way to use something like this for all z-levels
-			LAZYINITLIST(elligble_weather)
-			elligble_weather[W] = probability
+		if(!SSmapping.config.planetary)
+			// any weather with a probability set may occur at random
+			if (probability && SSmapping.config.particle_weather[target_trait]) //this handles all stations should probably find a way to use something like this for all z-levels
+				LAZYINITLIST(elligble_weather)
+				elligble_weather[W] = probability
 
-		for (var/z in SSmapping.levels_by_trait(ZTRAIT_MINING))
-			if(SSmapping.level_has_all_traits(z, ZTRAITS_LAVALAND))
-				if(!elligble_weather_mining)
-					LAZYINITLIST(elligble_weather)
-				for(var/weather_type in LAVALAND_WEATHERS)
-					var/datum/particle_weather/used_weather = weather_type
-					elligble_weather_mining[used_weather] = initial(used_weather.probability)
+			for (var/z in SSmapping.levels_by_trait(ZTRAIT_MINING))
+				if(SSmapping.level_has_all_traits(z, ZTRAITS_LAVALAND))
+					if(!elligble_weather_mining)
+						LAZYINITLIST(elligble_weather_mining)
+					for(var/weather_type in LAVALAND_WEATHERS)
+						var/datum/particle_weather/used_weather = weather_type
+						elligble_weather_mining[used_weather] = initial(used_weather.probability)
+		else
+			if(probability && SSmapping.config.particle_weather[target_trait])
+				LAZYINITLIST(elligble_weather)
+				elligble_weather[W] = probability
+				LAZYINITLIST(elligble_weather_mining)
+				elligble_weather_mining[W] = probability
 
 	return ..()
 
-/datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type)
+/datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type, randTime)
 	var/datum/particle_weather/weather_setter
 
 	switch(type)
@@ -105,7 +119,8 @@ SUBSYSTEM_DEF(ParticleWeather)
 	if(force)
 		weather_setter.start(type)
 	else
-		var/randTime = rand(0, 6000) + initial(weather_setter.weather_duration_upper)
+		if(!randTime)
+			randTime = rand(0, 6000) + initial(weather_setter.weather_duration_upper)
 		addtimer(CALLBACK(weather_setter, /datum/particle_weather/proc/start), randTime, TIMER_UNIQUE|TIMER_STOPPABLE) //Around 0-10 minutes between weathers
 
 	switch(type)

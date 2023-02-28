@@ -438,7 +438,7 @@ GLOBAL_LIST_INIT(nests, list())
 	else if(relative_y == world.maxy)
 		relative_y = world.maxy - 1
 	var/turf/destination_turf = locate(src.x, relative_y, z_transport)
-	do_teleport(arrived, destination_turf,null,null,null,null,null,TRUE)
+	do_teleport(arrived, destination_turf,null,null,null,null,null,TRUE, channel = "Null")
 
 /obj/effect/edge_transition/jungle/Initialize(mapload)
 	for(var/z in SSmapping.levels_by_trait(ZTRAIT_MINING))
