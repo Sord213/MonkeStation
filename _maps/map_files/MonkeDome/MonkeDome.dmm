@@ -10135,18 +10135,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
-"dzb" = (
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 3;
-	height = 5;
-	id = "mining_home";
-	name = "mining shuttle bay";
-	roundstart_template = /datum/map_template/shuttle/mining/box;
-	width = 7
-	},
-/turf/open/genturf,
-/area/pregen/station)
 "dzi" = (
 /obj/effect/turf_decal/trimline/darkblue/line{
 	dir = 5
@@ -97948,7 +97936,7 @@ rWZ
 rWZ
 rWZ
 rWZ
-dzb
+rWZ
 rWZ
 rWZ
 rWZ
