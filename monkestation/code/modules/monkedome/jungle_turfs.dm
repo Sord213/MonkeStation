@@ -12,7 +12,6 @@ Temperature: 126.85 °C (400 K)
 
 /area/ruin/unpowered/tar_temple
 	icon_state = "red"
-	noteleport = TRUE
 
 /area/pregen
 	name = "Pregenerated Space"
@@ -95,7 +94,7 @@ Temperature: 126.85 °C (400 K)
 			new /obj/item/stack/ore/glass(src)
 
 /turf/open/floor/plating/dirt/jungleland/attackby(obj/item/I, mob/user, params)
-	if(I.tool_type != TOOL_MINING && I.tool_type != TOOL_SHOVEL)
+	if(I.tool_behaviour != TOOL_MINING && I.tool_behaviour != TOOL_SHOVEL)
 		return ..()
 
 	if(ore_present == ORE_EMPTY)
