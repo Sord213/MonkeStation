@@ -436,6 +436,8 @@
 /obj/item/charged_tar_crystal
 	name = "Glowing Ominous Crystal"
 	desc = "It is glowing with pure power."
+	icon = 'monkestation/icons/obj/jungle.dmi'
+	icon_state = "tar_crystal"
 
 /obj/item/crusher_trophy/jungleland
 	icon = 'monkestation/icons/obj/jungle.dmi'

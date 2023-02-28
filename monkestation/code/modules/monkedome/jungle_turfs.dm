@@ -7,7 +7,12 @@ Nitrogen: 78.85 % (164 mol)
 Temperature: 126.85 °C (400 K)
 */
 
+/area/ruin/unpowered/ivymen
+	icon_state = "red"
 
+/area/ruin/unpowered/tar_temple
+	icon_state = "red"
+	noteleport = TRUE
 
 /area/pregen
 	name = "Pregenerated Space"
