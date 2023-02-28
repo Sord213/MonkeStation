@@ -15,8 +15,8 @@
 		return
 	SSParticleWeather.run_weather(weather_type, TRUE, weather_area)
 
-	message_admins("[key_name_admin(usr)] started weather of type [weather_type]. What a cunt.")
-	log_admin("[key_name(usr)] started weather of type [weather_type]. What a cunt.")
+	message_admins("[key_name_admin(usr)] started weather of type [weather_type].")
+	log_admin("[key_name(usr)] started weather of type [weather_type].")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Run Particle Weather")
 
 /client/proc/force_aurora()
