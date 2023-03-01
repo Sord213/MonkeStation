@@ -1,4 +1,4 @@
-SUBSYSTEM_DEF(ParticleWeather)
+SUBSYSTEM_DEF(particle_weather)
 	name = "Particle Weather"
 	flags = SS_BACKGROUND
 	wait = 1 SECONDS
@@ -23,7 +23,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 	var/obj/weather_effect_admin
 	var/obj/weather_effect_planet
 
-/datum/controller/subsystem/ParticleWeather/fire()
+/datum/controller/subsystem/particle_weather/fire()
 	// process active weather
 	if(running_weather)
 		if(running_weather.running)
@@ -48,7 +48,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 				run_weather(our_event, type = "Mining", randTime = rand_time, length = random_length)
 
 //This has been mangled - currently only supports 1 weather effect serverwide so I can finish this
-/datum/controller/subsystem/ParticleWeather/Initialize(start_timeofday)
+/datum/controller/subsystem/particle_weather/Initialize(start_timeofday)
 	for(var/V in subtypesof(/datum/particle_weather))
 		var/datum/particle_weather/W = V
 		var/probability = initial(W.probability)
@@ -76,7 +76,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 
 	return ..()
 
-/datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type, randTime, length = 0)
+/datum/controller/subsystem/particle_weather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0, type, randTime, length = 0)
 	var/datum/particle_weather/weather_setter
 
 	switch(type)
@@ -134,11 +134,11 @@ SUBSYSTEM_DEF(ParticleWeather)
 		if("Admin")
 			running_weather_admin = weather_setter
 
-/datum/controller/subsystem/ParticleWeather/proc/make_eligible(possible_weather)
+/datum/controller/subsystem/particle_weather/proc/make_eligible(possible_weather)
 	elligble_weather = possible_weather
 // 	next_hit = null
 
-/datum/controller/subsystem/ParticleWeather/proc/getweatherEffect()
+/datum/controller/subsystem/particle_weather/proc/getweatherEffect()
 	var/list/effects_to_return = list()
 	if(!weather_effect)
 		weather_effect = new /obj()
@@ -165,7 +165,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 		weather_effect_planet.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	effects_to_return |= weather_effect_planet
 	return effects_to_return
-/datum/controller/subsystem/ParticleWeather/proc/Setparticle_effect(particles/P, var/weather_level = "Default")
+/datum/controller/subsystem/particle_weather/proc/Setparticle_effect(particles/P, var/weather_level = "Default")
 	switch(weather_level)
 		if("Default")
 			particle_effect = P
@@ -180,7 +180,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 			particle_effect_planet = P
 			weather_effect_planet.particles = particle_effect_planet
 
-/datum/controller/subsystem/ParticleWeather/proc/stopWeather(var/weather_type)
+/datum/controller/subsystem/particle_weather/proc/stopWeather(var/weather_type)
 	switch(weather_type)
 		if("Default")
 			QDEL_NULL(running_weather)
@@ -195,7 +195,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 			QDEL_NULL(running_weather_planet)
 			QDEL_NULL(particle_effect_planet)
 
-/datum/controller/subsystem/ParticleWeather/proc/return_particle_emitter(var/weather_type)
+/datum/controller/subsystem/particle_weather/proc/return_particle_emitter(var/weather_type)
 	switch(weather_type)
 		if("Default")
 			return weather_effect

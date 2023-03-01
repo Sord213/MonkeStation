@@ -13,7 +13,7 @@
 	var/weather_area = input("Choose the level the weather will play on", "Weather") as null|anything in types
 	if(!weather_area)
 		return
-	SSParticleWeather.run_weather(weather_type, TRUE, weather_area)
+	SSparticle_weather.run_weather(weather_type, TRUE, weather_area)
 
 	message_admins("[key_name_admin(usr)] started weather of type [weather_type].")
 	log_admin("[key_name(usr)] started weather of type [weather_type].")

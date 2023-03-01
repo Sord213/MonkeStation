@@ -119,7 +119,7 @@
 
 	weather_area = weather_level
 	if(particle_effectType)
-		SSParticleWeather.Setparticle_effect(new particle_effectType, weather_level);
+		SSparticle_weather.Setparticle_effect(new particle_effectType, weather_level);
 
 	//Always step severity to start
 	change_severity()
@@ -139,17 +139,17 @@
 
 	switch(weather_area)
 		if("Default")
-			if(SSParticleWeather.particle_effect)
-				SSParticleWeather.particle_effect.animate_severity(severityMod())
+			if(SSparticle_weather.particle_effect)
+				SSparticle_weather.particle_effect.animate_severity(severityMod())
 		if("Admin")
-			if(SSParticleWeather.particle_effect_admin)
-				SSParticleWeather.particle_effect_admin.animate_severity(severityMod())
+			if(SSparticle_weather.particle_effect_admin)
+				SSparticle_weather.particle_effect_admin.animate_severity(severityMod())
 		if("Mining")
-			if(SSParticleWeather.particle_effect_mining)
-				SSParticleWeather.particle_effect_mining.animate_severity(severityMod())
+			if(SSparticle_weather.particle_effect_mining)
+				SSparticle_weather.particle_effect_mining.animate_severity(severityMod())
 		if("Planet")
-			if(SSParticleWeather.particle_effect_planet)
-				SSParticleWeather.particle_effect_planet.animate_severity(severityMod())
+			if(SSparticle_weather.particle_effect_planet)
+				SSparticle_weather.particle_effect_planet.animate_severity(severityMod())
 
 	//Send new severity message if the message has changed
 	if(last_message != scale_range_pick(min_severity, max_severity, severity, weather_messages))
@@ -171,21 +171,21 @@
 	severity = 0
 	switch(weather_area)
 		if("Default")
-			if(SSParticleWeather.particle_effect)
-				SSParticleWeather.particle_effect.animate_severity(severityMod())
-			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect.lifespan + SSParticleWeather.particle_effect.fade)
+			if(SSparticle_weather.particle_effect)
+				SSparticle_weather.particle_effect.animate_severity(severityMod())
+			addtimer(CALLBACK(src, .proc/end), SSparticle_weather.particle_effect.lifespan + SSparticle_weather.particle_effect.fade)
 		if("Admin")
-			if(SSParticleWeather.particle_effect_admin)
-				SSParticleWeather.particle_effect_admin.animate_severity(severityMod())
-			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect_admin.lifespan + SSParticleWeather.particle_effect_admin.fade)
+			if(SSparticle_weather.particle_effect_admin)
+				SSparticle_weather.particle_effect_admin.animate_severity(severityMod())
+			addtimer(CALLBACK(src, .proc/end), SSparticle_weather.particle_effect_admin.lifespan + SSparticle_weather.particle_effect_admin.fade)
 		if("Mining")
-			if(SSParticleWeather.particle_effect_mining)
-				SSParticleWeather.particle_effect_mining.animate_severity(severityMod())
-			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect_mining.lifespan + SSParticleWeather.particle_effect_mining.fade)
+			if(SSparticle_weather.particle_effect_mining)
+				SSparticle_weather.particle_effect_mining.animate_severity(severityMod())
+			addtimer(CALLBACK(src, .proc/end), SSparticle_weather.particle_effect_mining.lifespan + SSparticle_weather.particle_effect_mining.fade)
 		if("Planet")
-			if(SSParticleWeather.particle_effect_planet)
-				SSParticleWeather.particle_effect_planet.animate_severity(severityMod())
-			addtimer(CALLBACK(src, .proc/end), SSParticleWeather.particle_effect_planet.lifespan + SSParticleWeather.particle_effect_planet.fade)
+			if(SSparticle_weather.particle_effect_planet)
+				SSparticle_weather.particle_effect_planet.animate_severity(severityMod())
+			addtimer(CALLBACK(src, .proc/end), SSparticle_weather.particle_effect_planet.lifespan + SSparticle_weather.particle_effect_planet.fade)
 
 
 
@@ -200,7 +200,7 @@
 	running = FALSE
 
 	if(uses_filter)
-		var/obj/holder = SSParticleWeather.return_particle_emitter(weather_area)
+		var/obj/holder = SSparticle_weather.return_particle_emitter(weather_area)
 		var/used_source
 		switch(weather_area)
 			if("Default")
@@ -212,7 +212,7 @@
 			if("Planet")
 				used_source = WEATHER_PLANETOID_RENDER_TARGET
 		holder.filters += filter(type="alpha", render_source=used_source)
-	SSParticleWeather.stopWeather(weather_area)
+	SSparticle_weather.stopWeather(weather_area)
 
 /**
  * Returns TRUE if the living mob can hear the weather (you might be immune, but you get to listen to the pitter patter)

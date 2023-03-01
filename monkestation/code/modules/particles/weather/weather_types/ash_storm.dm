@@ -29,7 +29,7 @@
 			used_source = WEATHER_PLANETOID_RENDER_TARGET
 
 	uses_filter = TRUE
-	var/obj/holder = SSParticleWeather.return_particle_emitter(weather_level)
+	var/obj/holder = SSparticle_weather.return_particle_emitter(weather_level)
 	if(holder)
 		holder.add_filter("outline", 1, list(type = "outline", size = 3,  color = "#726967"))
 		holder.add_filter("bloom", 2 , list(type = "bloom", threshold = rgb(48, 30, 48), size = 10, offset = 4, alpha = 180))
