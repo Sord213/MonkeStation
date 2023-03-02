@@ -5,7 +5,9 @@
 /area/shuttle
 	name = "Shuttle"
 	requires_power = FALSE
-	static_lighting = TRUE
+	static_lighting = FALSE
+	base_lighting_color = "#FFFFFFF"
+	base_lighting_alpha = 255
 	has_gravity = STANDARD_GRAVITY
 	always_unpowered = FALSE
 	// Loading the same shuttle map at a different time will produce distinct area instances.

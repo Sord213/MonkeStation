@@ -43,7 +43,7 @@
 
 /datum/time_of_day/midnight
  name = "Midnight"
- color = "#000032"
+ color = "#1e1e7a"
  start = 20 HOURS //8:00:00 PM
  signal_to_send = COMSIG_TIME_MIDNIGHT
 

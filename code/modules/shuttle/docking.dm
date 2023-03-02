@@ -99,6 +99,8 @@
 
 	// remove any stragglers just in case, and clear the list
 	remove_ripples()
+	GLOB.SUNLIGHT_QUEUE_WORK += new_turfs
+	GLOB.SUNLIGHT_QUEUE_WORK += old_turfs
 	return DOCKING_SUCCESS
 
 /obj/docking_port/mobile/proc/preflight_check(list/old_turfs, list/new_turfs, list/areas_to_move, rotation)
@@ -129,6 +131,7 @@
 			areas_to_move[old_area] = TRUE
 
 		old_turfs[oldT] = move_mode
+
 
 /obj/docking_port/mobile/proc/takeoff(list/old_turfs, list/new_turfs, list/moved_atoms, rotation, movement_direction, old_dock, area/underlying_old_area)
 	for(var/i in 1 to old_turfs.len)

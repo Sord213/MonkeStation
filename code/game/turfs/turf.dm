@@ -102,8 +102,8 @@ GLOBAL_LIST_EMPTY(station_turfs)
 	for(var/atom/movable/content as anything in src)
 		Entered(content, null)
 
-	if(always_lit)
-		add_overlay(GLOB.fullbright_overlay)
+	//if(always_lit)
+		//add_overlay(GLOB.fullbright_overlay)
 
 	if(requires_activation)
 		CALCULATE_ADJACENT_TURFS(src)
