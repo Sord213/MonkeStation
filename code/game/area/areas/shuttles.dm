@@ -116,6 +116,8 @@
 	name = "Hyperspace"
 	desc = "Weeeeee"
 	static_lighting = FALSE
+	base_lighting_alpha = 70
+	base_lighting_color = COLOR_WHITE
 
 /area/shuttle/custom
 	name = "Custom player shuttle"
