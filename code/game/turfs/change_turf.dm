@@ -81,7 +81,6 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 	var/old_opacity = opacity
 	var/old_always_lit = always_lit
 	var/old_lighting_object = lighting_object
-	var/old_outdoor_effect = outdoor_effect
 	var/old_lighting_corner_NE = lighting_corner_NE
 	var/old_lighting_corner_SE = lighting_corner_SE
 	var/old_lighting_corner_SW = lighting_corner_SW
@@ -145,9 +144,6 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 	if(SSlighting.initialized)
 		recalc_atom_opacity()
 		lighting_object = old_lighting_object
-
-		if(SSoutdoor_effects.initialized)
-			outdoor_effect = old_outdoor_effect
 
 		if (old_opacity != opacity)
 			reconsider_lights()

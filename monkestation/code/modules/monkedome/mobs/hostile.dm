@@ -365,11 +365,6 @@
 
 	var/awoke = TRUE
 
-/mob/living/simple_animal/hostile/jungleland/mosquito/Initialize()
-	. = ..()
-	RegisterSignal(SSdcs,COMSIG_TIME_SUNSET,.proc/night_start)
-	RegisterSignal(SSdcs,COMSIG_TIME_DAWN, .proc/day_start)
-
 /mob/living/simple_animal/hostile/jungleland/mosquito/Aggro()
 	. = ..()
 	prepare_charge()
@@ -444,22 +439,6 @@
 
 /mob/living/simple_animal/hostile/jungleland/mosquito/proc/get_charge()
 	return can_charge
-
-/mob/living/simple_animal/hostile/jungleland/mosquito/proc/night_start()
-	if(stat == DEAD)
-		return
-	if(!awoke)
-		toggle_ai(AI_ON)
-		awoke = TRUE
-		icon_state = has_blood ? "mosquito_blood" : icon_living
-
-/mob/living/simple_animal/hostile/jungleland/mosquito/proc/day_start()
-	if(stat == DEAD)
-		return
-	if(awoke && !target)
-		toggle_ai(AI_OFF)
-		awoke = FALSE
-		icon_state = "mosquito_sleeping"
 
 //jungle version of the wasp. Slightly weaker and faster, with different loot. Renamed to avoid confusion. Credit to original creator.
 /mob/living/simple_animal/hostile/jungleland/yellowjacket

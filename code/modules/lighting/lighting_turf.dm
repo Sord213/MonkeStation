@@ -38,28 +38,18 @@
 
 	var/totallums = 0
 	var/datum/lighting_corner/L
-	var/totalSunFalloff
 	L = lighting_corner_NE
 	if (L)
 		totallums += L.lum_r + L.lum_b + L.lum_g
-		totalSunFalloff += L.sunFalloff
 	L = lighting_corner_SE
 	if (L)
 		totallums += L.lum_r + L.lum_b + L.lum_g
-		totalSunFalloff += L.sunFalloff
 	L = lighting_corner_SW
 	if (L)
 		totallums += L.lum_r + L.lum_b + L.lum_g
-		totalSunFalloff += L.sunFalloff
 	L = lighting_corner_NW
 	if (L)
 		totallums += L.lum_r + L.lum_b + L.lum_g
-		totalSunFalloff += L.sunFalloff
-
-	if(outdoor_effect && outdoor_effect.state) /* SKY_BLOCKED is 0 */
-		totalSunFalloff = 4
-	/* sunlight / 4 corners */
-	totallums += totalSunFalloff / 4
 
 	totallums /= 12 // 4 corners, each with 3 channels, get the average.
 

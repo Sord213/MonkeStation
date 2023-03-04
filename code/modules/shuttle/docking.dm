@@ -99,8 +99,6 @@
 
 	// remove any stragglers just in case, and clear the list
 	remove_ripples()
-	GLOB.SUNLIGHT_QUEUE_WORK += new_turfs
-	GLOB.SUNLIGHT_QUEUE_WORK += old_turfs
 	return DOCKING_SUCCESS
 
 /obj/docking_port/mobile/proc/preflight_check(list/old_turfs, list/new_turfs, list/areas_to_move, rotation)

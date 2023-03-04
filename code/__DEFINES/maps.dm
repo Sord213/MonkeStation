@@ -158,14 +158,3 @@ require only minor tweaks.
 #define SHELTER_DEPLOY_BAD_AREA "bad area"
 /// Shelter spot has anchored objects that restrict deployment
 #define SHELTER_DEPLOY_ANCHORED_OBJECTS "anchored objects"
-
-// boolean - particle weather types that occur on the level
-#define PARTICLEWEATHER_RAIN "Weather_Rain"
-#define PARTICLEWEATHER_SNOW "Weather_Snow"
-#define PARTICLEWEATHER_DUST "Weather_Dust"
-#define PARTICLEWEATHER_RADS "Weather_Rads"
-#define PARTICLEWEATHER_LEAF "Weather_Leaf"
-#define PARTICLEWEATHER_ASH  "Weather Ash"
-
-#define LAVALAND_WEATHERS list(/datum/particle_weather/dust_storm,  \
-								/datum/particle_weather/radiation_storm)

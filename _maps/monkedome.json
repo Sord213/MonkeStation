@@ -11,8 +11,5 @@
 	},
 	"minetype": "jungleland",
 	"traits": [{"Baseturf" : "/turf/open/floor/plating/dirt/jungle/wasteland", "Gravity" : "1"}],
-	"planetary": 1,
-	"particle_weather":{
-		"Weather_Rain" : 1
-	}
+	"planetary": 1
 }
