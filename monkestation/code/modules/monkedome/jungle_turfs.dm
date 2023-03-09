@@ -33,6 +33,7 @@ Temperature: 126.85 °C (400 K)
 	requires_power = TRUE
 	always_unpowered = TRUE
 	base_lighting_alpha = 255
+	base_lighting_color = COLOR_VERY_SOFT_YELLOW
 	power_light = FALSE
 	power_equip = FALSE
 	power_environ = FALSE
