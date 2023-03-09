@@ -95,7 +95,6 @@ INITIALIZE_IMMEDIATE(/atom/movable/plane_master_controller)
 		GHOST_PLANE,
 		POINT_PLANE,
 		LIGHTING_PLANE,
-		SUNLIGHTING_PLANE
 	)
 
 /datum/unit_test
