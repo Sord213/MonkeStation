@@ -112,10 +112,6 @@
 
 //---------- LIGHTING -------------
 
-// This is not rendered, a fullscreen effect uses the render_target as a layer filter to display on the lighting plane
-#define SUNLIGHTING_PLANE 99
-#define SUNLIGHTING_RENDER_TARGET "*SUNLIGHT_PLANE"
-
 ///Normal 1 per turf dynamic lighting objects
 #define LIGHTING_PLANE 100
 
