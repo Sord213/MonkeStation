@@ -47,7 +47,7 @@
 	name = "\improper Officer Dag'sky"
 	desc = "Oh, sweet Nerevar..."
 	icon = 'monkestation/icons/mob/aibots.dmi'
-	icon_state = "secbot"
+	icon_state = "dagsky"
 	chasesounds = list('monkestation/sound/voice/dagsky/chase1.ogg',
 						'monkestation/sound/voice/dagsky/chase2.ogg',
 						'monkestation/sound/voice/dagsky/chase3.ogg',
@@ -56,14 +56,14 @@
 						'monkestation/sound/voice/dagsky/chase6.ogg')
 	arrestsounds = "dagsky"
 	auto_patrol = TRUE
-	verb_whisper = "grumbles"
+	verb_say = "muses"
 	var/last_grumble_speak = 0
 
 /mob/living/simple_animal/bot/secbot/dagsky/bot_patrol()
 	..()
 	if((last_grumble_speak + 100 SECONDS) < world.time) //these messages should be fairly rare
 		var/list/messagevoice = list("That damned clown. I must find that damned clown." = 'monkestation/sound/voice/dagsky/grumble1.ogg',
-									"Criminals are the dredges of our socity. \
+									"Criminals are the dredges of our society. \
 									 Our space society. \
 									 In space..." = 'monkestation/sound/voice/dagsky/grumble2.ogg',
 									"Oh moon and star..." = 'monkestation/sound/voice/dagsky/grumble3.ogg',
@@ -72,8 +72,8 @@
 									"The alchemists on this station are awful. The only potions they make intoxicate you." = 'monkestation/sound/voice/dagsky/grumble6.ogg',
 									"All these assistants are useless. Useless!" = 'monkestation/sound/voice/dagsky/grumble7.ogg')
 		var/message = pick(messagevoice)
-		whisper(message)
-		playsound(src, messagevoice[message], 40, 0) //and pretty quiet
+		say(message)
+		playsound(src, messagevoice[message], 100, 0) //a god need not whisper, he must proclaim!
 		last_grumble_speak = world.time
 
 /mob/living/simple_animal/bot/secbot/dagsky/Initialize(mapload)
@@ -81,9 +81,14 @@
 	last_grumble_speak = world.time //so he doesn't grumble on spawn
 	var/list/messagevoice = list("Ah, moon and stars. You made the right choice bringing me here. I'm a God, how could they run from a God?" = 'monkestation/sound/voice/dagsky/spawn1.ogg',
 								 "Oh sweet Nerevar... You have made a wise choice." = 'monkestation/sound/voice/dagsky/spawn2.ogg',
-								 "The presence of Dagoth Ur is here. They shall not run from a god" = 'monkestation/sound/voice/dagsky/spawn3.ogg',
-								 "I am here, sweet moon and star" = 'monkestation/sound/voice/dagsky/spawn4.ogg',
+								 "The presence of Dagoth Ur is here. They shall not run from a god." = 'monkestation/sound/voice/dagsky/spawn3.ogg',
+								 "I am here, sweet moon and star." = 'monkestation/sound/voice/dagsky/spawn4.ogg',
 								 "This... does not look like Morrowind. Where am I?" = 'monkestation/sound/voice/dagsky/spawn5.ogg')
 	var/message = pick(messagevoice)
 	say(message)
 	playsound(src,messagevoice[message], 100, 0)
+
+/mob/living/simple_animal/bot/secbot/dagsky/explode()
+	var/atom/Tsec = drop_location()
+	new /obj/item/clothing/mask/dagoth(Tsec)
+	..()
