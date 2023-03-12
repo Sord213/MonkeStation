@@ -1,16 +1,16 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /turf/open/floor/plating/dirt/jungleland/toxic_pit,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "d" = (
 /obj/structure/closet/crate/coffin{
 	opened = 1
 	},
 /turf/open/water/toxic_pit,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "g" = (
 /turf/open/water/toxic_pit,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "h" = (
 /turf/open/water/toxic_pit,
 /area/template_noop)
@@ -20,7 +20,7 @@
 	lit = 1
 	},
 /turf/open/floor/plating/dirt/jungleland/toxic_pit,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "k" = (
 /obj/item/pickaxe/mini,
 /turf/open/floor/plating/dirt/jungleland/toxic_pit,
@@ -28,55 +28,55 @@
 "v" = (
 /mob/living/simple_animal/hostile/skeleton,
 /turf/open/floor/plating/dirt/jungleland/toxic_pit,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "w" = (
 /mob/living/simple_animal/hostile/skeleton,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "y" = (
 /obj/structure/table/wood,
 /turf/open/floor/plating/dirt/jungleland/toxic_pit,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "z" = (
 /turf/open/floor/plating/dirt/jungleland/toxic_pit,
 /area/template_noop)
 "D" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "E" = (
 /mob/living/simple_animal/hostile/skeleton,
 /turf/open/water/toxic_pit,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "I" = (
 /obj/item/candle/infinite{
 	lit = 1
 	},
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "K" = (
 /turf/closed/wall/mineral/iron,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "M" = (
 /obj/structure/closet/crate/coffin{
 	opened = 1
 	},
 /turf/open/floor/plating/dirt/jungleland/toxic_pit,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "P" = (
 /mob/living/simple_animal/hostile/skeleton/templar,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "T" = (
 /obj/item/wisp_lantern,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "V" = (
 /turf/closed/mineral/ash_rock/jungle/swamp,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Z" = (
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 
 (1,1,1) = {"
 z

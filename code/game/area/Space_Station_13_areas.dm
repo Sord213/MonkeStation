@@ -22,6 +22,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/ai_monitored/turret_protected
 
 /area/space
+	static_lighting = FALSE
 	icon_state = "space"
 	requires_power = TRUE
 	always_unpowered = TRUE

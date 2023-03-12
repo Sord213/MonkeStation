@@ -9,7 +9,7 @@
 /obj/item/seeds/random,
 /obj/item/seeds/cherry/bomb,
 /turf/open/floor/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "d" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/water/toxic_pit,
@@ -18,27 +18,27 @@
 /obj/structure/fans/tiny/invisible,
 /obj/structure/mineral_door/wood,
 /turf/open/floor/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "g" = (
 /obj/structure/closet/crate/wooden,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "l" = (
 /turf/open/floor/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "m" = (
 /obj/structure/curtain,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "n" = (
 /obj/structure/table/wood,
 /obj/structure/bedsheetbin/empty,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "p" = (
 /obj/structure/curtain,
 /turf/open/floor/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "q" = (
 /obj/structure/flora/rock/pile,
 /turf/open/floor/plating/dirt/jungleland/toxic_pit,
@@ -50,24 +50,24 @@
 "t" = (
 /obj/structure/chair/sofa/bamboo/right,
 /turf/open/floor/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "u" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "v" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/stack/sheet/leather,
 /obj/item/stack/sheet/leather,
 /obj/item/stack/sheet/leather,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "w" = (
 /obj/structure/table/wood,
 /obj/item/clothing/head/rice_hat,
 /obj/item/hatchet,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "x" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/shovel,
@@ -81,27 +81,27 @@
 "A" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "B" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "C" = (
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "D" = (
 /turf/open/floor/wood/jungle,
 /area/template_noop)
 "E" = (
 /obj/structure/dresser,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "F" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lantern,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "G" = (
 /turf/open/floor/plating/dirt/jungleland/toxic_pit,
 /area/template_noop)
@@ -115,7 +115,7 @@
 	icon_state = "wood-broken6";
 	tag = ""
 	},
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "L" = (
 /turf/open/water/toxic_pit,
 /area/template_noop)
@@ -127,25 +127,25 @@
 /obj/structure/table/wood,
 /obj/item/book_of_babel,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "O" = (
 /obj/structure/table,
 /obj/item/kitchen/knife/butcher,
 /turf/open/floor/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "P" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Q" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/wood,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "R" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "S" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/seeds/wheat/rice,
@@ -157,24 +157,24 @@
 "T" = (
 /obj/structure/table/wood,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "U" = (
 /turf/open/floor/wood{
 	icon_state = "wood-broken4";
 	tag = ""
 	},
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "W" = (
 /obj/structure/chair/stool/bamboo,
 /turf/open/floor/bamboo,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "X" = (
 /turf/closed/wall/mineral/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Y" = (
 /obj/structure/table,
 /turf/open/floor/wood,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Z" = (
 /obj/structure/flora/ausbushes/reedbush,
 /turf/open/water/toxic_pit,

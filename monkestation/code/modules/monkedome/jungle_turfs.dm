@@ -7,10 +7,21 @@ Nitrogen: 78.85 % (164 mol)
 Temperature: 126.85 °C (400 K)
 */
 
+/area/ruin/unpowered/jungleland
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = COLOR_VERY_SOFT_YELLOW
+
 /area/ruin/unpowered/ivymen
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = COLOR_VERY_SOFT_YELLOW
 	icon_state = "red"
 
 /area/ruin/unpowered/tar_temple
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = COLOR_VERY_SOFT_YELLOW
 	icon_state = "red"
 
 /area/pregen
@@ -28,6 +39,7 @@ Temperature: 126.85 °C (400 K)
 	has_gravity = TRUE
 
 /area/jungleland
+	static_lighting = FALSE
 	name = "Jungleland"
 	has_gravity = TRUE
 	requires_power = TRUE
@@ -109,7 +121,7 @@ Temperature: 126.85 °C (400 K)
 
 	can_mine = FALSE
 	I.play_tool_sound(user)
-	if(!do_after(user,10 SECONDS * I.toolspeed,src))
+	if(!do_after(user, 10 SECONDS * I.toolspeed, target = src))
 		can_mine = TRUE
 		return ..()
 	can_mine = TRUE

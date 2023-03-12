@@ -5,21 +5,21 @@
 /area/template_noop)
 "d" = (
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "f" = (
 /obj/item/ectoplasm,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "h" = (
 /mob/living/simple_animal/hostile/jungleland/corrupted_dryad,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "i" = (
 /obj/structure/table/wood,
 /obj/item/clothing/suit/cultrobes,
 /obj/item/clothing/head/culthood,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "m" = (
 /turf/open/floor/plating/dirt/jungleland/jungle,
 /area/template_noop)
@@ -32,7 +32,7 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/item/clothing/suit/space/hardsuit/cult,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "u" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -41,70 +41,70 @@
 /obj/structure/table/wood,
 /obj/item/stack/sheet/bone,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "z" = (
 /obj/structure/table/wood,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "B" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/mob_spawn/human/corpse/damaged,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "D" = (
 /obj/item/flashlight/flare/torch,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "F" = (
 /obj/structure/table/wood,
 /obj/item/stack/sheet/runed_metal,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "G" = (
 /obj/structure/table/wood,
 /obj/item/stack/sheet/sinew{
 	amount = 3
 	},
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "I" = (
 /obj/structure/table/wood,
 /obj/item/kitchen/knife/ritual,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "J" = (
 /obj/structure/table/wood,
 /obj/item/stack/sheet/runed_metal,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "L" = (
 /mob/living/simple_animal/hostile/jungleland/corrupted_dryad,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "O" = (
 /obj/structure/table/wood,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Q" = (
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "U" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/mob_spawn/human/corpse/damaged,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "V" = (
 /obj/structure/mineral_door/wood,
 /obj/structure/barricade/wooden/crude,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "W" = (
 /turf/closed/mineral/ash_rock/jungle/deepjungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Z" = (
 /obj/item/ectoplasm,
 /turf/open/floor/plating/ashplanet/rocky/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 
 (1,1,1) = {"
 m

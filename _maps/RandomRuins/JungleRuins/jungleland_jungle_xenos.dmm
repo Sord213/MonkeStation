@@ -2,7 +2,7 @@
 "aa" = (
 /obj/structure/alien/weeds/node,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "ab" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -34,7 +34,7 @@
 /obj/structure/alien/weeds,
 /obj/structure/alien/egg/burst,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "ao" = (
 /obj/structure/flora/tree/jungle/small,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -68,7 +68,7 @@
 "aw" = (
 /obj/structure/alien/weeds,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "ax" = (
 /obj/structure/flora/junglebush/b,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -84,7 +84,7 @@
 "aA" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "aC" = (
 /mob/living/simple_animal/hostile/alien/sentinel{
 	maxbodytemp = 550
@@ -94,7 +94,7 @@
 "aD" = (
 /obj/structure/punching_bag,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "aE" = (
 /obj/effect/decal/cleanable/xenoblood/xgibs/limb,
 /obj/effect/decal/cleanable/xenoblood/xgibs,
@@ -127,7 +127,7 @@
 /area/template_noop)
 "aK" = (
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "aN" = (
 /obj/item/ammo_casing/shotgun/buckshot,
 /obj/effect/decal/cleanable/blood,
@@ -150,7 +150,7 @@
 	plants_off = 1
 	},
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "aS" = (
 /obj/structure/flora/rock/jungle,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -165,7 +165,7 @@
 /area/template_noop)
 "aV" = (
 /turf/closed/indestructible/syndicate,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "aW" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -187,13 +187,13 @@
 /obj/item/stack/sheet/mineral/wood,
 /obj/item/stack/sheet/mineral/wood,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "ge" = (
 /mob/living/simple_animal/hostile/alien/drone{
 	maxbodytemp = 550
 	},
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "gI" = (
 /obj/structure/sign/warning,
 /turf/closed/indestructible/syndicate,
@@ -225,14 +225,14 @@
 /obj/item/food/canned/beans,
 /obj/item/food/canned/beans,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "uP" = (
 /turf/closed/indestructible/syndicate,
 /area/template_noop)
 "vl" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/wood/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "vF" = (
 /obj/structure/fence/end,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -243,12 +243,12 @@
 /obj/item/food/canned/beefbroth,
 /obj/item/food/canned/beefbroth,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "yv" = (
 /obj/effect/mob_spawn/human/corpse/damaged,
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/wood/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Fi" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -256,7 +256,7 @@
 /area/template_noop)
 "Gy" = (
 /turf/open/floor/wood/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Ij" = (
 /obj/item/kitchen/knife/combat,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -265,7 +265,7 @@
 /obj/structure/alien/weeds,
 /obj/structure/closet/crate/freezer,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Ou" = (
 /obj/structure/alien/weeds,
 /obj/structure/bed/nest,
@@ -273,7 +273,7 @@
 /obj/item/clothing/suit/hooded/explorer,
 /obj/item/disk/design_disk/modkit_disc/rapid_repeater,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "PC" = (
 /obj/item/target/alien,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -283,7 +283,7 @@
 /obj/structure/closet/crate/secure/weapon,
 /obj/item/storage/box/lethalshot,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "Ur" = (
 /obj/structure/fence/corner{
 	dir = 6
@@ -293,7 +293,7 @@
 "UW" = (
 /obj/structure/bed,
 /turf/open/floor/wood/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 "VC" = (
 /obj/item/target,
 /turf/open/floor/plating/dirt/jungleland/jungle,
@@ -306,7 +306,7 @@
 /obj/item/clothing/glasses/meson/night,
 /obj/item/clothing/mask/gas/explorer,
 /turf/open/floor/plating/dirt/jungleland/jungle,
-/area/ruin/unpowered)
+/area/ruin/unpowered/jungleland)
 
 (1,1,1) = {"
 aP
