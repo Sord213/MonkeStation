@@ -12225,7 +12225,7 @@
 /area/hallway/monkedome/engineering/fore)
 "ejE" = (
 /obj/machinery/hydroponics/constructable,
-/turf/open/genturf,
+/turf/open/floor/plating/dirt/jungle/wasteland,
 /area/hydroponics)
 "ejI" = (
 /obj/machinery/door/airlock/engineering{
@@ -28230,7 +28230,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/port)
 "jZD" = (
-/turf/open/genturf,
+/turf/open/floor/plating/dirt/jungle/wasteland,
 /area/hydroponics)
 "kab" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
