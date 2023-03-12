@@ -108,8 +108,10 @@ Temperature: 126.85 °C (400 K)
 
 /turf/open/floor/plating/dirt/jungleland/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/gun/energy/kinetic_accelerator))
-		var/obj/item/gun/energy/kinetic_accelerator/gun = I
-		gun.strike_thing(src)
+		var/obj/item/gun/energy/kinetic_accelerator/gun
+		var/obj/item/ammo_casing/energy/kinetic/guns_ammo = gun.ammo_type
+		gun.empty()
+		guns_ammo.strike_thing(src)
 		return
 
 	if(I.tool_behaviour != TOOL_MINING && I.tool_behaviour != TOOL_SHOVEL)
