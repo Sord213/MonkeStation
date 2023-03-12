@@ -107,6 +107,11 @@ Temperature: 126.85 °C (400 K)
 			new /obj/item/stack/ore/glass(src)
 
 /turf/open/floor/plating/dirt/jungleland/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/gun/energy/kinetic_accelerator))
+		var/obj/item/gun/energy/kinetic_accelerator/gun = I
+		gun.strike_thing(src)
+		return
+
 	if(I.tool_behaviour != TOOL_MINING && I.tool_behaviour != TOOL_SHOVEL)
 		return ..()
 
