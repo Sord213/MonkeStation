@@ -38619,7 +38619,7 @@
 /obj/machinery/power/apc{
 	dir = 8;
 	pixel_x = -24;
-	areastring = "Xenobio Outdoor Testing";
+	areastring = "/area/science/monkedome/xenobiooutdoor";
 	name = "Xenobio Outdoor Testing APC"
 	},
 /obj/structure/cable/yellow{

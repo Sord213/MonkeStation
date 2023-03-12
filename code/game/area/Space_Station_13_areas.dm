@@ -1898,3 +1898,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/solarsouthprimary
 	name = "South Primary Solar Array"
 	icon_state = "yellow"
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = COLOR_VERY_SOFT_YELLOW
