@@ -36,7 +36,7 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 	var/turf/new_turf = get_turf(destination)
 	if (old_turf?.z != new_turf?.z)
 		onTransitZ(old_turf?.z, new_turf?.z)
-	SEND_SIGNAL(destination, COMSIG_GHOST_ENTERED)
+	SEND_SIGNAL(src, COMSIG_GHOST_ENTERED, destination, old_turf)
 	return ..()
 
 /mob/dead/get_stat_tab_status()
