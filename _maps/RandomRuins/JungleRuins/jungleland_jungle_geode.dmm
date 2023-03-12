@@ -20,6 +20,7 @@
 /turf/template_noop,
 /area/template_noop)
 "L" = (
+/turf/template_noop,
 /area/ruin/unpowered/jungleland)
 "N" = (
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
