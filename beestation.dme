@@ -3910,7 +3910,6 @@
 #include "monkestation\code\modules\particles\byond_particles\emitter\smoke.dm"
 #include "monkestation\code\modules\particles\byond_particles\emitter\spark.dm"
 #include "monkestation\code\modules\particles\byond_particles\emitter\weather.dm"
-#include "monkestation\code\modules\particles\byond_particles\particle\_weather_particle.dm"
 #include "monkestation\code\modules\particles\byond_particles\particle\burst.dm"
 #include "monkestation\code\modules\particles\byond_particles\particle\fire.dm"
 #include "monkestation\code\modules\particles\byond_particles\particle\misc.dm"
