@@ -10,7 +10,7 @@
 
 		BIOME_PLAINS = list(LOW_HUMIDITY = /datum/biome/junglestation/toxic_pit,
 						MED_HUMIDITY = /datum/biome/junglestation/plains,
-						HIGH_HUMIDITY = /datum/biome/junglestation/dry_swamp)
+						HIGH_HUMIDITY = /datum/biome/junglestation/plains)
 	)
 	///Used to select "zoom" level into the perlin noise, higher numbers result in slower transitions
 	var/perlin_zoom = 65

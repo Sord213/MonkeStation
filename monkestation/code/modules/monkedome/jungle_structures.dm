@@ -221,13 +221,18 @@
 
 /obj/structure/herb/random_plant/Initialize(mapload)
 	. = ..()
-	random_plant = pick(typesof(/obj/item/food/grown))
-	name = initial(random_plant.plantname)
-	var/obj/item/seeds/random_seeds = initial(random_plant.seed)
+	random_plant = pick(subtypesof(/obj/item/food/grown))
+	random_plant = new random_plant
+	if(random_plant.plantname)
+		name = random_plant.plantname
+	else
+		name = random_plant.name
+	var/obj/item/seeds/random_seeds = random_plant.seed
 	icon = initial(random_seeds.growing_icon)
 	icon_state = "[initial(random_seeds.icon_grow)][initial(random_seeds.growthstages)]"
 	desc = initial(random_seeds.desc)
 	picked_amt = rand(1,4)
+
 /obj/structure/herb/explosive_shrooms
 	name = "Explosive Mushroom"
 	desc = "Highly volatile mushrooms, they contain a high amount of volatile alkalines that will explode after a short delay if stepped on."

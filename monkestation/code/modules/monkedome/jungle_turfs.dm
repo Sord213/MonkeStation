@@ -108,7 +108,7 @@ Temperature: 126.85 °C (400 K)
 
 /turf/open/floor/plating/dirt/jungleland/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/gun/energy/kinetic_accelerator))
-		var/obj/item/gun/energy/kinetic_accelerator/gun
+		var/obj/item/gun/energy/kinetic_accelerator/gun = I
 		var/obj/item/projectile/kinetic/gun_projectile = new()
 		gun.empty()
 		gun_projectile.strike_thing(src)
@@ -202,13 +202,13 @@ Temperature: 126.85 °C (400 K)
 /turf/open/water/toxic_pit
 	name = "sulphuric pit"
 	desc = "Very toxic"
-	color = "#00c167"
+	//color = "#00c167" /// can't do this because of how trees render
 	slowdown = 2
 	initial_gas_mix = JUNGLELAND_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 	baseturfs = /turf/open/water/toxic_pit
 
-/turf/open/water/toxic_pit/Entered(atom/movable/AM)
+/turf/open/water/toxic_pit/Entered(atom/movable/AM, atom/old_loc, list/atom/old_locs)
 	. = ..()
 	var/mob/living/carbon/human/humie = AM
 	if(AM.movement_type & (FLYING|FLOATING) || !AM.has_gravity())
