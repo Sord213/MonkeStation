@@ -3869,6 +3869,7 @@
 #include "monkestation\code\modules\mapping\random_bars.dm"
 #include "monkestation\code\modules\mapping\random_engines.dm"
 #include "monkestation\code\modules\mentor\mentorfriend.dm"
+#include "monkestation\code\modules\mining\equipment\explorer_gear.dm"
 #include "monkestation\code\modules\mob\inventory.dm"
 #include "monkestation\code\modules\mob\mob_defines.dm"
 #include "monkestation\code\modules\mob\dead\new_player\sprite_accessories.dm"
