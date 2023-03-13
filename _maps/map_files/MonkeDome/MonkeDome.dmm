@@ -1027,8 +1027,8 @@
 /area/maintenance/monkedome/civilian/starboard)
 "auz" = (
 /obj/machinery/button/door{
-	name = "Research Lounge Shutter Control";
 	id_tag = "resloungeshutters";
+	name = "Research Lounge Shutter Control";
 	pixel_y = -24
 	},
 /obj/effect/turf_decal/tile/dark_purple,
@@ -1832,8 +1832,8 @@
 "aJq" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Research Storage Room Shutters";
-	id = "rstorageshutters"
+	id = "rstorageshutters";
+	name = "Research Storage Room Shutters"
 	},
 /turf/open/floor/plasteel,
 /area/science/monkedome/constructionarea)
@@ -2561,8 +2561,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/machinery/light,
@@ -3271,6 +3271,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/disposal)
+"biD" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "biJ" = (
 /obj/machinery/button/door{
 	id_tag = "ArtSShutters";
@@ -3526,8 +3532,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/machinery/camera/autoname,
@@ -3887,9 +3893,9 @@
 /area/crew_quarters/heads/captain)
 "bsI" = (
 /obj/machinery/button/door{
+	id = "pvshutter1";
 	name = "Visitation Shutters 1";
-	pixel_x = -28;
-	id = "pvshutter1"
+	pixel_x = -28
 	},
 /obj/structure/chair/stool,
 /obj/effect/turf_decal/tile/orange/tile_full,
@@ -3898,8 +3904,8 @@
 "bsJ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "AI Upload Exterior Shutters";
-	id = "aiupload1"
+	id = "aiupload1";
+	name = "AI Upload Exterior Shutters"
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
@@ -3963,8 +3969,8 @@
 "btq" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Apothecary Safety Shutters";
-	id = "apothshutters"
+	id = "apothshutters";
+	name = "Apothecary Safety Shutters"
 	},
 /turf/open/floor/plating,
 /area/medical/apothecary)
@@ -4081,8 +4087,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/tile/darkblue{
@@ -4961,8 +4967,8 @@
 "bJh" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Cafe Shutters";
-	id = "pcafeshutters"
+	id = "pcafeshutters";
+	name = "Prison Cafe Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -5034,8 +5040,8 @@
 "bLl" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Research Lounge Shutters";
-	id_tag = "resloungeshutters"
+	id_tag = "resloungeshutters";
+	name = "Research Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -5113,8 +5119,8 @@
 "bMK" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Farm Shutters";
-	id = "pfarmshutters"
+	id = "pfarmshutters";
+	name = "Prison Farm Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -5289,8 +5295,8 @@
 /area/maintenance/disposal/incinerator)
 "bQB" = (
 /obj/machinery/atmospherics/components/binary/pump{
-	name = "Port Mix to North Ports";
-	dir = 8
+	dir = 8;
+	name = "Port Mix to North Ports"
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
@@ -5655,8 +5661,8 @@
 /area/storage/art)
 "bVR" = (
 /obj/machinery/door/airlock/gold{
-	name = "Executive Restroom";
-	id_tag = "exectoilet"
+	id_tag = "exectoilet";
+	name = "Executive Restroom"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -5681,8 +5687,8 @@
 "bWl" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Research Lounge Shutters";
-	id_tag = "resloungeshutters"
+	id_tag = "resloungeshutters";
+	name = "Research Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -5734,8 +5740,8 @@
 	},
 /obj/item/paper_bin,
 /obj/item/flashlight/lamp/green{
-	pixel_y = 12;
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = 12
 	},
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain)
@@ -5849,9 +5855,9 @@
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door{
-	pixel_x = 28;
 	id = "pgymshutters";
-	name = "Prison Gym Shutter Control"
+	name = "Prison Gym Shutter Control";
+	pixel_x = 28
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -6037,8 +6043,8 @@
 "cdJ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Cafe Shutters";
-	id = "pcafeshutters"
+	id = "pcafeshutters";
+	name = "Prison Cafe Shutters"
 	},
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
@@ -7048,6 +7054,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"cto" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "ctJ" = (
 /obj/machinery/nanite_program_hub,
 /obj/effect/turf_decal/bot,
@@ -7574,8 +7586,8 @@
 "cCi" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/southleft{
-	req_access_txt = "3";
-	name = "Warden's Desk"
+	name = "Warden's Desk";
+	req_access_txt = "3"
 	},
 /obj/machinery/door/window/northleft{
 	name = "Warden's Desk"
@@ -7621,9 +7633,9 @@
 /area/maintenance/monkedome/comsec/central)
 "cDp" = (
 /obj/machinery/button/door{
-	pixel_y = -28;
 	id = "capoffice1";
-	name = "Captain's Office Shutter Control"
+	name = "Captain's Office Shutter Control";
+	pixel_y = -28
 	},
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain)
@@ -7701,8 +7713,8 @@
 	pixel_y = 4
 	},
 /obj/item/folder/white{
-	pixel_y = 2;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 2
 	},
 /obj/item/pen,
 /obj/machinery/airalarm/directional/west,
@@ -7860,8 +7872,8 @@
 	dir = 4
 	},
 /obj/structure/fence/end{
-	pixel_x = 14;
-	density = 0
+	density = 0;
+	pixel_x = 14
 	},
 /turf/open/floor/plating/dirt/jungleland,
 /area/science/monkedome/xenobiooutdoor)
@@ -7936,15 +7948,15 @@
 /obj/machinery/button/door{
 	id = "hosprivacy";
 	name = "Privacy Shutters Control";
-	pixel_y = -24;
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = -24
 	},
 /obj/machinery/light,
 /obj/machinery/button/door{
-	pixel_x = 6;
-	pixel_y = -24;
+	id = "secsuits";
 	name = "Security Suit Storage";
-	id = "secsuits"
+	pixel_x = 6;
+	pixel_y = -24
 	},
 /turf/open/floor/carpet/red,
 /area/crew_quarters/heads/hos)
@@ -8648,6 +8660,10 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison)
+"cXe" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "cXo" = (
 /turf/closed/wall/r_wall,
 /area/science/monkedome/xenobiostorage)
@@ -8856,8 +8872,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /turf/open/floor/plasteel,
@@ -8871,8 +8887,8 @@
 	dir = 4
 	},
 /obj/structure/fence/end{
-	pixel_x = 14;
-	density = 0
+	density = 0;
+	pixel_x = 14
 	},
 /turf/open/genturf,
 /area/pregen/station)
@@ -8935,8 +8951,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/tile/darkblue{
@@ -9157,6 +9173,7 @@
 /area/hallway/monkedome/civilian/port)
 "dgD" = (
 /obj/machinery/light,
+/obj/machinery/suit_storage_unit/engine,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
 "dhp" = (
@@ -9287,8 +9304,8 @@
 	name = "Visitation Door 2"
 	},
 /obj/machinery/door/poddoor/shutters{
-	name = "Visitation Shutters 2";
-	id = "pvshutter2"
+	id = "pvshutter2";
+	name = "Visitation Shutters 2"
 	},
 /obj/effect/turf_decal/tile/orange/tile_full,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -9553,8 +9570,8 @@
 /obj/item/radio/intercom{
 	desc = "Talk through this. It looks like it has been modified to not broadcast.";
 	name = "Prison Intercom (General)";
-	prison_radio = 1;
-	pixel_x = -28
+	pixel_x = -28;
+	prison_radio = 1
 	},
 /obj/effect/turf_decal/tile/orange/tile_marquee,
 /turf/open/floor/plasteel,
@@ -9647,8 +9664,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/tile/dark_purple,
@@ -9664,9 +9681,6 @@
 /turf/open/floor/plating,
 /area/maintenance/monkedome/engine/upperport)
 "dqJ" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
@@ -10019,8 +10033,8 @@
 /area/medical/genetics)
 "dxk" = (
 /obj/machinery/atmospherics/components/binary/pump{
-	name = "Port to Fuel Pipe";
-	dir = 1
+	dir = 1;
+	name = "Port to Fuel Pipe"
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer2,
 /turf/open/floor/plasteel,
@@ -10378,10 +10392,6 @@
 "dDR" = (
 /turf/closed/wall,
 /area/crew_quarters/toilet/restrooms)
-"dDX" = (
-/obj/machinery/hydroponics/constructable,
-/turf/open/genturf,
-/area/pregen/station)
 "dEs" = (
 /obj/structure/sign/directions/engineering{
 	dir = 1;
@@ -10661,8 +10671,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/modular_fabricator/autolathe,
 /obj/machinery/door/window/northleft{
-	req_one_access_txt = "7;29";
-	name = "R&D Desk"
+	name = "R&D Desk";
+	req_one_access_txt = "7;29"
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
@@ -11478,8 +11488,8 @@
 "dXw" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
-	name = "Xenobio Hall Shutters";
-	id = "xenohallshutters"
+	id = "xenohallshutters";
+	name = "Xenobio Hall Shutters"
 	},
 /turf/open/floor/plating,
 /area/science/monkedome/xenobiohall)
@@ -12223,10 +12233,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/engineering/fore)
-"ejE" = (
-/obj/machinery/hydroponics/constructable,
-/turf/open/floor/plating/dirt/jungle/wasteland,
-/area/hydroponics)
 "ejI" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Freezer Room"
@@ -12663,8 +12669,8 @@
 "erE" = (
 /obj/machinery/modular_fabricator/autolathe,
 /obj/machinery/door/window/northleft{
-	req_access_txt = "48";
-	name = "autolathe door"
+	name = "autolathe door";
+	req_access_txt = "48"
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
@@ -12927,6 +12933,10 @@
 /obj/item/stock_parts/cell/high{
 	charge = 100;
 	maxcharge = 15000
+	},
+/obj/item/storage/secure/safe/caps_spare{
+	pixel_x = 6;
+	pixel_y = 28
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
@@ -13225,9 +13235,9 @@
 	dir = 4
 	},
 /obj/machinery/button/door{
-	pixel_y = 24;
+	id = "apothshutters";
 	name = "Apothecary Shutter Control";
-	id = "apothshutters"
+	pixel_y = 24
 	},
 /obj/machinery/light{
 	dir = 1
@@ -13557,15 +13567,16 @@
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/doorButtons/access_button{
-	idDoor = "virology_airlock_interior";
-	idSelf = "virology_airlock_control";
-	name = "Virology Access Button";
-	req_access_txt = "39";
-	pixel_x = 24
-	},
 /obj/effect/mapping_helpers/airlock/access/any/medical/virology,
 /obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/doorButtons/access_button{
+	idDoor = "virology_airlock_exterior";
+	idSelf = "virology_airlock_control";
+	name = "Virology Access Button";
+	pixel_x = -24;
+	pixel_y = 4;
+	req_access_txt = "39"
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
 "eIf" = (
@@ -14316,8 +14327,8 @@
 	},
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/door/poddoor/shutters{
-	name = "Virology LS Acess Shutters";
-	id = "viroLS"
+	id = "viroLS";
+	name = "Virology LS Acess Shutters"
 	},
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
@@ -14403,8 +14414,8 @@
 /obj/item/radio/intercom{
 	desc = "Talk through this. It looks like it has been modified to not broadcast.";
 	name = "Prison Intercom (General)";
-	prison_radio = 1;
-	pixel_x = -28
+	pixel_x = -28;
+	prison_radio = 1
 	},
 /turf/open/floor/plasteel/grimy,
 /area/security/prison)
@@ -15881,8 +15892,8 @@
 "fzZ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "infirmary shutters";
-	id = "infirmary"
+	id = "infirmary";
+	name = "infirmary shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -17166,8 +17177,8 @@
 "fYI" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "infirmary shutters";
-	id = "infirmary"
+	id = "infirmary";
+	name = "infirmary shutters"
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
@@ -17231,9 +17242,9 @@
 	dir = 9
 	},
 /obj/machinery/button/door{
-	pixel_y = 24;
+	id = "chemshutters";
 	name = "Chemistry Privacy Shutter Control";
-	id = "chemshutters"
+	pixel_y = 24
 	},
 /obj/machinery/light{
 	dir = 1
@@ -17891,8 +17902,8 @@
 /obj/structure/table/wood,
 /obj/machinery/reagentgrinder,
 /obj/structure/sink/kitchen{
-	pixel_y = 28;
-	name = "sink"
+	name = "sink";
+	pixel_y = 28
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/bar/bartendersquarters)
@@ -17989,15 +18000,15 @@
 "gpS" = (
 /obj/machinery/button/door{
 	id = "engconstdoor";
-	pixel_y = -6;
+	name = "Construction Area Door Bolt Control";
 	pixel_x = 24;
-	name = "Construction Area Door Bolt Control"
+	pixel_y = -6
 	},
 /obj/machinery/button/door{
-	pixel_y = 6;
-	pixel_x = 24;
 	id = "engconstshutters";
-	name = "Construction Safety Shutter Control"
+	name = "Construction Safety Shutter Control";
+	pixel_x = 24;
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel,
 /area/engine/monkedome/constructionarea)
@@ -18051,8 +18062,8 @@
 	},
 /obj/item/storage/toolbox/emergency,
 /obj/item/storage/toolbox/emergency{
-	pixel_y = 7;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 7
 	},
 /obj/item/assembly/signaler,
 /turf/open/floor/plasteel/dark,
@@ -18108,8 +18119,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/machinery/camera/autoname{
@@ -18366,8 +18377,8 @@
 "gxh" = (
 /obj/item/bikehorn/rubberducky{
 	color = "#aa0000";
-	name = "unholy ducky";
-	desc = "You feel an unknowable terror upon looking at this duck. What secrets does it hold? What monsters has it known?"
+	desc = "You feel an unknowable terror upon looking at this duck. What secrets does it hold? What monsters has it known?";
+	name = "unholy ducky"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -18633,8 +18644,8 @@
 	id = "Biohazard";
 	name = "Biohazard Shutter Control";
 	pixel_x = 24;
-	req_access_txt = "47";
-	pixel_y = 12
+	pixel_y = 12;
+	req_access_txt = "47"
 	},
 /obj/machinery/button/door{
 	desc = "A remote control switch for the research division entryway.";
@@ -18763,8 +18774,8 @@
 /area/engine/atmos)
 "gEG" = (
 /obj/structure/reagent_dispensers/watertank{
-	name = "Emergency Poolwater Supply";
-	desc = "In case of emergency, break open tank. CAUTION: Do not break outside of the pool you turds."
+	desc = "In case of emergency, break open tank. CAUTION: Do not break outside of the pool you turds.";
+	name = "Emergency Poolwater Supply"
 	},
 /turf/open/floor/grass/astroturf,
 /area/crew_quarters/fitness/pool)
@@ -18960,8 +18971,8 @@
 /obj/machinery/button/door{
 	id = "detective_shutters";
 	name = "detective's office shutters control";
-	req_access_txt = "4";
-	pixel_x = -28
+	pixel_x = -28;
+	req_access_txt = "4"
 	},
 /obj/structure/rack,
 /obj/item/storage/secure/briefcase{
@@ -19247,8 +19258,8 @@
 /obj/machinery/button/door{
 	id = "experimentor";
 	name = "Experimentor Door Control";
-	req_access_txt = "47";
-	pixel_y = -24
+	pixel_y = -24;
+	req_access_txt = "47"
 	},
 /turf/open/floor/plasteel/white,
 /area/science/explab)
@@ -19581,7 +19592,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/port)
 "gUE" = (
-/obj/machinery/conveyor/auto{
+/obj/machinery/conveyor{
 	dir = 6;
 	id = "QMLoad"
 	},
@@ -19645,8 +19656,8 @@
 /area/maintenance/monkedome/civilian/upperport)
 "gVN" = (
 /obj/machinery/atmospherics/components/binary/pump{
-	name = "Thermo to Gas";
-	dir = 4
+	dir = 4;
+	name = "Thermo to Gas"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -21019,8 +21030,8 @@
 "hwn" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Research Lounge Shutters";
-	id_tag = "resloungeshutters"
+	id_tag = "resloungeshutters";
+	name = "Research Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -21238,8 +21249,8 @@
 /obj/item/radio/intercom{
 	desc = "Talk through this. It looks like it has been modified to not broadcast.";
 	name = "Prison Intercom (General)";
-	prison_radio = 1;
-	pixel_x = -28
+	pixel_x = -28;
+	prison_radio = 1
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -21454,8 +21465,8 @@
 /area/security/lockerroom)
 "hEl" = (
 /obj/machinery/door/window/brigdoor/westright{
-	req_access_txt = "16";
-	name = "Tertiary AI Core Access"
+	name = "Tertiary AI Core Access";
+	req_access_txt = "16"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -21695,8 +21706,8 @@
 "hIW" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Captain's Quarters Shutters";
-	id = "capquarters1"
+	id = "capquarters1";
+	name = "Captain's Quarters Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -22866,6 +22877,16 @@
 /obj/machinery/meter,
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"icX" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/obj/structure/fence/end{
+	density = 0;
+	pixel_x = -14
+	},
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "idf" = (
 /obj/effect/turf_decal/trimline/dark_red/line{
 	dir = 1
@@ -22897,8 +22918,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/tile/darkblue{
@@ -24603,8 +24624,8 @@
 	dir = 1
 	},
 /obj/machinery/button/door{
-	name = "Toxins Shutter Control";
 	id = "toxshutters";
+	name = "Toxins Shutter Control";
 	pixel_x = 24
 	},
 /turf/open/floor/plasteel,
@@ -24854,8 +24875,8 @@
 /area/security/prison)
 "iOy" = (
 /obj/machinery/button/door{
-	name = "interrogation window shutters";
 	id = "interrogation";
+	name = "interrogation window shutters";
 	pixel_y = 24
 	},
 /turf/open/floor/plasteel/dark,
@@ -24882,8 +24903,8 @@
 "iOO" = (
 /obj/effect/turf_decal/tile/dark_green/tile_full,
 /obj/machinery/door/airlock/virology{
-	name = "Virology Lab Bravo";
-	id_tag = "ViroB"
+	id_tag = "ViroB";
+	name = "Virology Lab Bravo"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -25551,8 +25572,8 @@
 "jaV" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "ComSec Lounge Shutters";
-	id = "comsecshutters1"
+	id = "comsecshutters1";
+	name = "ComSec Lounge Shutters"
 	},
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
@@ -25937,8 +25958,8 @@
 "jha" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Lounge Shutters";
-	id = "ploungeshutters"
+	id = "ploungeshutters";
+	name = "Prison Lounge Shutters"
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
@@ -26069,8 +26090,8 @@
 /area/medical/medbay/lobby)
 "jkO" = (
 /obj/machinery/atmospherics/components/binary/pump{
-	name = "Pure to Ports";
-	dir = 8
+	dir = 8;
+	name = "Pure to Ports"
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
@@ -26155,6 +26176,27 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engine_smes)
+"jlT" = (
+/obj/structure/rack,
+/obj/item/tank/internals/air{
+	pixel_y = 6
+	},
+/obj/item/tank/internals/air{
+	pixel_y = 3
+	},
+/obj/item/tank/internals/air,
+/obj/item/clothing/mask/breath{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/clothing/mask/breath{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/clothing/mask/breath,
+/obj/effect/turf_decal/tile/dark_green/tile_full,
+/turf/open/floor/plasteel,
+/area/hydroponics)
 "jlU" = (
 /obj/machinery/porta_turret/ai{
 	dir = 4
@@ -26792,6 +26834,9 @@
 /obj/item/target/syndicate,
 /turf/open/floor/plasteel,
 /area/security/range)
+"jzH" = (
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "jzM" = (
 /obj/machinery/vending/cola/random,
 /obj/structure/sign/poster/random{
@@ -27964,9 +28009,9 @@
 /area/engine/atmos)
 "jUz" = (
 /obj/machinery/button/door{
-	pixel_y = -28;
+	id = "aiupload1";
 	name = "AI Upload Exterior Shutters Control";
-	id = "aiupload1"
+	pixel_y = -28
 	},
 /obj/machinery/camera/motion{
 	c_tag = "AI Upload Chamber - Starboard";
@@ -28143,8 +28188,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/tile/red,
@@ -28212,16 +28257,16 @@
 /area/science/monkedome/xenobiooutdoor)
 "jZo" = (
 /obj/machinery/button/door{
-	pixel_x = 6;
-	pixel_y = -24;
 	id = "medconshutters";
-	name = "Medical Construction Shutter Control"
+	name = "Medical Construction Shutter Control";
+	pixel_x = 6;
+	pixel_y = -24
 	},
 /obj/machinery/button/door{
-	pixel_x = -6;
-	pixel_y = -24;
 	id = "medcondoor";
-	name = "Medical Construction Door Control"
+	name = "Medical Construction Door Control";
+	pixel_x = -6;
+	pixel_y = -24
 	},
 /turf/open/floor/plasteel,
 /area/medical/monkedome/constructionarea)
@@ -28230,8 +28275,9 @@
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/civilian/port)
 "jZD" = (
-/turf/open/floor/plating/dirt/jungle/wasteland,
-/area/hydroponics)
+/obj/machinery/hydroponics/constructable,
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "kab" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /turf/open/floor/plasteel,
@@ -28440,8 +28486,8 @@
 "kev" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "interrogation shutters";
-	id = "interrogation"
+	id = "interrogation";
+	name = "interrogation shutters"
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
@@ -28580,8 +28626,8 @@
 /area/hallway/monkedome/medical)
 "khv" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Construction Area";
-	id_tag = "engconstdoor"
+	id_tag = "engconstdoor";
+	name = "Construction Area"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/plating,
@@ -29175,10 +29221,10 @@
 /area/maintenance/monkedome/engine/upperstarboard)
 "ksf" = (
 /obj/machinery/button/door{
-	pixel_y = -24;
-	pixel_x = -24;
 	id = "comsecshutters1";
-	name = "ComSec Lounge Shutter Control"
+	name = "ComSec Lounge Shutter Control";
+	pixel_x = -24;
+	pixel_y = -24
 	},
 /turf/open/floor/plasteel,
 /area/hallway/monkedome/security)
@@ -29229,8 +29275,8 @@
 /area/security/courtroom)
 "ksY" = (
 /obj/machinery/door/window/northright{
-	req_access_txt = "2";
-	name = "Court Cell"
+	name = "Court Cell";
+	req_access_txt = "2"
 	},
 /obj/effect/turf_decal/tile/red/tile_side{
 	dir = 6
@@ -29695,10 +29741,10 @@
 	dir = 1
 	},
 /obj/machinery/button/door{
-	name = "Xenobio Hall Shutter Control";
 	id = "xenohallshutters";
-	pixel_y = 24;
-	pixel_x = 24
+	name = "Xenobio Hall Shutter Control";
+	pixel_x = 24;
+	pixel_y = 24
 	},
 /obj/effect/turf_decal/trimline/dark_purple/filled/corner{
 	dir = 4
@@ -30319,8 +30365,8 @@
 "kQi" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Captain's Quarters Shutters";
-	id = "capquarters1"
+	id = "capquarters1";
+	name = "Captain's Quarters Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -30681,8 +30727,8 @@
 	dir = 4
 	},
 /obj/structure/sign/warning{
-	name = "FLYING SHIT HAZARD";
-	desc = "DUCK!"
+	desc = "DUCK!";
+	name = "FLYING SHIT HAZARD"
 	},
 /turf/open/genturf,
 /area/pregen/station)
@@ -31023,7 +31069,7 @@
 	volume_rate = 200
 	},
 /turf/open/floor/plating/outdoors,
-/area/jungleland/explored)
+/area/maintenance/disposal/incinerator)
 "lbf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/brown/tile_side{
@@ -31189,8 +31235,8 @@
 /obj/machinery/door_timer{
 	id = "Cell 1";
 	name = "Cell 1";
-	pixel_y = 32;
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 32
 	},
 /obj/effect/turf_decal/tile/red/tile_side{
 	dir = 4
@@ -31638,8 +31684,8 @@
 "lkn" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Lounge Shutters";
-	id = "ploungeshutters"
+	id = "ploungeshutters";
+	name = "Prison Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -32488,8 +32534,8 @@
 /area/security/prison)
 "lyt" = (
 /obj/machinery/door/window/brigdoor/eastleft{
-	req_access_txt = "16";
-	name = "Secondary AI Core Access"
+	name = "Secondary AI Core Access";
+	req_access_txt = "16"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -32518,8 +32564,8 @@
 	name = "Research and Development Shutter"
 	},
 /obj/machinery/door/window/northright{
-	req_one_access_txt = "7;29";
-	name = "R&D Desk"
+	name = "R&D Desk";
+	req_one_access_txt = "7;29"
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white,
@@ -33048,8 +33094,8 @@
 	},
 /obj/machinery/power/apc/auto_name/north,
 /obj/machinery/atmospherics/components/binary/pump{
-	name = "Fuel Pipe to Incinerator";
-	dir = 4
+	dir = 4;
+	name = "Fuel Pipe to Incinerator"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -33743,8 +33789,8 @@
 /area/quartermaster/storage)
 "lXF" = (
 /obj/machinery/door/window/northleft{
-	req_access_txt = "37";
-	name = "Library Desk Door"
+	name = "Library Desk Door";
+	req_access_txt = "37"
 	},
 /turf/open/floor/wood,
 /area/library)
@@ -33908,8 +33954,8 @@
 	},
 /obj/machinery/button/door{
 	id = "viroLS";
-	pixel_y = 24;
-	name = "Virology LS Shutter Control"
+	name = "Virology LS Shutter Control";
+	pixel_y = 24
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -34113,8 +34159,8 @@
 "mgs" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Captain's Quarters Shutters";
-	id = "capquarters1"
+	id = "capquarters1";
+	name = "Captain's Quarters Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -35148,9 +35194,9 @@
 "mzp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door{
-	pixel_x = -28;
 	id = "ploungeshutters";
-	name = "Prison Lounge Shutter Control"
+	name = "Prison Lounge Shutter Control";
+	pixel_x = -28
 	},
 /turf/open/floor/plasteel/grimy,
 /area/security/prison)
@@ -35314,8 +35360,8 @@
 "mCk" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Farm Shutters";
-	id = "pfarmshutters"
+	id = "pfarmshutters";
+	name = "Prison Farm Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -35676,11 +35722,9 @@
 /turf/open/floor/plasteel/dark/telecomms,
 /area/tcommsat/server)
 "mGW" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
-	dir = 4
-	},
-/turf/open/floor/plating/outdoors,
-/area/pregen/station)
+/obj/machinery/suit_storage_unit/engine,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering)
 "mGY" = (
 /obj/machinery/vending/wardrobe/hydro_wardrobe,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
@@ -35738,8 +35782,8 @@
 "mHy" = (
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/westleft{
-	req_access_txt = "25";
-	name = "Bar Delivery"
+	name = "Bar Delivery";
+	req_access_txt = "25"
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar/bartendersquarters)
@@ -36692,8 +36736,8 @@
 "mZD" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Captain's Office Shutters";
-	id = "capoffice1"
+	id = "capoffice1";
+	name = "Captain's Office Shutters"
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
@@ -36861,8 +36905,8 @@
 /area/security/prison)
 "ndc" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
-	name = "Waste to Filter";
-	dir = 4
+	dir = 4;
+	name = "Waste to Filter"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -37383,8 +37427,8 @@
 "nnx" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Lounge Shutters";
-	id = "ploungeshutters"
+	id = "ploungeshutters";
+	name = "Prison Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -37393,32 +37437,32 @@
 /area/security/prison)
 "noa" = (
 /obj/structure/sink{
-	dir = 4;
-	pixel_x = 11;
 	color = "#FFD700";
+	desc = "God damn. Classy.";
+	dir = 4;
 	name = "gold plated executive sink";
-	desc = "God damn. Classy."
+	pixel_x = 11
 	},
 /obj/structure/mirror{
-	pixel_x = 28;
 	color = "#FFD700";
+	desc = "Maybe being on top does have its perks?";
 	name = "gold plated mirror";
-	desc = "Maybe being on top does have its perks?"
+	pixel_x = 28
 	},
 /obj/effect/turf_decal/tile/piss_yellow/tile_full,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 12;
 	color = "#FFD700";
+	desc = "A small lighting fixture, plated in solid gold.";
+	dir = 4;
 	name = "gold plated light fixture";
-	desc = "A small lighting fixture, plated in solid gold."
+	pixel_y = 12
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 1;
 	color = "#FFD700";
+	dir = 1;
 	name = "Gold Plated Air Vent"
 	},
 /turf/open/floor/plasteel/white,
@@ -37940,8 +37984,8 @@
 "nvb" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Captain's Quarters Shutters";
-	id = "capquarters1"
+	id = "capquarters1";
+	name = "Captain's Quarters Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -38028,8 +38072,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/machinery/light{
@@ -38617,10 +38661,10 @@
 	dir = 9
 	},
 /obj/machinery/power/apc{
-	dir = 8;
-	pixel_x = -24;
 	areastring = "/area/science/monkedome/xenobiooutdoor";
-	name = "Xenobio Outdoor Testing APC"
+	dir = 8;
+	name = "Xenobio Outdoor Testing APC";
+	pixel_x = -24
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -38885,8 +38929,8 @@
 "nMW" = (
 /obj/structure/table/wood,
 /obj/item/taperecorder{
-	pixel_y = 4;
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 4
 	},
 /obj/item/folder/red,
 /obj/item/stamp/hos,
@@ -39100,8 +39144,8 @@
 	name = "Visitation Door 1"
 	},
 /obj/machinery/door/poddoor/shutters{
-	name = "Visitation Shutters 1";
-	id = "pvshutter1"
+	id = "pvshutter1";
+	name = "Visitation Shutters 1"
 	},
 /obj/effect/turf_decal/tile/orange/tile_full,
 /turf/open/floor/plasteel,
@@ -39547,8 +39591,8 @@
 /area/science/robotics)
 "nYR" = (
 /obj/machinery/mineral/ore_redemption{
-	input_dir = 4;
-	output_dir = 8
+	input_dir = 8;
+	output_dir = 4
 	},
 /obj/effect/turf_decal/tile/brown/tile_full,
 /obj/effect/turf_decal/tile/gray/tile_full,
@@ -40065,8 +40109,8 @@
 "ohp" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Medical Construction Shutters";
-	id = "medconshutters"
+	id = "medconshutters";
+	name = "Medical Construction Shutters"
 	},
 /turf/open/floor/plasteel,
 /area/medical/monkedome/constructionarea)
@@ -40254,6 +40298,10 @@
 	name = "Holodeck Projector Floor"
 	},
 /area/holodeck/rec_center)
+"olJ" = (
+/obj/structure/closet/secure_closet/freezer/meat,
+/turf/open/floor/plasteel/freezer,
+/area/crew_quarters/kitchen)
 "olQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -40548,8 +40596,8 @@
 "ord" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Lounge Shutters";
-	id = "ploungeshutters"
+	id = "ploungeshutters";
+	name = "Prison Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -40757,8 +40805,8 @@
 "otp" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Captain's Office Shutters";
-	id = "capoffice1"
+	id = "capoffice1";
+	name = "Captain's Office Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -40966,8 +41014,8 @@
 "oxO" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "infirmary shutters";
-	id = "infirmary"
+	id = "infirmary";
+	name = "infirmary shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -41408,6 +41456,12 @@
 /obj/item/stack/cable_coil/cut/yellow,
 /turf/open/floor/plating,
 /area/medical/monkedome/constructionarea)
+"oHy" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "oHA" = (
 /obj/machinery/computer/secure_data{
 	dir = 8
@@ -41529,8 +41583,8 @@
 "oJf" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Cafe Shutters";
-	id = "pcafeshutters"
+	id = "pcafeshutters";
+	name = "Prison Cafe Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -41603,8 +41657,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/northleft{
-	req_access_txt = "31";
-	name = "Cargo Desk"
+	name = "Cargo Desk";
+	req_access_txt = "31"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
@@ -42278,9 +42332,9 @@
 "oVA" = (
 /obj/structure/chair/stool,
 /obj/machinery/button/door{
-	pixel_x = -28;
 	id = "pcafeshutters";
-	name = "Prison Cafe Shutter Control"
+	name = "Prison Cafe Shutter Control";
+	pixel_x = -28
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison)
@@ -42315,16 +42369,16 @@
 "oVW" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "chemistry privacy shutters";
-	id = "chemshutters"
+	id = "chemshutters";
+	name = "chemistry privacy shutters"
 	},
 /turf/open/floor/plating,
 /area/medical/chemistry)
 "oWq" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "ComSec Lounge Shutters";
-	id = "comsecshutters1"
+	id = "comsecshutters1";
+	name = "ComSec Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -42380,8 +42434,8 @@
 /area/crew_quarters/heads/hos)
 "oXr" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Construction Area Maintenance";
-	id_tag = "rstoragedoor"
+	id_tag = "rstoragedoor";
+	name = "Construction Area Maintenance"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/plating,
@@ -43107,8 +43161,8 @@
 "pjK" = (
 /obj/structure/plasticflaps,
 /obj/machinery/door/window/southright{
-	req_access_txt = "50";
-	name = "MULE Bot Access Door"
+	name = "MULE Bot Access Door";
+	req_access_txt = "50"
 	},
 /obj/machinery/door/window/northright{
 	name = "MULE Bot Access Door"
@@ -43292,8 +43346,8 @@
 /obj/structure/bodycontainer/crematorium,
 /obj/machinery/button/crematorium{
 	id = "cremawheat";
-	req_access_txt = "27";
-	pixel_y = 24
+	pixel_y = 24;
+	req_access_txt = "27"
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/crematorium)
@@ -43454,8 +43508,8 @@
 "ppX" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "AI Upload Exterior Shutters";
-	id = "aiupload1"
+	id = "aiupload1";
+	name = "AI Upload Exterior Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -43520,8 +43574,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/tile/yellow/tile_side{
@@ -43634,8 +43688,8 @@
 "psq" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "AI Upload Exterior Shutters";
-	id = "aiupload1"
+	id = "aiupload1";
+	name = "AI Upload Exterior Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -43699,8 +43753,8 @@
 "puc" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "ComSec Lounge Shutters";
-	id = "comsecshutters1"
+	id = "comsecshutters1";
+	name = "ComSec Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -44163,8 +44217,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/machinery/light,
@@ -44195,8 +44249,8 @@
 "pDC" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Cafe Shutters";
-	id = "pcafeshutters"
+	id = "pcafeshutters";
+	name = "Prison Cafe Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -44760,8 +44814,8 @@
 /area/science/mixing)
 "pMv" = (
 /obj/machinery/atmospherics/components/binary/pump{
-	name = "Port Mix to South Ports";
-	dir = 8
+	dir = 8;
+	name = "Port Mix to South Ports"
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
@@ -45256,8 +45310,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/tile/darkblue{
@@ -45290,8 +45344,8 @@
 "pVd" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Captain's Office Shutters";
-	id = "capoffice1"
+	id = "capoffice1";
+	name = "Captain's Office Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -46356,6 +46410,10 @@
 	},
 /turf/open/floor/engine,
 /area/ai_monitored/turret_protected/ai)
+"qnL" = (
+/obj/structure/fence/door,
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "qnM" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -46741,6 +46799,10 @@
 /obj/machinery/atmospherics/pipe/simple/purple/visible/layer2,
 /turf/open/floor/engine,
 /area/engine/monkedome/freezer)
+"qvn" = (
+/obj/structure/fence/corner,
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "qvo" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -47162,6 +47224,8 @@
 /area/maintenance/monkedome/engine/central)
 "qEK" = (
 /obj/machinery/airalarm/directional/south,
+/obj/structure/bed/dogbed/renault,
+/mob/living/simple_animal/pet/fox/Renault,
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain)
 "qFb" = (
@@ -47603,8 +47667,8 @@
 "qLx" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "infirmary shutters";
-	id = "infirmary"
+	id = "infirmary";
+	name = "infirmary shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -47643,8 +47707,8 @@
 "qLQ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "infirmary shutters";
-	id = "infirmary"
+	id = "infirmary";
+	name = "infirmary shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -47757,8 +47821,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /turf/open/floor/plasteel,
@@ -48294,8 +48358,8 @@
 "qZd" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "ComSec Lounge Shutters";
-	id = "comsecshutters1"
+	id = "comsecshutters1";
+	name = "ComSec Lounge Shutters"
 	},
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
@@ -49008,9 +49072,9 @@
 /area/ai_monitored/security/armory)
 "rlP" = (
 /obj/machinery/button/door{
+	id = "pvshutter2";
 	name = "Visitation Shutters 2";
-	pixel_x = 28;
-	id = "pvshutter2"
+	pixel_x = 28
 	},
 /obj/structure/chair/stool,
 /obj/effect/turf_decal/tile/orange/tile_full,
@@ -49147,8 +49211,8 @@
 /obj/machinery/button/door{
 	id = "engsm";
 	name = "Radiation Shutters Control";
-	req_access_txt = "10";
-	pixel_y = 24
+	pixel_y = 24;
+	req_access_txt = "10"
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
@@ -49438,8 +49502,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/machinery/door/poddoor/shutters{
-	name = "Security Suit Storage";
-	id = "secsuits"
+	id = "secsuits";
+	name = "Security Suit Storage"
 	},
 /turf/open/floor/plasteel,
 /area/security/evidencestorage)
@@ -49989,8 +50053,8 @@
 "rEG" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Cafe Shutters";
-	id = "pcafeshutters"
+	id = "pcafeshutters";
+	name = "Prison Cafe Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -50310,8 +50374,8 @@
 "rMF" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "ComSec Lounge Shutters";
-	id = "comsecshutters1"
+	id = "comsecshutters1";
+	name = "ComSec Lounge Shutters"
 	},
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
@@ -50381,8 +50445,8 @@
 /area/engine/engineering)
 "rNJ" = (
 /obj/machinery/atmospherics/components/binary/valve/digital{
-	name = "Waste Release";
-	dir = 4
+	dir = 4;
+	name = "Waste Release"
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/piss_yellow{
@@ -50636,8 +50700,8 @@
 "rRG" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Toxins Shutters";
-	id = "toxshutters"
+	id = "toxshutters";
+	name = "Toxins Shutters"
 	},
 /turf/open/floor/plating,
 /area/science/mixing)
@@ -50807,8 +50871,8 @@
 "rUr" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Farm Shutters";
-	id = "pfarmshutters"
+	id = "pfarmshutters";
+	name = "Prison Farm Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -51066,6 +51130,12 @@
 "rYX" = (
 /turf/open/floor/plating,
 /area/maintenance/monkedome/ls/comsec/lifesupport)
+"rYY" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "rZd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -51158,8 +51228,8 @@
 /obj/machinery/button/door{
 	id = "lawyer_shutters";
 	name = "law office shutters control";
-	req_access_txt = "38";
-	pixel_x = -26
+	pixel_x = -26;
+	req_access_txt = "38"
 	},
 /turf/open/floor/carpet/green,
 /area/lawoffice)
@@ -52029,8 +52099,8 @@
 "spc" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Farm Shutters";
-	id = "pfarmshutters"
+	id = "pfarmshutters";
+	name = "Prison Farm Shutters"
 	},
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
@@ -52569,23 +52639,23 @@
 /area/security/prison)
 "sxp" = (
 /obj/structure/toilet{
-	dir = 4;
 	color = "#FFD700";
-	name = "gold plated executive toilet";
-	desc = "Holy shit that's a fancy ass toilet. You almost feel bad shitting in it. Almost."
+	desc = "Holy shit that's a fancy ass toilet. You almost feel bad shitting in it. Almost.";
+	dir = 4;
+	name = "gold plated executive toilet"
 	},
 /obj/effect/turf_decal/tile/piss_yellow/tile_full,
 /obj/machinery/button/door{
-	pixel_y = 24;
+	color = "#FFD700";
+	desc = "A gold plated door remote control switch.";
 	id = "exectoilet";
 	name = "Gold Executive Toilet Door Bolt Control";
-	color = "#FFD700";
-	desc = "A gold plated door remote control switch."
+	pixel_y = 24
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	color = "#FFD700";
 	dir = 4;
-	name = "Gold Plated Air Scrubber";
-	color = "#FFD700"
+	name = "Gold Plated Air Scrubber"
 	},
 /turf/open/floor/plasteel/white,
 /area/bridge)
@@ -52751,9 +52821,9 @@
 /obj/item/multitool,
 /obj/item/clothing/glasses/meson,
 /obj/machinery/button/door{
-	pixel_y = 26;
 	id = "techstorageshutters";
-	name = "Tech Storage Shutter Controls"
+	name = "Tech Storage Shutter Controls";
+	pixel_y = 26
 	},
 /turf/open/floor/plasteel/dark,
 /area/storage/tech)
@@ -52790,8 +52860,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/machinery/camera/autoname{
@@ -53318,8 +53388,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/tile/red,
@@ -53526,8 +53596,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/machinery/camera/autoname{
@@ -53598,14 +53668,14 @@
 /obj/machinery/button/door{
 	id = "rstorageshutters";
 	name = "Research Storage Shutter Control";
-	pixel_y = 24;
-	pixel_x = 6
+	pixel_x = 6;
+	pixel_y = 24
 	},
 /obj/machinery/button/door{
 	id = "rstoragedoor";
 	name = "Research Storage Door Control";
-	pixel_y = 24;
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = 24
 	},
 /turf/open/floor/plasteel,
 /area/science/monkedome/constructionarea)
@@ -53765,8 +53835,8 @@
 "sSs" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "ComSec Lounge Shutters";
-	id = "comsecshutters1"
+	id = "comsecshutters1";
+	name = "ComSec Lounge Shutters"
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
@@ -53995,8 +54065,8 @@
 /obj/item/radio/intercom{
 	desc = "Talk through this. It looks like it has been modified to not broadcast.";
 	name = "Prison Intercom (General)";
-	prison_radio = 1;
-	pixel_x = -28
+	pixel_x = -28;
+	prison_radio = 1
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -54315,6 +54385,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/medical/virology,
 /obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/doorButtons/access_button{
+	idDoor = "virology_airlock_interior";
+	idSelf = "virology_airlock_control";
+	name = "Virology Access Button";
+	pixel_x = 24;
+	req_access_txt = "39"
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
 "tbX" = (
@@ -54865,8 +54942,8 @@
 "tkG" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Lounge Shutters";
-	id = "ploungeshutters"
+	id = "ploungeshutters";
+	name = "Prison Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -55049,8 +55126,8 @@
 "tmK" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Research Lounge Shutters";
-	id_tag = "resloungeshutters"
+	id_tag = "resloungeshutters";
+	name = "Research Lounge Shutters"
 	},
 /obj/structure/cable/yellow,
 /turf/open/floor/plating,
@@ -55402,8 +55479,8 @@
 /area/janitor)
 "tsW" = (
 /obj/structure/sign/poster/contraband/clown{
-	pixel_x = 32;
-	layer = 3.4
+	layer = 3.4;
+	pixel_x = 32
 	},
 /obj/item/storage/secure/safe{
 	pixel_x = 32
@@ -55420,8 +55497,8 @@
 "ttg" = (
 /obj/machinery/door/airlock/public/glass/incinerator/atmos_interior,
 /obj/machinery/embedded_controller/radio/airlock_controller/incinerator_atmos{
-	pixel_y = 24;
-	pixel_x = -8
+	pixel_x = -8;
+	pixel_y = 24
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -55755,8 +55832,8 @@
 "tyu" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "interrogation shutters";
-	id = "interrogation"
+	id = "interrogation";
+	name = "interrogation shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -55803,8 +55880,8 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
 /obj/machinery/door/poddoor/shutters{
-	name = "Security Suit Storage";
-	id = "secsuits"
+	id = "secsuits";
+	name = "Security Suit Storage"
 	},
 /turf/open/floor/plating,
 /area/security/evidencestorage)
@@ -55942,8 +56019,8 @@
 "tCk" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Construction Area Safety Shutters";
-	id = "engconstshutters"
+	id = "engconstshutters";
+	name = "Construction Area Safety Shutters"
 	},
 /turf/open/floor/plasteel,
 /area/engine/monkedome/constructionarea)
@@ -55993,8 +56070,8 @@
 "tCZ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "interrogation shutters";
-	id = "interrogation"
+	id = "interrogation";
+	name = "interrogation shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -56065,8 +56142,8 @@
 	dir = 4
 	},
 /obj/machinery/button/door{
-	name = "infirmary window shutters";
 	id = "infirmary";
+	name = "infirmary window shutters";
 	pixel_x = 24
 	},
 /turf/open/floor/plasteel/white,
@@ -56259,9 +56336,9 @@
 /area/ai_monitored/turret_protected/ai_upload)
 "tGI" = (
 /obj/machinery/button/door{
-	pixel_y = 28;
 	id = "pfarmshutters";
-	name = "Prison Farm Shutter Control"
+	name = "Prison Farm Shutter Control";
+	pixel_y = 28
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -56299,12 +56376,12 @@
 "tHt" = (
 /obj/structure/dresser,
 /obj/item/cartridge/atmos{
-	pixel_y = 12;
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = 12
 	},
 /obj/item/cartridge/atmos{
-	pixel_y = 12;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 12
 	},
 /obj/item/cartridge/atmos{
 	pixel_y = 9
@@ -56967,7 +57044,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/access/any/science/general,
+/obj/effect/mapping_helpers/airlock/access/any/science/research,
 /obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel/white,
 /area/science/breakroom)
@@ -57210,9 +57287,9 @@
 	pixel_y = -25
 	},
 /obj/machinery/door/window/brigdoor/westright{
-	req_access_txt = "16";
 	name = "Tertiary AI Core Access";
-	pixel_x = -4
+	pixel_x = -4;
+	req_access_txt = "16"
 	},
 /turf/open/floor/circuit/red,
 /area/ai_monitored/turret_protected/ai)
@@ -57228,8 +57305,8 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /obj/item/pen/blue{
-	pixel_y = -3;
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = -3
 	},
 /obj/item/pen/red{
 	pixel_x = 3;
@@ -57419,8 +57496,8 @@
 "tZY" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "ComSec Lounge Shutters";
-	id = "comsecshutters1"
+	id = "comsecshutters1";
+	name = "ComSec Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -57631,8 +57708,8 @@
 /obj/effect/landmark/start/assistant,
 /obj/effect/decal/cleanable/blood{
 	color = "#554033";
-	name = "stain";
-	desc = "Please be blood, please be blood, please be blood"
+	desc = "Please be blood, please be blood, please be blood";
+	name = "stain"
 	},
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet/restrooms)
@@ -57661,8 +57738,8 @@
 "ueC" = (
 /obj/structure/table,
 /obj/item/book/granter/crafting_recipe/cooking_sweets_101{
-	pixel_y = 7;
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 7
 	},
 /obj/item/book/manual/wiki/cooking_to_serve_man,
 /turf/open/floor/plasteel/cafeteria{
@@ -58931,8 +59008,8 @@
 	dir = 4
 	},
 /obj/structure/fence/end{
-	pixel_x = -14;
-	density = 0
+	density = 0;
+	pixel_x = -14
 	},
 /turf/open/floor/plating/dirt/jungleland,
 /area/science/monkedome/xenobiooutdoor)
@@ -59833,8 +59910,8 @@
 	},
 /obj/machinery/power/apc/highcap/ten_k{
 	areastring = "/area/security/prison";
-	name = "Prison Wing APC";
 	dir = 1;
+	name = "Prison Wing APC";
 	pixel_y = 24
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -59957,8 +60034,8 @@
 	dir = 8
 	},
 /obj/machinery/button/door{
-	name = "Toxins Shutter Control";
 	id = "toxshutters";
+	name = "Toxins Shutter Control";
 	pixel_x = -24
 	},
 /obj/structure/cable/yellow{
@@ -60276,9 +60353,9 @@
 	pixel_y = -25
 	},
 /obj/machinery/door/window/brigdoor/eastleft{
-	req_access_txt = "16";
 	name = "Secondary AI Core Access";
-	pixel_x = 4
+	pixel_x = 4;
+	req_access_txt = "16"
 	},
 /turf/open/floor/circuit/green,
 /area/ai_monitored/turret_protected/ai)
@@ -60312,9 +60389,9 @@
 	dir = 6
 	},
 /obj/machinery/conveyor_switch/oneway{
+	dir = 8;
 	id = "QMLoad2";
-	pixel_x = 6;
-	dir = 8
+	pixel_x = 6
 	},
 /obj/machinery/light{
 	dir = 4
@@ -61038,8 +61115,8 @@
 "vkq" = (
 /obj/effect/turf_decal/tile/dark_green/tile_full,
 /obj/machinery/door/airlock/virology{
-	name = "Virology Lab Alpha";
-	id_tag = "ViroA"
+	id_tag = "ViroA";
+	name = "Virology Lab Alpha"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -61422,8 +61499,8 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/door/poddoor/shutters{
-	name = "Security Suit Storage";
-	id = "secsuits"
+	id = "secsuits";
+	name = "Security Suit Storage"
 	},
 /turf/open/floor/plating,
 /area/security/evidencestorage)
@@ -61710,8 +61787,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/northright{
-	req_access_txt = "31";
-	name = "Cargo Desk"
+	name = "Cargo Desk";
+	req_access_txt = "31"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
@@ -61832,6 +61909,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel,
 /area/security/checkpoint/escape)
+"vyM" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "vyN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
@@ -62848,8 +62931,8 @@
 	dir = 4
 	},
 /obj/structure/fence/end{
-	pixel_x = -14;
-	density = 0
+	density = 0;
+	pixel_x = -14
 	},
 /turf/open/genturf,
 /area/pregen/station)
@@ -63265,8 +63348,8 @@
 "vZg" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Lounge Shutters";
-	id = "ploungeshutters"
+	id = "ploungeshutters";
+	name = "Prison Lounge Shutters"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -63535,8 +63618,8 @@
 "wdt" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Construction Area Safety Shutters";
-	id = "engconstshutters"
+	id = "engconstshutters";
+	name = "Construction Area Safety Shutters"
 	},
 /turf/open/floor/plating,
 /area/engine/monkedome/constructionarea)
@@ -63547,6 +63630,10 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison)
+"wdT" = (
+/obj/structure/fence,
+/turf/open/floor/plating/dirt/jungleland,
+/area/jungleland/explored)
 "wdZ" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -63924,9 +64011,9 @@
 "wlY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door{
-	pixel_y = -28;
 	id = "pbathshutters";
-	name = "Prison Bathroom Shutters Control"
+	name = "Prison Bathroom Shutters Control";
+	pixel_y = -28
 	},
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/plasteel/showroomfloor,
@@ -64663,8 +64750,8 @@
 	},
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/window/brigdoor/security/cell/southleft{
-	req_access_txt = "1";
-	name = "Security Deliveries"
+	name = "Security Deliveries";
+	req_access_txt = "1"
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
@@ -66415,8 +66502,8 @@
 	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath{
-	pixel_y = 3;
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/clothing/mask/breath,
 /obj/machinery/light{
@@ -67256,8 +67343,8 @@
 /obj/machinery/door_timer{
 	id = "Cell 2";
 	name = "Cell 2";
-	pixel_y = 32;
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 32
 	},
 /obj/effect/turf_decal/tile/red/tile_side{
 	dir = 4
@@ -67768,10 +67855,13 @@
 /turf/open/floor/plasteel/white,
 /area/medical/genetics)
 "xKl" = (
-/obj/structure/bed/dogbed/renault,
-/mob/living/simple_animal/pet/fox/Renault,
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/structure/displaycase/captain{
+	pixel_y = 5;
+	req_access = null;
+	req_access_txt = "20"
 	},
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain)
@@ -68609,8 +68699,8 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/door/poddoor/shutters{
-	name = "Security Suit Storage";
-	id = "secsuits"
+	id = "secsuits";
+	name = "Security Suit Storage"
 	},
 /turf/open/floor/plating,
 /area/security/evidencestorage)
@@ -68663,8 +68753,8 @@
 "ybv" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	name = "Prison Lounge Shutters";
-	id = "ploungeshutters"
+	id = "ploungeshutters";
+	name = "Prison Lounge Shutters"
 	},
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
@@ -68713,7 +68803,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/outdoors,
-/area/pregen/station)
+/area/engine/engineering)
 "ycM" = (
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -69265,6 +69355,17 @@
 "yjV" = (
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
+"ykc" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 5;
+	height = 7;
+	id = "supply_home";
+	name = "Cargo Bay";
+	width = 12
+	},
+/turf/open/genturf,
+/area/pregen/station)
 "yky" = (
 /obj/effect/turf_decal/tile/dark_green/tile_marquee{
 	dir = 1
@@ -83006,7 +83107,7 @@ rWZ
 rWZ
 rWZ
 rWZ
-mGW
+tMD
 bwo
 bwo
 bwo
@@ -83263,7 +83364,7 @@ rWZ
 rWZ
 rWZ
 rWZ
-mGW
+tMD
 bwo
 mFe
 qQO
@@ -83520,7 +83621,7 @@ rWZ
 rWZ
 rWZ
 rWZ
-mGW
+tMD
 bwo
 ozL
 nEt
@@ -83777,7 +83878,7 @@ rWZ
 rWZ
 rWZ
 rWZ
-mGW
+tMD
 bwo
 ozL
 aXr
@@ -84034,13 +84135,13 @@ rWZ
 rWZ
 rWZ
 rWZ
-mGW
+tMD
 bwo
 ozL
 wUf
 mFe
 ozn
-mFe
+mGW
 bwo
 wxw
 gXw
@@ -86404,7 +86505,7 @@ dOO
 qMC
 qMC
 qMC
-rWZ
+fbR
 rWZ
 rWZ
 rWZ
@@ -86661,7 +86762,7 @@ voO
 ghN
 fKM
 vgB
-rWZ
+fbR
 rWZ
 rWZ
 rWZ
@@ -86918,7 +87019,7 @@ qMC
 qMC
 iVn
 qMC
-rWZ
+fbR
 rWZ
 rWZ
 rWZ
@@ -92905,7 +93006,7 @@ nqU
 xen
 eTZ
 gmt
-rWZ
+fbR
 vQt
 ljj
 xdf
@@ -93162,7 +93263,7 @@ vZo
 vME
 veN
 vME
-rWZ
+fbR
 jKK
 ljj
 ljj
@@ -102350,7 +102451,7 @@ ydb
 mKz
 mMs
 gsc
-gsc
+olJ
 rkf
 qGO
 kig
@@ -104609,9 +104710,9 @@ rWZ
 rWZ
 rWZ
 rWZ
-rWZ
-rWZ
-rWZ
+fbR
+fbR
+fbR
 rWZ
 rWZ
 bSl
@@ -106675,7 +106776,7 @@ rWZ
 rWZ
 rWZ
 rWZ
-rWZ
+ykc
 rWZ
 rWZ
 rWZ
@@ -107519,11 +107620,11 @@ fVg
 fVg
 fUR
 fUR
-nHg
-rWZ
-rWZ
-rWZ
-vQt
+oHy
+jzH
+jzH
+jzH
+icX
 rWZ
 rWZ
 rWZ
@@ -107765,22 +107866,22 @@ xpQ
 kvi
 dsg
 fgm
-dDX
-dDX
-rWZ
-rWZ
-iGs
+jZD
+jZD
+jzH
+jzH
+cXe
 wRD
 vPr
 vPr
 wRD
 fbR
 fbR
-nHg
-rWZ
-rWZ
-rWZ
-jKK
+oHy
+jzH
+jzH
+jzH
+biD
 rWZ
 rWZ
 rWZ
@@ -108025,19 +108126,19 @@ fgm
 fgm
 fgm
 fgm
-rWZ
-iGs
+jzH
+cXe
 fbR
 fbR
 fbR
 fbR
 fbR
 fbR
-nHg
-rWZ
-rWZ
-rWZ
-jKK
+oHy
+jzH
+jzH
+jzH
+biD
 rWZ
 rWZ
 rWZ
@@ -108282,19 +108383,19 @@ pfm
 dBn
 iCI
 wRX
-rWZ
-iGs
+jzH
+cXe
 fbR
 fbR
 fbR
 fbR
 fbR
 fbR
-nHg
-rWZ
-rWZ
-rWZ
-iGl
+oHy
+jzH
+jzH
+jzH
+qnL
 rWZ
 rWZ
 rWZ
@@ -108539,19 +108640,19 @@ syX
 syX
 syX
 syX
-rWZ
-pJJ
-xJu
-xJu
-xJu
-xJu
-xJu
-xJu
-xUo
-rWZ
-rWZ
-rWZ
-jKK
+jzH
+cto
+vyM
+vyM
+vyM
+vyM
+vyM
+vyM
+rYY
+jzH
+jzH
+jzH
+biD
 rWZ
 rWZ
 rWZ
@@ -108792,23 +108893,23 @@ vTn
 lSo
 gBV
 jzQ
+jlT
 syX
-ejE
-ejE
 jZD
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-iGl
+jZD
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+qnL
 rWZ
 rWZ
 rWZ
@@ -109053,19 +109154,19 @@ syX
 syX
 syX
 syX
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-jKK
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+biD
 rWZ
 rWZ
 rWZ
@@ -109310,19 +109411,19 @@ pfm
 dBn
 iCI
 wRX
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-jKK
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+biD
 rWZ
 rWZ
 rWZ
@@ -109567,19 +109668,19 @@ fgm
 fgm
 fgm
 fgm
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-rWZ
-jKK
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+jzH
+biD
 rWZ
 rWZ
 rWZ
@@ -109821,22 +109922,22 @@ who
 fgm
 fgm
 fgm
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kNh
-kUw
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+wdT
+qvn
 rWZ
 rWZ
 rWZ
@@ -118573,9 +118674,9 @@ rWZ
 rWZ
 rWZ
 rWZ
-rWZ
-rWZ
-rWZ
+fbR
+fbR
+fbR
 eZK
 pLm
 bzq
@@ -119305,7 +119406,7 @@ jvN
 wbM
 wiU
 wbM
-rWZ
+fbR
 rWZ
 rWZ
 rWZ
@@ -119562,7 +119663,7 @@ dOt
 hVh
 sZH
 gXS
-rWZ
+fbR
 rWZ
 rWZ
 rWZ
@@ -119819,7 +119920,7 @@ jvN
 wbM
 wbM
 wbM
-rWZ
+fbR
 rWZ
 rWZ
 rWZ
