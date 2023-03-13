@@ -221,13 +221,12 @@
 
 /obj/structure/herb/random_plant/Initialize(mapload)
 	. = ..()
-	var/temp_var = pick(typesof(/obj/item/food/grown))
-	random_plant = new temp_var
-	name = random_plant.plantname
-	var/obj/item/seeds/random_seeds = new random_plant.seed
-	icon = random_seeds.growing_icon
-	icon_state = "[random_seeds.icon_grow][random_seeds.growthstages]"
-	desc = random_seeds.desc
+	random_plant = pick(typesof(/obj/item/food/grown))
+	name = initial(random_plant.plantname)
+	var/obj/item/seeds/random_seeds = initial(random_plant.seed)
+	icon = initial(random_seeds.growing_icon)
+	icon_state = "[inital(random_seeds.icon_grow)][initial(random_seeds.growthstages)]"
+	desc = initial(random_seeds.desc)
 	picked_amt = rand(1,4)
 /obj/structure/herb/explosive_shrooms
 	name = "Explosive Mushroom"
