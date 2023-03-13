@@ -225,7 +225,7 @@
 	name = initial(random_plant.plantname)
 	var/obj/item/seeds/random_seeds = initial(random_plant.seed)
 	icon = initial(random_seeds.growing_icon)
-	icon_state = "[inital(random_seeds.icon_grow)][initial(random_seeds.growthstages)]"
+	icon_state = "[initial(random_seeds.icon_grow)][initial(random_seeds.growthstages)]"
 	desc = initial(random_seeds.desc)
 	picked_amt = rand(1,4)
 /obj/structure/herb/explosive_shrooms
