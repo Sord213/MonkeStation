@@ -202,13 +202,13 @@ Temperature: 126.85 °C (400 K)
 /turf/open/water/toxic_pit
 	name = "sulphuric pit"
 	desc = "Very toxic"
-	color = "#00c167"
+	//color = "#00c167" /// can't do this because of how trees render
 	slowdown = 2
 	initial_gas_mix = JUNGLELAND_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 	baseturfs = /turf/open/water/toxic_pit
 
-/turf/open/water/toxic_pit/Entered(atom/movable/AM)
+/turf/open/water/toxic_pit/Entered(atom/movable/AM, atom/old_loc, list/atom/old_locs)
 	. = ..()
 	var/mob/living/carbon/human/humie = AM
 	if(AM.movement_type & (FLYING|FLOATING) || !AM.has_gravity())
