@@ -214,6 +214,21 @@
 
 	qdel(src)
 
+/obj/structure/herb/random_plant
+	name = "Random Plant"
+	desc = "Blegh! This shouldn't be here!"
+	var/obj/item/food/grown/random_plant
+
+/obj/structure/herb/random_plant/Initialize(mapload)
+	. = ..()
+	var/temp_var = pick(typesof(/obj/item/food/grown))
+	random_plant = new temp_var
+	name = random_plant.plantname
+	var/obj/item/seeds/random_seeds = new random_plant.seed
+	icon = random_seeds.growing_icon
+	icon_state = "[random_seeds.icon_grow][random_seeds.growthstages]"
+	desc = random_seeds.desc
+	picked_amt = rand(1,4)
 /obj/structure/herb/explosive_shrooms
 	name = "Explosive Mushroom"
 	desc = "Highly volatile mushrooms, they contain a high amount of volatile alkalines that will explode after a short delay if stepped on."

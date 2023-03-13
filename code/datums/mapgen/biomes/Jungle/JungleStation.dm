@@ -53,8 +53,8 @@
 	turf_type = /turf/open/floor/plating/dirt/jungleland/jungle
 	closed_turf = /turf/open/floor/plating/dirt/jungleland/toxic_pit
 	dense_flora = list(/obj/structure/flora/rock = 2,/obj/structure/flora/rock/jungle = 1,/obj/structure/flora/rock/pile = 2)
-	loose_flora = list(/obj/structure/flora/grass/jungle = 3,/obj/structure/flora/grass/jungle/b = 2,/obj/structure/flora/ausbushes = 2,/obj/structure/flora/ausbushes/leafybush = 1,/obj/structure/flora/ausbushes/sparsegrass = 1,/obj/structure/flora/ausbushes/fullgrass = 1,/obj/structure/herb/explosive_shrooms = 0.1,/obj/structure/flytrap = 0.1,/obj/structure/herb/fruit = 0.2)
-	loose_flora_density = 15
+	loose_flora = list(/obj/structure/flora/grass/jungle = 3,/obj/structure/flora/grass/jungle/b = 2,/obj/structure/flora/ausbushes = 2, /obj/structure/herb/random_plant = 1.5, /obj/structure/flora/ausbushes/leafybush = 1,/obj/structure/flora/ausbushes/sparsegrass = 1,/obj/structure/flora/ausbushes/fullgrass = 1,/obj/structure/herb/explosive_shrooms = 0.1,/obj/structure/flytrap = 0.1,/obj/structure/herb/fruit = 0.2)
+	loose_flora_density = 30
 	dense_flora_density = 1
 	spawn_fauna_on_closed = TRUE
 	this_area = /area/jungleland/plains
