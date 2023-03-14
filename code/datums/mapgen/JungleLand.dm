@@ -276,6 +276,6 @@
 		var/datum/biome/jungleland/selected_biome = SSmapping.biomes[biome]
 		selected_biome.this_area.reg_in_areas_in_z()
 
-	var/message = "Jungle land finished in [(REALTIMEOFDAY - start_time)/10]s!"
+	var/message = "Jungle-Mining finished in [(REALTIMEOFDAY - start_time)/10]s!"
 	to_chat(world, "<span class='boldannounce'>[message]</span>")
 	log_world(message)

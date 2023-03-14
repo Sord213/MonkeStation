@@ -232,6 +232,7 @@
 	icon_state = "[initial(random_seeds.icon_grow)][initial(random_seeds.growthstages)]"
 	desc = initial(random_seeds.desc)
 	picked_amt = rand(1,4)
+	picked_result = random_plant
 
 /obj/structure/herb/explosive_shrooms
 	name = "Explosive Mushroom"
