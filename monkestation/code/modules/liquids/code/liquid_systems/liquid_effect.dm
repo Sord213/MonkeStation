@@ -166,7 +166,7 @@
 			liquid_group.expose_atom(stepped_human, stepped_human.get_permeability_protection(), TOUCH)
 	else if (isliving(AM))
 		var/mob/living/L = AM
-		if(prob(7) && !(L.movement_type & FLYING))
+		if(prob(7) && !(L.movement_type & FLYING) && L.body_position == STANDING_UP)
 			L.slip(30, T, NO_SLIP_WHEN_WALKING, 0, TRUE)
 		if(ishuman(L))
 			var/mob/living/carbon/human/entered_human = L
@@ -177,7 +177,7 @@
 			else
 				liquid_group.expose_atom(entered_human, 0 , TOUCH)
 			for(var/datum/reagent/listed_reagent in liquid_group.reagents.reagent_list)
-				if(listed_reagent.type == /datum/reagent/blood && entered_human.shoes)
+				if(listed_reagent.type == /datum/reagent/blood && entered_human.shoes && !HAS_TRAIT(entered_human, TRAIT_LIGHT_STEP))
 					var/obj/item/clothing/shoes/stepped_shoes = entered_human.shoes
 					stepped_shoes.bloody_shoes[BLOOD_STATE_HUMAN] = min(MAX_SHOE_BLOODINESS, stepped_shoes.bloody_shoes[BLOOD_STATE_HUMAN] + BLOOD_GAIN_PER_STEP)
 					stepped_shoes.blood_state = "blood"
@@ -230,7 +230,6 @@
 	RegisterSignal(my_turf, COMSIG_ATOM_ENTERED, .proc/movable_entered)
 	RegisterSignal(my_turf, COMSIG_TURF_MOB_FALL, .proc/mob_fall)
 	RegisterSignal(my_turf, COMSIG_PARENT_EXAMINE, .proc/examine_turf)
-	SSliquids.add_active_turf(my_turf)
 
 	SEND_SIGNAL(my_turf, COMSIG_TURF_LIQUIDS_CREATION, src)
 
@@ -257,9 +256,6 @@
 		stack_trace("Liquids tried to change to a new turf, that already had liquids on it!")
 
 	UnregisterSignal(my_turf, list(COMSIG_ATOM_ENTERED, COMSIG_TURF_MOB_FALL))
-	if(SSliquids.active_turfs[my_turf])
-		SSliquids.active_turfs -= my_turf
-		SSliquids.active_turfs[NewT] = TRUE
 	if(SSliquids.evaporation_queue[my_turf])
 		SSliquids.evaporation_queue -= my_turf
 		SSliquids.evaporation_queue[NewT] = TRUE
